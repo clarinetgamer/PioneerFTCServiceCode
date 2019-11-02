@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%0 initializer is inaccessible due to '%select{private|fileprivate|internal|%error|%error}1' protection level</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：%0 构造器不可访问，由于“%select{private|fileprivate|internal|%error|%error}1”保护级别</string>
+	<key>%0 is not a %select{binary|prefix unary|postfix unary}1 operator</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：%0 不是%select{二元|前缀一元|后缀一元}1运算符</string>
+	<key>%0 is unavailable: %1</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：%0 不可用：%1</string>
+	<key>%1 is not %select{convertible to|a subtype of}0 %2</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：%1 不%select{可转换为|是其子类}0 %2</string>
+	<key>'%select{var|let}0' cannot appear nested inside another 'var' or 'let' pattern</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“%select{var|let}0”不能嵌套在另一个“var”或“let”模式中</string>
+	<key>';' statements are not allowed</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：不允许“;”语句</string>
+	<key>'=' must have consistent whitespace on both sides</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“=”两边的空格必须相等</string>
+	<key>'switch' statement body must have at least one 'case' or 'default' block</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“switch”语句体必须至少有一个“case”或“default”代码块</string>
+	<key>adjacent operators are in non-associative precedence group %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：相邻运算符位于非关联优先群组 %0</string>
+	<key>ambiguous reference to member %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：歧义引用成员 %0</string>
+	<key>ambiguous use of %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：歧义使用 %0</string>
+	<key>ambiguous use of operator %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：歧义使用运算符 %0</string>
+	<key>argument labels '%0' do not match any available overloads</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：使用的实参标签“%0”不匹配任何可用的函数或构造器。请检查尝试调用的函数或构造器，并确保使用匹配的实参。</string>
+	<key>argument passed to call that takes no arguments</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：传入以调用的实参没有参数</string>
+	<key>argument type %0 does not conform to expected type %1</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：实参类型 %0 与预期类型 %1 不一致</string>
+	<key>assigning a variable to itself</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：将变量分配给自身</string>
+	<key>binary operator '%0' cannot be applied to operands of type %1 and %2</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：二元运算符“%0”无法应用到操作数类型 %1 和 %2</string>
+	<key>binary operator '%0' cannot be applied to two %1 operands</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：二元运算符“%0”无法应用到两个 %1 操作数</string>
+	<key>cannot assign to immutable expression of type %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：类型 %0 的表达式不可变（永不可更改），所以你无法赋予它其他值。</string>
+	<key>cannot assign to value: %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：无法分配给值：%0</string>
+	<key>cannot assign value of type %0 to type %1</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：无法将类型 %0 赋值给类型 %1</string>
+	<key>cannot call value of non-function type %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：无法调用非函数类型 %0 的值</string>
+	<key>cannot convert value of type %0 to expected argument type %1</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：无法将类型 %0 的值转换为预期实参类型 %1</string>
+	<key>cannot force unwrap value of non-optional type %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：不能强制打开非可选类型 %0 的值</string>
+	<key>cannot invoke %select{|initializer for type }1'%0' with no arguments</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：无法在无实参的情况下调用%select{|类型的构造器}1“%0”</string>
+	<key>cannot invoke %select{|initializer for type }2'%0' with an argument list of type '%1'</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：无法在带有类型“%1”实参列表的情况下调用%select{|类型的构造器}2“%0”</string>
+	<key>cannot subscript a value of type %0 with an index of type %1</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：无法为类型 %0 的值下标类型 %1 的索引</string>
+	<key>closure expression is unused</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：未使用闭包表达式</string>
+	<key>consecutive statements on a line must be separated by ';'</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：一行代码上的连续性语句必须用“;”隔开</string>
+	<key>curried function declaration syntax has been removed; use a single parameter list</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：柯里化函数声明语义已移除；使用单个参数列表</string>
+	<key>editor placeholder in source file</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：需要填写此占位符</string>
+	<key>empty collection literal requires an explicit type</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：空字符集合需要显式类型</string>
+	<key>expected '%0' separator</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：应有“%0”分隔符</string>
+	<key>expected '(' in argument list of function declaration</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：函数声明的实参列表中应有“(”</string>
+	<key>expected ')' in expression list</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：表达式中缺少“)”</string>
+	<key>expected ';' in 'for' statement</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“for”语句中应有“;”</string>
+	<key>expected 'in' after for-each pattern</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：for-each 模式后面要接“in”</string>
+	<key>expected 'while' after body of 'repeat' statement</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“repeat”语句后面要接“while”</string>
+	<key>expected '{' after 'else'</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“else”语句后面要加上“{”</string>
+	<key>expected '{' after 'if' condition</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“if”条件后面应有“{”</string>
+	<key>expected '{' after 'repeat'</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“repeat”后面要加上“{”</string>
+	<key>expected '{' after 'switch' subject expression</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“switch”主语表达式后面应有“{”</string>
+	<key>expected '{' after 'while' condition</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“while”条件后面要加上“{”</string>
+	<key>expected '{' in 'for' statement</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“for”语句中应有“{”</string>
+	<key>expected '{' in body of function declaration</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：函数声明体中应有“{”</string>
+	<key>expected '{' to start the body of for-each loop</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：需要“{”来开始 for-each 循环体</string>
+	<key>expected '}' at end of brace statement</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：括号语句结尾应有“}”</string>
+	<key>expected '}' at end of closure</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：闭包结尾应有“}”</string>
+	<key>expected Sequence expression for for-each loop</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：for-each 循环中应有序列表达式</string>
+	<key>expected a digit after integer literal prefix</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：整数字符前缀后面应有一个数字</string>
+	<key>expected condition in 'for' statement</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“for”语句中需要条件</string>
+	<key>expected expression</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：应有表达式</string>
+	<key>expected expression after operator</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：运算符后面应有表达式</string>
+	<key>expected expression after unary operator</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：一元运算符后面应有表达式</string>
+	<key>expected expression in 'switch' statement</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“switch”语句中需要表达式</string>
+	<key>expected expression in assignment</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：赋值应有表达式</string>
+	<key>expected expression in list of expressions</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：表达式列表中应有表达式</string>
+	<key>expected expression, var, or let in 'if' condition</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“if”条件中应有表达式、var 或 let</string>
+	<key>expected expression, var, or let in 'while' condition</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“while”条件中应有表达式、var 或 let</string>
+	<key>expected identifier after '.' expression</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“.”后面应有一个标识符</string>
+	<key>expected identifier in %0 declaration</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：%0 声明中应有标识符</string>
+	<key>expected initial value after '='</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“=”后面要跟一个值</string>
+	<key>expected initialization in a 'for' statement</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“for”语句应初始化</string>
+	<key>expected member name following '.'</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“.”后面应有成员名称</string>
+	<key>expected member name or constructor call after type name</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：类型名称后面应有成员名称或构造函数调用</string>
+	<key>expected parameter name followed by ':'</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：参数名称后面要跟“:”</string>
+	<key>expected parameter type following ':'</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“:”后面要跟参数类型</string>
+	<key>expected pattern</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：应有模式</string>
+	<key>expected type</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：应有类型</string>
+	<key>expression resolves to an unused function</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：表达式解析至未使用的函数</string>
+	<key>expression resolves to an unused l-value</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：表达式解析至未使用的左值</string>
+	<key>extra argument in call</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：调用了多余的实参</string>
+	<key>extraneous '}' at top level</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：顶层有多余的“}”</string>
+	<key>extraneous argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：%select{call|subscript}2 中有无关的实参标签%select{|s}0“%1”</string>
+	<key>extraneous whitespace after '.' is not permitted</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“.”后面不能有空格</string>
+	<key>found an unexpected second identifier in %0 declaration; is there an accidental break?</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：%0 声明中有非预期第二标识符；是发生了意外中断吗？</string>
+	<key>incorrect argument label%select{|s}0 in %select{call|subscript}3 (have '%1', expected '%2')</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：%select{call|subscript}3 中有错误实参标签%select{|s}0（有“%1”，应为“%2”）</string>
+	<key>instance member %1 cannot be used on type %0; did you mean to use a value of this type instead?</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：实例成员 %1 无法用于类型 %0；你是想使用此类型的值吗？</string>
+	<key>invalid character in source file</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：源文件中有无效字符</string>
+	<key>invalid redeclaration of %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：%0 重声明无效</string>
+	<key>keyword '%0' cannot be used as an identifier here</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：关键词“%0”无法在此处用作标识符</string>
+	<key>left side of mutating operator isn't mutable: %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：可变运算符左侧不可变：%0</string>
+	<key>missing argument for parameter #%0 in call</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：调用的参数 #%0 缺少实参</string>
+	<key>missing argument for parameter %0 in call</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：调用的参数 %0 缺少实参</string>
+	<key>missing argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：%select{call|subscript}2 中缺少实参标签%select{|s}0“%1”</string>
+	<key>missing condition in a 'while' statement</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“while”语句中需要加入条件</string>
+	<key>missing condition in an 'if' statement</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“if”语句中需要条件</string>
+	<key>operator with postfix spacing cannot start a subexpression</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：有后缀间距的运算符无法开始子表达式</string>
+	<key>parameter requires an explicit type</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：参数需要显式类型</string>
+	<key>partial application of %select{function with 'inout' parameters|'mutating' method|'super.init' initializer chain|'self.init' initializer delegation}0 is not allowed</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：部分应用的 %select{'inout' 参数的函数|'mutating' 方法|'super.init' 构造器链|'self.init' 构造器代理}0不被允许</string>
+	<key>reference to member %0 cannot be resolved without a contextual type</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：引用成员 %0 在没有上下文类型的条件下无法解析</string>
+	<key>single-quoted string literal found, use '\"'</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：存在单引字符串，请使用“\"”</string>
+	<key>top-level statement cannot begin with a closure expression</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：顶层语句无法以闭包表达式开头</string>
+	<key>type %0 does not conform to protocol %1</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：类型 %0 与协议 %1 不一致</string>
+	<key>type %0 has no member %1</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：类型 %0 没有成员 %1</string>
+	<key>type annotation missing in pattern</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：模式中缺少类型注释</string>
+	<key>type of expression is ambiguous without more context</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：表达式类型没有更多上下文，有歧义</string>
+	<key>unary operator cannot be separated from its operand</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：一元运算符无法从其操作数中分离</string>
+	<key>unexpected '%0' separator</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：不应有“%0”分隔符</string>
+	<key>unexpected 'else' immediately following 'if' condition</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：“if”条件紧跟着非预期“else”</string>
+	<key>unnamed parameters must be written with the empty name '_'</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：未命名参数必须用空名称“_”写</string>
+	<key>unterminated string literal</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：未结束的字符串</string>
+	<key>use of '=' in a boolean context, did you mean '=='?</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：你在布尔值比较上下文中使用了赋值运算符“=”，你是想用“==”吗？</string>
+	<key>use of local variable %0 before its declaration</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：需要先声明变量 %0 才能使用它</string>
+	<key>use of undeclared type %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：使用了未声明的类型 %0</string>
+	<key>use of unresolved %select{identifier|operator}1 %0</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：使用了未解析的%select{标识符|运算符}1 %0</string>
+	<key>value of tuple type %0 has no member %1</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：元组类型 %0 的值没有成员 %1</string>
+	<key>value of type %0 has no member %1</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：类型 %0 的值没有成员 %1</string>
+	<key>variable used within its own initial value</key>
+	<string>糟糕，出错了。检查这一行及邻近代码并试着修正它。
+
+错误：不能使用同一个变量设定其初始值</string>
+</dict>
+</plist>

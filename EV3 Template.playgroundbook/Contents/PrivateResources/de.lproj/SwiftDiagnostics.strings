@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%0 initializer is inaccessible due to '%select{private|fileprivate|internal|%error|%error}1' protection level</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Auf die %0-Initialisierung kann aufgrund der %select{private|fileprivate|internal|%error|%error}1'-Schutzstufe nicht zugegriffen werden</string>
+	<key>%0 is not a %select{binary|prefix unary|postfix unary}1 operator</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: %0 ist kein %select{binärer|Präfix-unärer|Postfix-unärer}1 Operator</string>
+	<key>%0 is unavailable: %1</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: %0 ist nicht verfügbar: %1</string>
+	<key>%1 is not %select{convertible to|a subtype of}0 %2</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: %1 %select{kann nicht konvertiert werden zu|ist kein Subtyp von}0 %2</string>
+	<key>'%select{var|let}0' cannot appear nested inside another 'var' or 'let' pattern</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: „%select{var|let}0“ kann nicht in einem anderen „var“- oder „let“-Muster verschachtelt werden</string>
+	<key>';' statements are not allowed</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: „;“-Anweisungen sind nicht zulässig</string>
+	<key>'=' must have consistent whitespace on both sides</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Auf beiden Seiten von „=“ muss gleich viel Leerraum sein</string>
+	<key>'switch' statement body must have at least one 'case' or 'default' block</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: der Text der „switch“-Anweisung muss mindestens einen „case“- oder „default“-Block enthalten</string>
+	<key>adjacent operators are in non-associative precedence group %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Angrenzende Operatoren befinden sich in einer nicht assoziativen Präzedenzgruppe %0</string>
+	<key>ambiguous reference to member %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Uneindeutiger Verweis auf Mitglied %0</string>
+	<key>ambiguous use of %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Uneindeutige Verwendung von %0</string>
+	<key>ambiguous use of operator %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Uneindeutige Verwendung des Operators %0</string>
+	<key>argument labels '%0' do not match any available overloads</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Die Argumentetiketten „%0“, die du verwendest stimmen nicht mit verfügbaren überein. Überprüfe die Funktion oder die Initialisierung, die du aufrufen möchtest, und überprüfe, dass du übereinstimmende Argumente verwendest.</string>
+	<key>argument passed to call that takes no arguments</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Argument an einen Aufruf gegeben, der keine Argumente benötigt</string>
+	<key>argument type %0 does not conform to expected type %1</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Argument des Typs %0 entspricht nicht dem erwarteten Typ %1</string>
+	<key>assigning a variable to itself</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Weist eine Variable sich selbst zu</string>
+	<key>binary operator '%0' cannot be applied to operands of type %1 and %2</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Binärer Operator „%0“ kann keinen Operanden des Typs %1 und %2 zugewiesen werden</string>
+	<key>binary operator '%0' cannot be applied to two %1 operands</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Binärer Operator „%0“ kann nicht zwei %1-Operanden zugewiesen werden</string>
+	<key>cannot assign to immutable expression of type %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Der Ausdruckstyp %0 kann nicht verändert werden und kann daher keinen anderen Wert ausgeben.</string>
+	<key>cannot assign to value: %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Kann Wert nicht zuweisen: %0</string>
+	<key>cannot assign value of type %0 to type %1</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Kann Wert des Typs %0 nicht %1 zuweisen</string>
+	<key>cannot call value of non-function type %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Kann Wert des Nicht-Funktionstyps %0 nicht aufrufen</string>
+	<key>cannot convert value of type %0 to expected argument type %1</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Kann Wert des Typs %0 nicht in den erwarteten Argumenttyp %1 konvertieren</string>
+	<key>cannot force unwrap value of non-optional type %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Du kannst kein Entpacken von Werten des nichtoptionalen Typs %0 erzwingen</string>
+	<key>cannot invoke %select{|initializer for type }1'%0' with no arguments</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: %select{|Initialisierung für Typ }1„%0“ kann nicht ohne Argumente aufgerufen werden</string>
+	<key>cannot invoke %select{|initializer for type }2'%0' with an argument list of type '%1'</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: %select{|Initialisierung für Typ }2„%0“ kann nicht mit einer Argumentliste des Typs „%1“ aufgerufen werden</string>
+	<key>cannot subscript a value of type %0 with an index of type %1</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Kann Wert des Typs %0 nicht mit einem Index des Typs %1 subskribieren</string>
+	<key>closure expression is unused</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Ausdruck zum Schließen nicht verwendet</string>
+	<key>consecutive statements on a line must be separated by ';'</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Konsekutive Anweisungen in einer Zeile müssen durch „;“ getrennt werden</string>
+	<key>curried function declaration syntax has been removed; use a single parameter list</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Funktionsdeklarationssyntax mit Currying wurde entfernt; verwende eine einzelne Parameterliste</string>
+	<key>editor placeholder in source file</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Du musst diesen Platzhalter ausfüllen</string>
+	<key>empty collection literal requires an explicit type</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Ein leerer Sammlungsliteral benötigt einen expliziten Typ</string>
+	<key>expected '%0' separator</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: „%0“-Trennzeichen wird erwartet</string>
+	<key>expected '(' in argument list of function declaration</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In einer Argumentenliste der Funktionsdeklaration wird „(“ erwartet</string>
+	<key>expected ')' in expression list</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In deinem Ausdruck fehlt „)“</string>
+	<key>expected ';' in 'for' statement</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In einer „for“-Anweisung wird „;“ erwartet</string>
+	<key>expected 'in' after for-each pattern</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach einem „for-each“-Muster muss ein „in“ folgen</string>
+	<key>expected 'while' after body of 'repeat' statement</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach einer „repeat“-Anweisung muss ein „while“ folgen</string>
+	<key>expected '{' after 'else'</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach einer „else“-Anweisung wird „{“ benötigt</string>
+	<key>expected '{' after 'if' condition</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In einer „if“-Bedingung wird „{“ erwartet</string>
+	<key>expected '{' after 'repeat'</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach „repeat“ muss „{“ folgen</string>
+	<key>expected '{' after 'switch' subject expression</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach einem „switch“-Subjektausdruck wird „{“ erwartet</string>
+	<key>expected '{' after 'while' condition</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach einer „while“-Bedingung wird „{“ benötigt</string>
+	<key>expected '{' in 'for' statement</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In der „for“-Anweisung wird „{“ erwartet</string>
+	<key>expected '{' in body of function declaration</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Im Text der Funktionsdeklaration wird „{“ erwartet</string>
+	<key>expected '{' to start the body of for-each loop</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Du brauchst „{“ am Anfang einer „for-each“-Schleife</string>
+	<key>expected '}' at end of brace statement</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Am Ende einer „brace“-Anweisung wird „}“ erwartet</string>
+	<key>expected '}' at end of closure</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Am Ende eines Funktionsabschlusses wird „}“ erwartet</string>
+	<key>expected Sequence expression for for-each loop</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In der „for-each“-Schleife wird ein Sequenzausdruck erwartet</string>
+	<key>expected a digit after integer literal prefix</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach einem Ganzzahl-Literalpräfix wird eine Ziffer erwartet</string>
+	<key>expected condition in 'for' statement</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In der „for“-Anweisung muss eine Bedingung enthalten sein</string>
+	<key>expected expression</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Ausdruck wird erwartet</string>
+	<key>expected expression after operator</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach dem Operator wird ein Ausdruck erwartet</string>
+	<key>expected expression after unary operator</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach dem unären Operator wird ein Ausdruck erwartet</string>
+	<key>expected expression in 'switch' statement</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In einer „switch“-Anweisung muss ein Ausdruck enthalten sein</string>
+	<key>expected expression in assignment</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In der Zuweisung wird ein Ausdruck erwartet</string>
+	<key>expected expression in list of expressions</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In der Liste der Ausdrücke wird ein Ausdruck erwartet</string>
+	<key>expected expression, var, or let in 'if' condition</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In der „if“-Bedingung wird ein Ausdruck, „var“ oder „let“ erwartet</string>
+	<key>expected expression, var, or let in 'while' condition</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In der „while“-Bedingung wird ein Ausdruck, „var“ oder „let“ erwartet</string>
+	<key>expected identifier after '.' expression</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach „.“ wird ein Identifikator erwartet</string>
+	<key>expected identifier in %0 declaration</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In einer %0 Deklaration wird ein Identifikator erwartet</string>
+	<key>expected initial value after '='</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach „=“ wird ein Wert benötigt</string>
+	<key>expected initialization in a 'for' statement</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In einer „for“-Anweisung wird eine Initialisierung erwartet</string>
+	<key>expected member name following '.'</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach „.“ wird ein Mitgliedsname erwartet</string>
+	<key>expected member name or constructor call after type name</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach dem Typnamen wird ein Mitgliedsname oder Konstruktoraufruf erwartet</string>
+	<key>expected parameter name followed by ':'</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Parametername gefolgt von „:“ wird erwartet</string>
+	<key>expected parameter type following ':'</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach „:“ wird ein Parametertyp erwartet</string>
+	<key>expected pattern</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Muster wird erwartet</string>
+	<key>expected type</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Typ wird erwartet</string>
+	<key>expression resolves to an unused function</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Ausdruck wird in eine nicht verwendete Funktion aufgelöst</string>
+	<key>expression resolves to an unused l-value</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Ausdruck wird in einen nicht verwendeten I-Wert aufgelöst</string>
+	<key>extra argument in call</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Zusätzliches Argument im Aufruf</string>
+	<key>extraneous '}' at top level</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Zusätzliches „}“ in der obersten Ebene</string>
+	<key>extraneous argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Zusätzliches Argumentetikett%select{|s}0 '%1' im %select{Aufruf|Subskript}2</string>
+	<key>extraneous whitespace after '.' is not permitted</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nach „.“ darf kein Leerraum folgen</string>
+	<key>found an unexpected second identifier in %0 declaration; is there an accidental break?</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In einer %0 Deklaration wird ein unerwarteter zweiter Identifikator gefunden; gibt es einen ungewollten Zeilenumbruch?</string>
+	<key>incorrect argument label%select{|s}0 in %select{call|subscript}3 (have '%1', expected '%2')</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Ungültiges Argumentetikett%select{|e}0 '%1' im %select{Aufruf|Subskript}3 (ist '%1', erwartet '%2‘)</string>
+	<key>instance member %1 cannot be used on type %0; did you mean to use a value of this type instead?</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Instanzmitglied %1 kann nicht für Typ %0 verwendet werden; wolltest du stattdessen einen Wert dieses Typs verwenden?</string>
+	<key>invalid character in source file</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Ungültiges Zeichen in der Quelldatei</string>
+	<key>invalid redeclaration of %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Ungültige Neudeklaration von %0</string>
+	<key>keyword '%0' cannot be used as an identifier here</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Schlagwort „%0“ kann hier nicht als Identifikator verwendet werden</string>
+	<key>left side of mutating operator isn't mutable: %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Linke Seite des Mutationsoperators kann nicht verändert werden: %0</string>
+	<key>missing argument for parameter #%0 in call</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Fehlendes Argument für den Parameter #%0 im Aufruf</string>
+	<key>missing argument for parameter %0 in call</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Fehlendes Argument für den Parameter %0 im Aufruf</string>
+	<key>missing argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Fehlendes Argumentetikett%select{|s}0 '%1' im %select{Aufruf|Subskript}2</string>
+	<key>missing condition in a 'while' statement</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In einer „while“-Anweisung muss eine Bedingung hinzugefügt werden</string>
+	<key>missing condition in an 'if' statement</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: In einer „if“-Anweisung muss eine Bedingung enthalten sein</string>
+	<key>operator with postfix spacing cannot start a subexpression</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Operator mit Postfixabstand kann nicht Anfang eines Subausdrucks sein</string>
+	<key>parameter requires an explicit type</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Parameter benötigt einen expliziten Typ</string>
+	<key>partial application of %select{function with 'inout' parameters|'mutating' method|'super.init' initializer chain|'self.init' initializer delegation}0 is not allowed</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: %select{Funktion mit „inout“-Parametern|„mutating“-Methode|„super.init“-Initialisierungskette|„self.init“-Initialisierungsdelegation}0 darf nicht partiell angewendet werden</string>
+	<key>reference to member %0 cannot be resolved without a contextual type</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Bezug auf Mitglied %0 kann ohne Kontexttyp nicht aufgelöst werden</string>
+	<key>single-quoted string literal found, use '\"'</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Einfach zitierter Stringliteral gefunden, verwende „\"“</string>
+	<key>top-level statement cannot begin with a closure expression</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Anweisung der obersten Ebene kann nicht mit einem Ausdruck zum Schließen beginnen</string>
+	<key>type %0 does not conform to protocol %1</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Typ %0 entspricht nicht dem Protokoll %1</string>
+	<key>type %0 has no member %1</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Typ %0 besitzt kein Mitglied %1</string>
+	<key>type annotation missing in pattern</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Typkommentar fehlt im Muster</string>
+	<key>type of expression is ambiguous without more context</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Art des Ausdrucks ist ohne weiteren Kontext zweideutig</string>
+	<key>unary operator cannot be separated from its operand</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Unäre Operatoren dürfen nicht von ihren Operanden getrennt sein</string>
+	<key>unexpected '%0' separator</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Unerwartetes „%0“-Trennzeichen</string>
+	<key>unexpected 'else' immediately following 'if' condition</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Unerwartetes „else“ direkt nach „if“-Bedingung</string>
+	<key>unnamed parameters must be written with the empty name '_'</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Unbenannte Parameter müssen mit dem leeren Namen „_“ geschrieben werden</string>
+	<key>unterminated string literal</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Nicht beendeter Stringliteral</string>
+	<key>use of '=' in a boolean context, did you mean '=='?</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Du hast den Zuweisungsoperator „=“ in einem booleschen Vergleich verwendet, meintest du „==“?</string>
+	<key>use of local variable %0 before its declaration</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Du musst die Variable %0 deklarieren, bevor du sie verwendest</string>
+	<key>use of undeclared type %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Verwendung des nicht deklarierten Typs %0</string>
+	<key>use of unresolved %select{identifier|operator}1 %0</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Verwendung des nicht aufgelösten %select{Identifikators|Operators}1 %0</string>
+	<key>value of tuple type %0 has no member %1</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Wert des Tupeltyps %0 besitzt kein Mitglied %1</string>
+	<key>value of type %0 has no member %1</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Wert des Typs %0 besitzt kein Mitglied %1</string>
+	<key>variable used within its own initial value</key>
+	<string>Ups, da hat sich ein Fehler eingeschlichen. Überprüfe deinen Code dieser Zeile, um ihn zu beheben.
+
+Fehler: Du kannst nicht dieselbe Variable verwenden, um ihren Anfangswert festzulegen</string>
+</dict>
+</plist>

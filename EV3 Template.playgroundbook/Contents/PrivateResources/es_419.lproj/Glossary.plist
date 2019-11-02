@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>ev3.brickLightOff</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `brickLightOff` apaga la luz de estado del bloque.</string>
+			</dict>
+		</dict>
+		<key>ev3.brickLightOn</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `brickLightOn` controla la luz de estado del bloque. Esta luz se encuentra alrededor de los botones de la cara del Bloque EV3. Puedes hacer que la luz encienda en verde, naranja o rojo, o también puedes hacer que parpadee o que se apague.</string>
+			</dict>
+		</dict>
+		<key>ev3.display</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `display` puede mostrar texto en cualquier lugar de la pantalla del Bloque EV3.</string>
+			</dict>
+		</dict>
+		<key>ev3.displayCircle</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `displayCircle` dibuja un círculo en la pantalla.</string>
+			</dict>
+		</dict>
+		<key>ev3.displayImage</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `displayImage` dibuja un archivo de imagen gráfico. Te permite elegir uno de los archivos de imagen disponibles en el Bloque EV3.</string>
+			</dict>
+		</dict>
+		<key>ev3.displayLine</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `displayLine` dibuja una línea recta entre dos puntos en la pantalla.</string>
+			</dict>
+		</dict>
+		<key>ev3.displayPoint</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `displayPoint` dibuja un solo pixel en la pantalla.</string>
+			</dict>
+		</dict>
+		<key>ev3.displayRectangle</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `displayRectangle` dibuja un rectángulo en la pantalla.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureGyroAngle</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureGyroAngle` mide el ángulo usando el girosensor. El ángulo se mide en relación con la última vez que se restableció el sensor.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureGyroRate</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureGyroRate` mide la velocidad de rotación en grados por segundo usando el girosensor.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureLightAmbient</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureLightAmbient` mide la intensidad de la luz ambiente usando el sensor de color.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureLightColor</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureLightColor` detecta los colores usando el sensor de color.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureLightReflection</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureLightReflection` mide la intensidad de la luz reflejada usando el sensor de color.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureMotorDegrees</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureMotorDegrees` mide la rotación actual del motor en grados. Esta rotación se mide en grados en relación con la posición que se tenía al principio del programa o desde la última vez que se restableció el sensor.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureMotorPower</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureMotorPower` mide el nivel de potencia actual del motor.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureMotorRotations</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureMotorRotations` mide la rotación actual del motor en números (cantidad de rotaciones). Esta rotación se mide en números en relación al estado que se tenía al principio del programa o desde la última vez que se restableció el sensor.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureTouch</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureTouch` mide el estado del sensor táctil. El sensor puede estar “presionado” o “soltado”.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureTouchCount</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureTouchCount` mide el número de veces que se ha tocado el sensor táctil desde el inicio del programa o desde la última vez que se restableció.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureUltrasonicCentimeters</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureUltrasonicCentimeters` mide la distancia que hay para llegar a un objeto en centímetros usando el sensor ultrasónico.</string>
+			</dict>
+		</dict>
+		<key>ev3.measureUltrasonicInches</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `measureUltrasonicInches` mide la distancia que hay para llegar a un objeto en pulgadas usando el sensor ultrasónico.</string>
+			</dict>
+		</dict>
+		<key>ev3.motorOff</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `motorOff` apaga el motor. Esta función se usa comúnmente para detener un motor que se haya iniciado usando la función `motorOn` anteriormente en el programa. Si `withBrake` es `True`, el motor se detendrá inmediatamente y, entonces, puede permanecer en esa posición detenido hasta que otra función lo inicie o hasta que termine el programa. Si `withBrake` es `False`, se apagará el motor, pero seguirá usando el impulso que le quede hasta que éste se acabe o hasta que inicie otra función.</string>
+			</dict>
+		</dict>
+		<key>ev3.motorOn</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `motorOn` controla un motor. Puedes encender o apagar un motor, controlar su nivel de potencia o encenderlo por un periodo de tiempo o cantidad de rotaciones específica. La función `motorOn` enciende el motor y pasa inmediatamente al siguiente bloque del programa, a menos que se especifique la duración usando los parámetros `forSeconds`, `forDegrees` o `forRotations`. Puedes controlar la velocidad y dirección del motor con los parámetros de `withPower`. El motor permanecerá encendido hasta que lo detengas, hasta que otra instrucción del programa cambie su estado, o hasta que termine el programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.move</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `move` puede hacer que el robot avance, retroceda, gire o se detenga. Usa la función `move` para vehículos robot que tengan dos motores largos, con uno de ellos controlando el lado izquierdo y el otro el lado derecho. Puedes hacer que los dos motores se muevan a distintas velocidades y direcciones para que el robot de la vuelta. La función `move` enciende ambos motores y pasa inmediatamente a la siguiente instrucción del programa, a menos que se haya especificado una duración usando los parámetros `forSeconds`, `forDegrees` o `forRotations`. Puedes controlar la velocidad y dirección de los motores con los parámetros `leftPower` y `rightPower`. Los motores permanecerán encendidos hasta que los detengas, hasta que otra instrucción del programa cambie su estado, o hasta que termine el programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.playSound</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `playSound` reproduce sonidos usando la bocina interior del Bloque EV3. Puedes reproducir archivos de sonido pregrabados, así como un tono o nota musical específico.</string>
+			</dict>
+		</dict>
+		<key>ev3.resetGyro</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `resetGyro` te permite restablecer el contador del girosensor.</string>
+			</dict>
+		</dict>
+		<key>ev3.resetMotor</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `resetMotor` te permite restablecer el contador de rotaciones de motor.</string>
+			</dict>
+		</dict>
+		<key>ev3.resetTouchCount</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>The `resetTouchCount` function allows you to reset the touch counter.</string>
+			</dict>
+		</dict>
+		<key>ev3.stopMove</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `stopMove` apaga los dos motores. Usa esta función para detener un robot que se haya iniciado usando la función `move` anteriormente en el programa. Si `withBrake` es `True`, los motores se detendrán inmediatamente y, entonces, pueden permanecer en esa posición detenidos hasta que otra función los inicie o hasta que termine el programa. Si `withBrake` es `False`, se apagarán los motores, pero seguirán usando el impulso que les quede hasta que éste se acabe o hasta que inicie otra función.</string>
+			</dict>
+		</dict>
+		<key>ev3.stopSound</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `stopSound` detiene cualquier sonido que esté reproduciendo el Bloque EV3. Esta función se usa comúnmente para detener un sonido que se haya iniciado anteriormente en el programa usando una función `playSound` que no esperó a que finalizara el sonido.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitFor</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitFor` hace que tu programa espere una cantidad de tiempo (en segundos) antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForGyroAngle</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForGyroAngle` hace que tu programa espere a que el ángulo sea mayor o menor que un valor de umbral establecido antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForGyroRate</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForGyroRate` hace que tu programa espere a que la velocidad de rotación (medida en grados por segundo) sea mayor o menor que un valor de umbral establecido antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForLightAmbient</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForLightAmbient` hace que tu programa espere a que la intensidad de la luz ambiente medida sea mayor o menor que un valor de umbral establecido antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForLightColor</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForLightColor` hace que tu programa espere a que el sensor de color detecte un color específico antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForLightReflection</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForLightReflection` hace que tu programa espere a que la intensidad de la luz reflejada medida sea mayor o menor que un valor de umbral establecido antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForMotorDegrees</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForMotorDegrees` hace que tu programa espere a que la rotación de tu motor (medida en grados) sea mayor o menor que un valor de umbral establecido antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForMotorPower</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForMotorPower` hace que tu programa espere a que la potencia actual de un motor sea mayor o menor que un valor de umbral establecido antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForMotorRotations</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForMotorRotations` hace que tu programa espere a que la rotación de tu motor (medida en cantidad de rotaciones) sea mayor o menor que un valor de umbral establecido antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForTouch</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForTouch` hace que tu programa espere a que se presione el sensor táctil antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForTouchCount</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForTouchCount` hace que tu programa espere a que el sensor táctil se haya presionado un número de veces específico antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForTouchReleased</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForTouchReleased` hace que tu programa espere a que se suelte el sensor táctil antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForUltrasonicCentimeters</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForUltrasonicCentimeters` hace que tu programa espere a que la distancia (medida en centímetros) sea mayor o menor que un valor de umbral establecido antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForUltrasonicDecrease</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForUltrasonicDecrease` hace que tu programa espere a que disminuya la distancia medida antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForUltrasonicInches</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForUltrasonicInches` hace que tu programa espere a que la distancia (medida en pulgadas) sea mayor o menor que un valor de umbral establecido antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForUltrasonicIncrease</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>La función `waitForUltrasonicIncrease` hace que tu programa espere a que aumente la distancia medida antes de pasar a la siguiente instrucción del programa.</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

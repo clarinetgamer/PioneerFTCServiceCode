@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ connected to %@</key>
+	<string>%1$@が%2$@に接続されました</string>
+	<key>1.</key>
+	<string>1.</string>
+	<key>2.</key>
+	<string>2.</string>
+	<key>3.</key>
+	<string>3.</string>
+	<key>Add new brick</key>
+	<string>新しいブロックを追加</string>
+	<key>Ambient</key>
+	<string>周辺</string>
+	<key>Available Bricks</key>
+	<string>利用できるブロック</string>
+	<key>Black</key>
+	<string>黒</string>
+	<key>Blue</key>
+	<string>青</string>
+	<key>Brown</key>
+	<string>ブラウン</string>
+	<key>Bumps</key>
+	<string>バンプ</string>
+	<key>Cancel</key>
+	<string>キャンセル</string>
+	<key>Change mode</key>
+	<string>モードを変更</string>
+	<key>Color</key>
+	<string>カラー</string>
+	<key>Connect EV3 Brick</key>
+	<string>EV3ブロックを接続</string>
+	<key>Connect your EV3 Brick to this iPad.</key>
+	<string>EV3ブロックをこのiPadに接続してください。</string>
+	<key>Connected to %@</key>
+	<string>%@ に接続しました</string>
+	<key>Degrees</key>
+	<string>度</string>
+	<key>Disconnect</key>
+	<string>接続解除</string>
+	<key>Dismiss</key>
+	<string>閉じる</string>
+	<key>EV3 Brick</key>
+	<string>EV3ブロック</string>
+	<key>EV3 actions</key>
+	<string>EV3アクション</string>
+	<key>Enable both Bluetooth and iPhone/iPad/iPod.</key>
+	<string>“Bluetooth”と“iPhone/iPad/iPod”の両方をオンにします。</string>
+	<key>Enter a new name for your EV3 Brick</key>
+	<string>EV3ブロックの新しい名前を入力してください</string>
+	<key>Error During User Program</key>
+	<string>ユーザプログラム中にエラーが発生しました</string>
+	<key>Expected %@ on Port %@ in call %@, actual: %@</key>
+	<string>呼び出し%3$@のポート%2$@は%1$@にしてください。実際: %4$@</string>
+	<key>Green</key>
+	<string>緑</string>
+	<key>Gyroscope</key>
+	<string>ジャイロスコープ</string>
+	<key>How do I connect?</key>
+	<string>接続方法</string>
+	<key>How to connect your EV3</key>
+	<string>EV3に接続する方法</string>
+	<key>Inches</key>
+	<string>インチ</string>
+	<key>Infrared</key>
+	<string>赤外線</string>
+	<key>Infrared Sensor</key>
+	<string>赤外線センサー</string>
+	<key>Large Motor</key>
+	<string>Lモーター</string>
+	<key>Light</key>
+	<string>光</string>
+	<key>Light Sensor</key>
+	<string>光センサー</string>
+	<key>Medium Motor</key>
+	<string>Mモーター</string>
+	<key>Missing Sensor</key>
+	<string>センサーが見つかりません</string>
+	<key>Motor connected to %@</key>
+	<string>モーターが%@に接続されました</string>
+	<key>Motor disconnected from %@</key>
+	<string>モーターが%@から接続解除されました</string>
+	<key>Motors connected to %@ and %@</key>
+	<string>モーターが%1$@および%2$@に接続されました</string>
+	<key>Motors connected to %@, %@ and %@</key>
+	<string>モーターが%1$@、%2$@および%3$@に接続されました</string>
+	<key>Motors connected to %@, %@, %@ and %@</key>
+	<string>モーターが%1$@、%2$@、%3$@および%4$@に接続されました</string>
+	<key>Motors disconnected from %@ and %@</key>
+	<string>モーターが%1$@および%2$@から接続解除されました</string>
+	<key>Motors disconnected from %@, %@ and %@</key>
+	<string>モーターが%1$@、%2$@および%3$@から接続解除されました</string>
+	<key>Motors disconnected from %@, %@, %@ and %@</key>
+	<string>モーターが%1$@、%2$@、%3$@および%4$@から接続解除されました</string>
+	<key>No connection</key>
+	<string>接続なし</string>
+	<key>None</key>
+	<string>なし</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>On your EV3 Brick, go to Settings and open Bluetooth.</key>
+	<string>EV3ブロックで、“設定”へ移動して“Bluetooth設定”を開きます。</string>
+	<key>Port 1</key>
+	<string>ポート1</string>
+	<key>Port 2</key>
+	<string>ポート2</string>
+	<key>Port 3</key>
+	<string>ポート3</string>
+	<key>Port 4</key>
+	<string>ポート4</string>
+	<key>Port A</key>
+	<string>ポートA</string>
+	<key>Port B</key>
+	<string>ポートB</string>
+	<key>Port C</key>
+	<string>ポートC</string>
+	<key>Port D</key>
+	<string>ポートD</string>
+	<key>Power</key>
+	<string>電源</string>
+	<key>Proximity</key>
+	<string>接近度</string>
+	<key>Rate</key>
+	<string>音の長さ</string>
+	<key>Red</key>
+	<string>赤</string>
+	<key>Reflect</key>
+	<string>反射</string>
+	<key>Remote</key>
+	<string>リモート</string>
+	<key>Rename</key>
+	<string>名前を変更</string>
+	<key>Rename EV3</key>
+	<string>EV3の名前を変更</string>
+	<key>Reset</key>
+	<string>リセット</string>
+	<key>Rotations</key>
+	<string>回転</string>
+	<key>Seek</key>
+	<string>探索</string>
+	<key>Sensor connected to %@</key>
+	<string>センサーが%@に接続されました</string>
+	<key>Sensor disconnected from %@</key>
+	<string>センサーが%@から接続解除されました</string>
+	<key>Sensors connected to %@ and %@</key>
+	<string>センサーが%1$@および%2$@に接続されました</string>
+	<key>Sensors connected to %@, %@ and %@</key>
+	<string>センサーが%1$@、%2$@および%3$@に接続されました</string>
+	<key>Sensors connected to %@, %@, %@ and %@</key>
+	<string>センサーが%1$@、%2$@、%3$@および%4$@に接続されました</string>
+	<key>Sensors disconnected from %@ and %@</key>
+	<string>センサーが%1$@および%2$@から接続解除されました</string>
+	<key>Sensors disconnected from %@, %@ and %@</key>
+	<string>センサーが%1$@、%2$@および%3$@から接続解除されました</string>
+	<key>Sensors disconnected from %@, %@, %@ and %@</key>
+	<string>センサーが%1$@、%2$@、%3$@および%4$@から接続解除されました</string>
+	<key>Switch to graph mode</key>
+	<string>グラフモードに切り替え</string>
+	<key>Switch to grid mode</key>
+	<string>グリッドモードに切り替え</string>
+	<key>Touch</key>
+	<string>Touch</string>
+	<key>Touch Sensor</key>
+	<string>タッチセンサー</string>
+	<key>Touched</key>
+	<string>触れた</string>
+	<key>Ultrasonic</key>
+	<string>超音波</string>
+	<key>Ultrasonic Sensor</key>
+	<string>超音波センサー</string>
+	<key>White</key>
+	<string>白</string>
+	<key>Yellow</key>
+	<string>黄</string>
+	<key>cm</key>
+	<string>cm</string>
+	<key>missing</key>
+	<string>鳴っていない</string>
+</dict>
+</plist>

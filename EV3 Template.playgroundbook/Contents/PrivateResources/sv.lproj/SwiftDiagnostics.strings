@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%0 initializer is inaccessible due to '%select{private|fileprivate|internal|%error|%error}1' protection level</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Initieraren %0 är inte tillgänglig p.g.a. skyddsnivån '%select{privat|privat fil|intern|%error|%error}1'</string>
+	<key>%0 is not a %select{binary|prefix unary|postfix unary}1 operator</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: %0 är inte en %select{binär|prefixunär|postfixunär}1 operator</string>
+	<key>%0 is unavailable: %1</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: %0 är inte tillgänglig: %1</string>
+	<key>%1 is not %select{convertible to|a subtype of}0 %2</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: %1 är inte %select{konverterbar till|en deltyp av}0 %2</string>
+	<key>'%select{var|let}0' cannot appear nested inside another 'var' or 'let' pattern</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: '%select{var|let}0' får inte vara nästlat inuti ett annat 'var'- eller 'let'-mönster</string>
+	<key>';' statements are not allowed</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: ';'-uttryck är inte tillåtna</string>
+	<key>'=' must have consistent whitespace on both sides</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: '=' måste ha samma antal mellanslag på båda sidorna</string>
+	<key>'switch' statement body must have at least one 'case' or 'default' block</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: 'switch'-uttrycket måste innehålla minst ett 'case'- eller 'default'-block</string>
+	<key>adjacent operators are in non-associative precedence group %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Närliggande operatorer finns i icke-associativa precedensgruppen %0</string>
+	<key>ambiguous reference to member %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Tvetydig referens till medlem %0</string>
+	<key>ambiguous use of %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Tvetydig användning av %0</string>
+	<key>ambiguous use of operator %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Tvetydig användning av operatorn %0</string>
+	<key>argument labels '%0' do not match any available overloads</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Argumentetiketterna '%0' du använder matchar inte något som är tillgängligt. Kontrollera funktionen eller initieraren du försöker anropa och se till att använda argument som matchar.</string>
+	<key>argument passed to call that takes no arguments</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Argument överfördes till anrop som inte reagerar på argument</string>
+	<key>argument type %0 does not conform to expected type %1</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Argumenttypen %0 överensstämmer inte med förväntade typen %1</string>
+	<key>assigning a variable to itself</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: En variabel är tilldelad till sig själv</string>
+	<key>binary operator '%0' cannot be applied to operands of type %1 and %2</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Binära operatorn '%0' kan inte användas till operander av typerna %1 och %2</string>
+	<key>binary operator '%0' cannot be applied to two %1 operands</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Binära operatorn '%0' kan inte användas på två %1-operander</string>
+	<key>cannot assign to immutable expression of type %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Uttrycket av typen %0 är icke-muterbara (det kan aldrig ändras), så du kan inte ge det ett annat värde.</string>
+	<key>cannot assign to value: %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Kan inte tilldela till värde: %0</string>
+	<key>cannot assign value of type %0 to type %1</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Kan inte tilldela värde av typen %0 till typen %1</string>
+	<key>cannot call value of non-function type %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Kan inte anropa värde hos icke-funktionstypen %0</string>
+	<key>cannot convert value of type %0 to expected argument type %1</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Kan inte konvertera värde av typen %0 till förväntade argumenttypen %1</string>
+	<key>cannot force unwrap value of non-optional type %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du kan inte tvinga fram uppackning av omslaget på icke-frivillig typ %0</string>
+	<key>cannot invoke %select{|initializer for type }1'%0' with no arguments</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Kan inte aktivera %select{|initierare för typ }1'%0' utan argument</string>
+	<key>cannot invoke %select{|initializer for type }2'%0' with an argument list of type '%1'</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Kan inte aktivera %select{|initierare för typ }2'%0' med en argumentlista för typ '%1'</string>
+	<key>cannot subscript a value of type %0 with an index of type %1</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Kan inte använda ett delskriptvärde av typen %0 med ett index av typen %1</string>
+	<key>closure expression is unused</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Stängningsuttryck är oanvänt</string>
+	<key>consecutive statements on a line must be separated by ';'</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Uttryck i ordningsföljd på en rad måste separeras med ';'</string>
+	<key>curried function declaration syntax has been removed; use a single parameter list</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Curryfunktionsdeklarationssyntax har tagits bort – använd en enda parameterlista</string>
+	<key>editor placeholder in source file</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste fylla i den här platshållaren</string>
+	<key>empty collection literal requires an explicit type</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Tom samlingslitteral kräver en explicit typ</string>
+	<key>expected '%0' separator</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade avskiljare '%0'</string>
+	<key>expected '(' in argument list of function declaration</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade '(' i argumentlista med funktionsdeklaration</string>
+	<key>expected ')' in expression list</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du saknar en ')' i ditt uttryck</string>
+	<key>expected ';' in 'for' statement</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade ';' i 'for'-uttryck</string>
+	<key>expected 'in' after for-each pattern</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste ha en 'in' efter ett for-each-mönster</string>
+	<key>expected 'while' after body of 'repeat' statement</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste ha ett 'while' efter ett 'repeat'-uttryck</string>
+	<key>expected '{' after 'else'</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste ha en '{' efter ett 'else'-uttryck</string>
+	<key>expected '{' after 'if' condition</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade '{' efter 'if'-villkor</string>
+	<key>expected '{' after 'repeat'</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste ha en '{' efter 'repeat'</string>
+	<key>expected '{' after 'switch' subject expression</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade '{' efter 'switch'-subjektuttryck</string>
+	<key>expected '{' after 'while' condition</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste ha en '{' efter ett 'while'-villkor</string>
+	<key>expected '{' in 'for' statement</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade '{' i 'for'-uttryck</string>
+	<key>expected '{' in body of function declaration</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade '{' i funktionsdeklaration</string>
+	<key>expected '{' to start the body of for-each loop</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste ha en '{' för att starta innehållet i en for-each-loop</string>
+	<key>expected '}' at end of brace statement</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade '}' i slutet av klammerparentesuttryck</string>
+	<key>expected '}' at end of closure</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade '}' sist i avslutningen</string>
+	<key>expected Sequence expression for for-each loop</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade sekvensuttryck i for-each-loop</string>
+	<key>expected a digit after integer literal prefix</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade en siffra efter heltals litterala prefix</string>
+	<key>expected condition in 'for' statement</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste ha ett villkor i 'for'-uttrycket</string>
+	<key>expected expression</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade uttryck</string>
+	<key>expected expression after operator</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade uttryck efter operator</string>
+	<key>expected expression after unary operator</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade uttryck efter unär operator</string>
+	<key>expected expression in 'switch' statement</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste ha ett uttryck i ditt 'switch'-uttryck</string>
+	<key>expected expression in assignment</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade uttryck i tilldelning</string>
+	<key>expected expression in list of expressions</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade uttryck i lista med uttryck</string>
+	<key>expected expression, var, or let in 'if' condition</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade uttryck, var eller let i 'if'-villkor</string>
+	<key>expected expression, var, or let in 'while' condition</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade uttryck, var eller let i 'while'-uttryck</string>
+	<key>expected identifier after '.' expression</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade en identifierare efter '.'</string>
+	<key>expected identifier in %0 declaration</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade identifierare i deklarationen %0</string>
+	<key>expected initial value after '='</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste ha ett värde efter '='</string>
+	<key>expected initialization in a 'for' statement</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade initiering i ett 'for'-uttryck</string>
+	<key>expected member name following '.'</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade medlemsnamn efter '.'</string>
+	<key>expected member name or constructor call after type name</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade medlemsnamn eller konstruktorsanrop efter typ name</string>
+	<key>expected parameter name followed by ':'</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade parameternamn följt av ':'</string>
+	<key>expected parameter type following ':'</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade parametertyp efter ':'</string>
+	<key>expected pattern</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade mönster</string>
+	<key>expected type</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Förväntade typ</string>
+	<key>expression resolves to an unused function</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Uttrycket leder till en oanvänd funktion</string>
+	<key>expression resolves to an unused l-value</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Uttrycket leder till ett oanvänt l-värde</string>
+	<key>extra argument in call</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Extra argument i anropet</string>
+	<key>extraneous '}' at top level</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Extra '}' i översta nivån</string>
+	<key>extraneous argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Överflödigt argument label%select{|s}0 '%1' i %select{anrop|delskript}2</string>
+	<key>extraneous whitespace after '.' is not permitted</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du kan inte ha mellanrum efter '.'</string>
+	<key>found an unexpected second identifier in %0 declaration; is there an accidental break?</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Hittade en oväntad andra identifierare i deklarationen %0 – finns det ett oavsiktligt avbrott?</string>
+	<key>incorrect argument label%select{|s}0 in %select{call|subscript}3 (have '%1', expected '%2')</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Felaktigt argument label%select{|s}0 '%1' i %select{anrop|delskript}3 (har '%1', förväntade '%2')</string>
+	<key>instance member %1 cannot be used on type %0; did you mean to use a value of this type instead?</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Instansmedlem %1 kan inte användas på typen %0 – tänkte du använda ett värde av den här typen istället?</string>
+	<key>invalid character in source file</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Ogiltigt tecken i källfilen</string>
+	<key>invalid redeclaration of %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Ogiltig omdeklaration av %0</string>
+	<key>keyword '%0' cannot be used as an identifier here</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Nyckelordet '%0' kan inte användas som en identifierare här</string>
+	<key>left side of mutating operator isn't mutable: %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Vänstra sidan av muterande operator är inte muterbar: %0</string>
+	<key>missing argument for parameter #%0 in call</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Saknar argument för parametern nr %0 i anropet</string>
+	<key>missing argument for parameter %0 in call</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Saknar argument för parametern %0 i anropet</string>
+	<key>missing argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Saknat argument label%select{|s}0 '%1' i %select{anrop|delskript}2</string>
+	<key>missing condition in a 'while' statement</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste lägga till ett villkor i ditt 'while'-uttryck</string>
+	<key>missing condition in an 'if' statement</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste ha ett villkor i ett 'if'-uttryck</string>
+	<key>operator with postfix spacing cannot start a subexpression</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Operator med postfixmellanrum kan inte starta ett deluttryck</string>
+	<key>parameter requires an explicit type</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Parameter kräver en explicit typ</string>
+	<key>partial application of %select{function with 'inout' parameters|'mutating' method|'super.init' initializer chain|'self.init' initializer delegation}0 is not allowed</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Delvis användning av %select{funktion med 'inout'-parametrar|'mutating'-metod|'super.init'-initierarkedja|'self.init'-initierardelegation}0 är inte tillåten</string>
+	<key>reference to member %0 cannot be resolved without a contextual type</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Referens till medlem '%0' kan inte lösas utan en kontextuell typ</string>
+	<key>single-quoted string literal found, use '\"'</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Hittade stränglitteral med enkla citationstecken, använd '\"'</string>
+	<key>top-level statement cannot begin with a closure expression</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Uttryck på översta nivån kan inte börja med ett stängningsuttryck</string>
+	<key>type %0 does not conform to protocol %1</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Typ %0 överensstämmer inte med protokoll %1</string>
+	<key>type %0 has no member %1</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Typ %0 har inte medlemmen %1</string>
+	<key>type annotation missing in pattern</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Typanteckning saknas i mönster</string>
+	<key>type of expression is ambiguous without more context</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Typen av uttryck är tvetydigt utan mer kontext</string>
+	<key>unary operator cannot be separated from its operand</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Unär operator kan inte separeras från dess operand</string>
+	<key>unexpected '%0' separator</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Oväntad avskiljare '%0'</string>
+	<key>unexpected 'else' immediately following 'if' condition</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Oväntat 'else' omedelbart efter 'if'-villkor</string>
+	<key>unnamed parameters must be written with the empty name '_'</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Namnlösa parametrar måste skrivas med det tomma namnet '_'</string>
+	<key>unterminated string literal</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Oavslutad stränglitteral</string>
+	<key>use of '=' in a boolean context, did you mean '=='?</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du använde '=', som är en tilldelningsoperator, i ett booleskt jämförelsesammanhang. Ville du använda '=='?</string>
+	<key>use of local variable %0 before its declaration</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du måste deklarera variabeln %0 innan du använder den</string>
+	<key>use of undeclared type %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Använder odeklarerad typ %0</string>
+	<key>use of unresolved %select{identifier|operator}1 %0</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Använder olöst %select{identifierare|operator}1 %0</string>
+	<key>value of tuple type %0 has no member %1</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Värdet av tupeltyp %0 har inte medlemmen %1</string>
+	<key>value of type %0 has no member %1</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Värdet av typ %0 har inte medlemmen %1</string>
+	<key>variable used within its own initial value</key>
+	<string>Hoppsan, du har ett fel. Kontrollera koden runt den här raden för att försöka fixa det.
+
+Fel: Du kan inte använda samma variabel till att ange dess inledande värde</string>
+</dict>
+</plist>

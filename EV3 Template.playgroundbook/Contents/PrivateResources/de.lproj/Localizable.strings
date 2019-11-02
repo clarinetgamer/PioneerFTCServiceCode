@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ connected to %@</key>
+	<string>„%1$@“ mit „%2$@“ verbunden</string>
+	<key>1.</key>
+	<string>1.</string>
+	<key>2.</key>
+	<string>2.</string>
+	<key>3.</key>
+	<string>3.</string>
+	<key>Add new brick</key>
+	<string>Neuen Stein hinzufügen</string>
+	<key>Ambient</key>
+	<string>Umgebungslicht</string>
+	<key>Available Bricks</key>
+	<string>Verfügbare Steine</string>
+	<key>Black</key>
+	<string>Schwarz</string>
+	<key>Blue</key>
+	<string>Blau</string>
+	<key>Brown</key>
+	<string>Braun</string>
+	<key>Bumps</key>
+	<string>Auslösungen</string>
+	<key>Cancel</key>
+	<string>Abbrechen</string>
+	<key>Change mode</key>
+	<string>Modus ändern</string>
+	<key>Color</key>
+	<string>Farbe</string>
+	<key>Connect EV3 Brick</key>
+	<string>EV3-Stein anschließen</string>
+	<key>Connect your EV3 Brick to this iPad.</key>
+	<string>Verbinde deinen EV3-Stein mit diesem iPad.</string>
+	<key>Connected to %@</key>
+	<string>Verbunden mit „%@“</string>
+	<key>Degrees</key>
+	<string>Grad</string>
+	<key>Disconnect</key>
+	<string>Trennen</string>
+	<key>Dismiss</key>
+	<string>Verwerfen</string>
+	<key>EV3 Brick</key>
+	<string>EV3-Stein</string>
+	<key>EV3 actions</key>
+	<string>EV3-Aktionen</string>
+	<key>Enable both Bluetooth and iPhone/iPad/iPod.</key>
+	<string>Aktiviere sowohl Bluetooth als auch das iPhone/das iPad/den iPod.</string>
+	<key>Enter a new name for your EV3 Brick</key>
+	<string>Gib einen neuen Namen für deinen EV3-Stein ein</string>
+	<key>Error During User Program</key>
+	<string>Fehler im Benutzeprogramm</string>
+	<key>Expected %@ on Port %@ in call %@, actual: %@</key>
+	<string>%1$@ am Port %2$@ erwartet beim Aufrufen von %3$@, tatsächlich: %4$@</string>
+	<key>Green</key>
+	<string>Grün</string>
+	<key>Gyroscope</key>
+	<string>Gyroskop</string>
+	<key>How do I connect?</key>
+	<string>Wie stelle ich eine Verbindung her?</string>
+	<key>How to connect your EV3</key>
+	<string>So stellst du eine Verbindung zum EV3 her</string>
+	<key>Inches</key>
+	<string>Zoll</string>
+	<key>Infrared</key>
+	<string>Infrarot</string>
+	<key>Infrared Sensor</key>
+	<string>Infrarotsensor</string>
+	<key>Large Motor</key>
+	<string>Großer Motor</string>
+	<key>Light</key>
+	<string>Licht</string>
+	<key>Light Sensor</key>
+	<string>Lichtsensor</string>
+	<key>Medium Motor</key>
+	<string>Mittlerer Motor</string>
+	<key>Missing Sensor</key>
+	<string>Fehlender Sensor</string>
+	<key>Motor connected to %@</key>
+	<string>Motor angeschlossen an %@</string>
+	<key>Motor disconnected from %@</key>
+	<string>Motor getrennt von %@</string>
+	<key>Motors connected to %@ and %@</key>
+	<string>Motoren an %1$@ und %2$@ angeschlossen</string>
+	<key>Motors connected to %@, %@ and %@</key>
+	<string>Motoren an %1$@, %2$@ und %3$@ angeschlossen</string>
+	<key>Motors connected to %@, %@, %@ and %@</key>
+	<string>Motoren an %1$@, %2$@, %3$@ und %4$@ angeschlossen</string>
+	<key>Motors disconnected from %@ and %@</key>
+	<string>Motoren von %1$@ und %2$@ getrennt</string>
+	<key>Motors disconnected from %@, %@ and %@</key>
+	<string>Motoren von %1$@, %2$@ und %3$@ getrennt</string>
+	<key>Motors disconnected from %@, %@, %@ and %@</key>
+	<string>Motoren von %1$@, %2$@, %3$@ und %4$@ getrennt</string>
+	<key>No connection</key>
+	<string>Keine Verbindung</string>
+	<key>None</key>
+	<string>Ohne</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>On your EV3 Brick, go to Settings and open Bluetooth.</key>
+	<string>Öffne die Einstellungen des EV3-Steins und dort „Bluetooth“.</string>
+	<key>Port 1</key>
+	<string>Port 1</string>
+	<key>Port 2</key>
+	<string>Port 2</string>
+	<key>Port 3</key>
+	<string>Port 3</string>
+	<key>Port 4</key>
+	<string>Port 4</string>
+	<key>Port A</key>
+	<string>Port A</string>
+	<key>Port B</key>
+	<string>Port B</string>
+	<key>Port C</key>
+	<string>Port C</string>
+	<key>Port D</key>
+	<string>Port D</string>
+	<key>Power</key>
+	<string>Geschwindigkeit</string>
+	<key>Proximity</key>
+	<string>Fernbedienung</string>
+	<key>Rate</key>
+	<string>Rate</string>
+	<key>Red</key>
+	<string>Rot</string>
+	<key>Reflect</key>
+	<string>Reflexion</string>
+	<key>Remote</key>
+	<string>Entfernt</string>
+	<key>Rename</key>
+	<string>Umbenennen</string>
+	<key>Rename EV3</key>
+	<string>EV3 umbenennen</string>
+	<key>Reset</key>
+	<string>Zurücksetzen</string>
+	<key>Rotations</key>
+	<string>Rotationen</string>
+	<key>Seek</key>
+	<string>Suche</string>
+	<key>Sensor connected to %@</key>
+	<string>Sensor angeschlossen an %@</string>
+	<key>Sensor disconnected from %@</key>
+	<string>Sensor getrennt von %@</string>
+	<key>Sensors connected to %@ and %@</key>
+	<string>Sensoren an %1$@ und %2$@ angeschlossen</string>
+	<key>Sensors connected to %@, %@ and %@</key>
+	<string>Sensoren an %1$@, %2$@ und %3$@ angeschlossen</string>
+	<key>Sensors connected to %@, %@, %@ and %@</key>
+	<string>Sensoren an %1$@, %2$@, %3$@ und %4$@</string>
+	<key>Sensors disconnected from %@ and %@</key>
+	<string>Sensoren von %1$@ und %2$@ getrennt</string>
+	<key>Sensors disconnected from %@, %@ and %@</key>
+	<string>Sensoren von %1$@, %2$@ und %3$@ getrennt</string>
+	<key>Sensors disconnected from %@, %@, %@ and %@</key>
+	<string>Sensoren von %1$@, %2$@, %3$@ und %4$@ getrennt</string>
+	<key>Switch to graph mode</key>
+	<string>Zum Graphmodus wechseln</string>
+	<key>Switch to grid mode</key>
+	<string>Zum Rastermodus wechseln</string>
+	<key>Touch</key>
+	<string>Taster</string>
+	<key>Touch Sensor</key>
+	<string>Berührungssensor</string>
+	<key>Touched</key>
+	<string>Ausgelöst</string>
+	<key>Ultrasonic</key>
+	<string>Ultraschall</string>
+	<key>Ultrasonic Sensor</key>
+	<string>Ultraschallsensor</string>
+	<key>White</key>
+	<string>Weiß</string>
+	<key>Yellow</key>
+	<string>Gelb</string>
+	<key>cm</key>
+	<string>cm</string>
+	<key>missing</key>
+	<string>fehlt</string>
+</dict>
+</plist>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%0 initializer is inaccessible due to '%select{private|fileprivate|internal|%error|%error}1' protection level</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se puede acceder al inicializador %0 debido al nivel de protección '%select{private|fileprivate|internal|%error|%error}1'</string>
+	<key>%0 is not a %select{binary|prefix unary|postfix unary}1 operator</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: %0 no es un operador %select{binario|unario prefijo|unario sufijo}1</string>
+	<key>%0 is unavailable: %1</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: %0 no está disponible: %1</string>
+	<key>%1 is not %select{convertible to|a subtype of}0 %2</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: %1 no %select{se puede convertir a|es un subtipo de}0 %2</string>
+	<key>'%select{var|let}0' cannot appear nested inside another 'var' or 'let' pattern</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: '%select{var|let}0' no puede estar anidado dentro de otro patrón 'var' o 'let'</string>
+	<key>';' statements are not allowed</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se permiten los enunciados ';'</string>
+	<key>'=' must have consistent whitespace on both sides</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: '=' debe tener la misma cantidad de espacio en blanco en ambos lados</string>
+	<key>'switch' statement body must have at least one 'case' or 'default' block</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el cuerpo del enunciado 'switch' debe contener al menos un bloque 'default' o 'case'</string>
+	<key>adjacent operators are in non-associative precedence group %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: los operadores adyacentes están en un grupo de procedencia no asociativo %0</string>
+	<key>ambiguous reference to member %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: referencia ambigua al miembro %0</string>
+	<key>ambiguous use of %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: uso ambiguo de %0</string>
+	<key>ambiguous use of operator %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: uso ambiguo del operador %0</string>
+	<key>argument labels '%0' do not match any available overloads</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: las etiquetas del argumento '%0' que usas no coinciden con lo que hay disponible. Revisa la función o inicializador que intentas llamar y asegúrate de usar argumentos que coincidan.</string>
+	<key>argument passed to call that takes no arguments</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: hay un argumento pasado a una llamada que no toma argumentos</string>
+	<key>argument type %0 does not conform to expected type %1</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el tipo de argumento %0 no es del tipo esperado %1</string>
+	<key>assigning a variable to itself</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: asignar una variable a sí misma</string>
+	<key>binary operator '%0' cannot be applied to operands of type %1 and %2</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el operador binario '%0' no se puede aplicar a los operandos del tipo %1 y %2</string>
+	<key>binary operator '%0' cannot be applied to two %1 operands</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el operador binario '%0' no se puede aplicar a dos operandos %1</string>
+	<key>cannot assign to immutable expression of type %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: la expresión del tipo %0 es inmutable (no se puede cambiar nunca), por lo que no le puedes dar otro valor.</string>
+	<key>cannot assign to value: %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se puede asignar al valor: %0</string>
+	<key>cannot assign value of type %0 to type %1</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se puede asignar un valor del tipo %0 al tipo %1</string>
+	<key>cannot call value of non-function type %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se puede llamar al valor de un tipo que no sea función %0</string>
+	<key>cannot convert value of type %0 to expected argument type %1</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se puede convertir un valor del tipo %0 en el argumento esperado del tipo %1</string>
+	<key>cannot force unwrap value of non-optional type %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no puedes forzar la desenvoltura del valor del tipo no opcional %0</string>
+	<key>cannot invoke %select{|initializer for type }1'%0' with no arguments</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se puede invocar el %select{|inicializador del tipo }1'%0' sin argumentos</string>
+	<key>cannot invoke %select{|initializer for type }2'%0' with an argument list of type '%1'</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se puede invocar el %select{|inicializador del tipo }2’%0’’ con una lista de argumentos del tipo '%1'</string>
+	<key>cannot subscript a value of type %0 with an index of type %1</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se puede agregar un valor subíndice del tipo %0 con un índice del tipo %1</string>
+	<key>closure expression is unused</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se usa la expresión de cierre</string>
+	<key>consecutive statements on a line must be separated by ';'</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: los enunciados consecutivos en una línea deben estar separados por ';'</string>
+	<key>curried function declaration syntax has been removed; use a single parameter list</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se eliminó la sintaxis de declaración de la función currificada; usa una sola lista de parámetros</string>
+	<key>editor placeholder in source file</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas rellenar este marcador de posición</string>
+	<key>empty collection literal requires an explicit type</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el literal de la colección vacía requiere un tipo explícito</string>
+	<key>expected '%0' separator</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba el separador '%0'</string>
+	<key>expected '(' in argument list of function declaration</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba '(' en la lista de argumentos de la declaración de la función</string>
+	<key>expected ')' in expression list</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: falta una ')' en tu expresión</string>
+	<key>expected ';' in 'for' statement</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba ';' en el enunciado 'for'</string>
+	<key>expected 'in' after for-each pattern</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas poner un 'in' después de un patrón 'for-each'</string>
+	<key>expected 'while' after body of 'repeat' statement</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas poner un 'while' después de un enunciado 'repeat'</string>
+	<key>expected '{' after 'else'</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas poner un '{' después de un enunciado 'else'</string>
+	<key>expected '{' after 'if' condition</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba '{' después de la condición 'if'</string>
+	<key>expected '{' after 'repeat'</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas poner un '{' después de 'repeat'</string>
+	<key>expected '{' after 'switch' subject expression</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba '{' después de la expresión de sujeto 'switch'</string>
+	<key>expected '{' after 'while' condition</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas poner un '{' después de una condición 'while'</string>
+	<key>expected '{' in 'for' statement</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba '{' en el enunciado 'for'</string>
+	<key>expected '{' in body of function declaration</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba '{' en el cuerpo de la declaración de la función</string>
+	<key>expected '{' to start the body of for-each loop</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas poner un '{' al inicio del cuerpo de un ciclo 'for-each'</string>
+	<key>expected '}' at end of brace statement</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba '}' al final del enunciado de llave</string>
+	<key>expected '}' at end of closure</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba '}' al final de cierre</string>
+	<key>expected Sequence expression for for-each loop</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba una expresión de secuencia en el ciclo 'for-each'</string>
+	<key>expected a digit after integer literal prefix</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba un dígito después del prefijo del literal entero</string>
+	<key>expected condition in 'for' statement</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas poner una condición en el enunciado for'</string>
+	<key>expected expression</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba una expresión</string>
+	<key>expected expression after operator</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba una expresión después del operador</string>
+	<key>expected expression after unary operator</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba una expresión después del operador unario</string>
+	<key>expected expression in 'switch' statement</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas poner una expresión en tu enunciado 'switch'</string>
+	<key>expected expression in assignment</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba una expresión en la asignación</string>
+	<key>expected expression in list of expressions</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba una expresión en la lista de expresiones</string>
+	<key>expected expression, var, or let in 'if' condition</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba una expresión 'var' o 'let' en la condición 'if'</string>
+	<key>expected expression, var, or let in 'while' condition</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba una expresión 'var' o 'let' en la condición 'while'</string>
+	<key>expected identifier after '.' expression</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba un identificador después de '.'</string>
+	<key>expected identifier in %0 declaration</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba un identificador en la declaración %0</string>
+	<key>expected initial value after '='</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas poner un valor después de '='</string>
+	<key>expected initialization in a 'for' statement</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba inicialización en un enunciado 'for'</string>
+	<key>expected member name following '.'</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba el nombre de un miembro después de '.'</string>
+	<key>expected member name or constructor call after type name</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba el nombre de un miembro o un llamado a un constructor después del nombre del tipo</string>
+	<key>expected parameter name followed by ':'</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba el nombre de un parámetro seguido de ':'</string>
+	<key>expected parameter type following ':'</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba un tipo de parámetro después de ':'</string>
+	<key>expected pattern</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba un patrón</string>
+	<key>expected type</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se esperaba un tipo</string>
+	<key>expression resolves to an unused function</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: la expresión se resuelve a una función no usada</string>
+	<key>expression resolves to an unused l-value</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: la expresión se resuelve a un valor L no usado</string>
+	<key>extra argument in call</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: hay un argumento extra en la llamada</string>
+	<key>extraneous '}' at top level</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: hay un '}' extra en el nivel superior</string>
+	<key>extraneous argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: etiqueta%select{|s}0 '%1' de argumento extraño en %select{la llamada|el subíndice}2</string>
+	<key>extraneous whitespace after '.' is not permitted</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no puede hacer un espacio en blanco después de '.'</string>
+	<key>found an unexpected second identifier in %0 declaration; is there an accidental break?</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se encontró un identificador secundario no esperado en la declaración %0. ¿Hay un salto de línea accidental?</string>
+	<key>incorrect argument label%select{|s}0 in %select{call|subscript}3 (have '%1', expected '%2')</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: etiqueta%select{|s}0 de argumento incorrecto en %select{la llamada|el subíndice}3 (es '%1', pero se esperaba '%2')</string>
+	<key>instance member %1 cannot be used on type %0; did you mean to use a value of this type instead?</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el miembro de la instancia %1 no se puede usar en el tipo %0. ¿Querías usar un valor de este tipo?</string>
+	<key>invalid character in source file</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: hay un carácter no válido en el archivo de origen</string>
+	<key>invalid redeclaration of %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: redeclaración no válida de %0</string>
+	<key>keyword '%0' cannot be used as an identifier here</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se puede usar la palabra clave "%0" como identificador aquí</string>
+	<key>left side of mutating operator isn't mutable: %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el lado izquierdo del operador mutante no es mutable: %0</string>
+	<key>missing argument for parameter #%0 in call</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: falta un argumento en el parámetro #%0 en la llamada</string>
+	<key>missing argument for parameter %0 in call</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: falta un argumento en el parámetro %0 en la llamada</string>
+	<key>missing argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: etiqueta%select{|s}0 '%1' de argumento faltante en %select{la llamada|el subíndice}2</string>
+	<key>missing condition in a 'while' statement</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas agregar una condición a tu enunciado 'while'</string>
+	<key>missing condition in an 'if' statement</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas poner una condición en un enunciado 'if'</string>
+	<key>operator with postfix spacing cannot start a subexpression</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: un operador con espaciado sufijo no puede iniciar una subexpresión</string>
+	<key>parameter requires an explicit type</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el parámetro requiere un tipo explícito</string>
+	<key>partial application of %select{function with 'inout' parameters|'mutating' method|'super.init' initializer chain|'self.init' initializer delegation}0 is not allowed</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se permite la aplicación parcial %select{de la función sin parámetros 'inout'|del método 'mutating'|de la cadena de inicializador 'super.init'|de la delegación de inicializador 'self.init'}0</string>
+	<key>reference to member %0 cannot be resolved without a contextual type</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no se puede resolver la referencia al miembro %0 sin un tipo contextual</string>
+	<key>single-quoted string literal found, use '\"'</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: se encontró un literal de cadena con una sola comilla, usa '\"'</string>
+	<key>top-level statement cannot begin with a closure expression</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: un enunciado de nivel superior no puede iniciar con una expresión de cierre</string>
+	<key>type %0 does not conform to protocol %1</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el tipo %0 no se ajusta al protocolo %1</string>
+	<key>type %0 has no member %1</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el tipo %0 no tiene miembro %1</string>
+	<key>type annotation missing in pattern</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: falta la anotación de tipo en el patrón</string>
+	<key>type of expression is ambiguous without more context</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el tipo de expresión es ambiguo sin más contexto</string>
+	<key>unary operator cannot be separated from its operand</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el operador unario no se puede separar de su operando</string>
+	<key>unexpected '%0' separator</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: separador '%0' inesperado</string>
+	<key>unexpected 'else' immediately following 'if' condition</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: hay un 'else' inesperado inmediatamente después de la condición 'if'</string>
+	<key>unnamed parameters must be written with the empty name '_'</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: lo parámetros sin nombre se deben escribir con el nombre vacío '_'</string>
+	<key>unterminated string literal</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: literal de cadena sin cerrar</string>
+	<key>use of '=' in a boolean context, did you mean '=='?</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: usaste '=', que es un operador de asignación, en un contexto de comparación booleano. ¿Quisiste decir '=='?</string>
+	<key>use of local variable %0 before its declaration</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: necesitas declarar la variable %0 antes de usarla</string>
+	<key>use of undeclared type %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: uso del tipo sin declarar %0</string>
+	<key>use of unresolved %select{identifier|operator}1 %0</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: uso de un %select{identificador|operador}1 %0 sin resolver</string>
+	<key>value of tuple type %0 has no member %1</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el valor del tipo de tupla %0 no tiene miembro %1</string>
+	<key>value of type %0 has no member %1</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: el valor del tipo %0 no tiene miembro %1</string>
+	<key>variable used within its own initial value</key>
+	<string>Uy, hay un error. Revisa tu código por esta línea e intenta corregirlo.
+
+Error: no puedes usar la misma variable para establecer su valor inicial</string>
+</dict>
+</plist>

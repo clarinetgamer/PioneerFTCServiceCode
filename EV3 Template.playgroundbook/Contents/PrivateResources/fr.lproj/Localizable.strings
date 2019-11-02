@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ connected to %@</key>
+	<string>%1$@ connecté au %2$@</string>
+	<key>1.</key>
+	<string>1.</string>
+	<key>2.</key>
+	<string>2.</string>
+	<key>3.</key>
+	<string>3.</string>
+	<key>Add new brick</key>
+	<string>Ajouter une nouvelle brique</string>
+	<key>Ambient</key>
+	<string>Lumière ambiante</string>
+	<key>Available Bricks</key>
+	<string>Briques disponibles</string>
+	<key>Black</key>
+	<string>Noir</string>
+	<key>Blue</key>
+	<string>Bleu</string>
+	<key>Brown</key>
+	<string>Marron</string>
+	<key>Bumps</key>
+	<string>Bosses</string>
+	<key>Cancel</key>
+	<string>Annuler</string>
+	<key>Change mode</key>
+	<string>Changer de mode</string>
+	<key>Color</key>
+	<string>Couleur</string>
+	<key>Connect EV3 Brick</key>
+	<string>Connecter la brique EV3</string>
+	<key>Connect your EV3 Brick to this iPad.</key>
+	<string>Connecte ta brique EV3 à cet iPad.</string>
+	<key>Connected to %@</key>
+	<string>Connecté au %@</string>
+	<key>Degrees</key>
+	<string>Degrés</string>
+	<key>Disconnect</key>
+	<string>Se déconnecter</string>
+	<key>Dismiss</key>
+	<string>Fermer</string>
+	<key>EV3 Brick</key>
+	<string>Brique EV3</string>
+	<key>EV3 actions</key>
+	<string>Actions d’EV3</string>
+	<key>Enable both Bluetooth and iPhone/iPad/iPod.</key>
+	<string>Active à la fois le Bluetooth et l’iPhone, l’iPad ou l’iPod.</string>
+	<key>Enter a new name for your EV3 Brick</key>
+	<string>Saisis un nouveau nom pour ta brique EV3</string>
+	<key>Error During User Program</key>
+	<string>Une erreur est survenue lors du programme utilisateur</string>
+	<key>Expected %@ on Port %@ in call %@, actual: %@</key>
+	<string>Prévu %1$@ sur le port %2$@ dans l’appel %3$@, réel : %4$@</string>
+	<key>Green</key>
+	<string>Vert</string>
+	<key>Gyroscope</key>
+	<string>Gyroscope</string>
+	<key>How do I connect?</key>
+	<string>Comment se connecter ?</string>
+	<key>How to connect your EV3</key>
+	<string>Connecter ta brique EV3</string>
+	<key>Inches</key>
+	<string>Pouces</string>
+	<key>Infrared</key>
+	<string>Infrarouge</string>
+	<key>Infrared Sensor</key>
+	<string>Capteur infrarouge</string>
+	<key>Large Motor</key>
+	<string>Grand moteur</string>
+	<key>Light</key>
+	<string>Lumière</string>
+	<key>Light Sensor</key>
+	<string>Capteur de lumière</string>
+	<key>Medium Motor</key>
+	<string>Moteur moyen</string>
+	<key>Missing Sensor</key>
+	<string>Capteur manquant</string>
+	<key>Motor connected to %@</key>
+	<string>Moteur connecté au %@</string>
+	<key>Motor disconnected from %@</key>
+	<string>Moteur déconnecté du %@</string>
+	<key>Motors connected to %@ and %@</key>
+	<string>Moteurs connectés au %1$@ et au %2$@</string>
+	<key>Motors connected to %@, %@ and %@</key>
+	<string>Moteurs connectés au %1$@, au %2$@ et au %3$@</string>
+	<key>Motors connected to %@, %@, %@ and %@</key>
+	<string>Moteurs connectés au %1$@, au %2$@, au %3$@ et au %4$@</string>
+	<key>Motors disconnected from %@ and %@</key>
+	<string>Moteurs déconnectés du %1$@ et du %2$@</string>
+	<key>Motors disconnected from %@, %@ and %@</key>
+	<string>Moteurs déconnectés du %1$@, du %2$@ et du %3$@</string>
+	<key>Motors disconnected from %@, %@, %@ and %@</key>
+	<string>Moteurs déconnectés du %1$@, du %2$@, du %3$@ et du %4$@</string>
+	<key>No connection</key>
+	<string>Aucune connexion</string>
+	<key>None</key>
+	<string>Aucune</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>On your EV3 Brick, go to Settings and open Bluetooth.</key>
+	<string>Dans ta brique EV3, accède à Réglages, puis ouvre Bluetooth.</string>
+	<key>Port 1</key>
+	<string>Port 1</string>
+	<key>Port 2</key>
+	<string>Port 2</string>
+	<key>Port 3</key>
+	<string>Port 3</string>
+	<key>Port 4</key>
+	<string>Port 4</string>
+	<key>Port A</key>
+	<string>Port A</string>
+	<key>Port B</key>
+	<string>Port B</string>
+	<key>Port C</key>
+	<string>Port C</string>
+	<key>Port D</key>
+	<string>Port D</string>
+	<key>Power</key>
+	<string>Alimentation</string>
+	<key>Proximity</key>
+	<string>Proximité</string>
+	<key>Rate</key>
+	<string>Pulsation</string>
+	<key>Red</key>
+	<string>Rouge</string>
+	<key>Reflect</key>
+	<string>Réflexion</string>
+	<key>Remote</key>
+	<string>À distance</string>
+	<key>Rename</key>
+	<string>Renommer</string>
+	<key>Rename EV3</key>
+	<string>Renommer EV3</string>
+	<key>Reset</key>
+	<string>Réinitialiser</string>
+	<key>Rotations</key>
+	<string>Rotations</string>
+	<key>Seek</key>
+	<string>Rechercher</string>
+	<key>Sensor connected to %@</key>
+	<string>Capteur connecté au %@</string>
+	<key>Sensor disconnected from %@</key>
+	<string>Capteur déconnecté du %@</string>
+	<key>Sensors connected to %@ and %@</key>
+	<string>Capteurs connectés au %1$@ et au %2$@</string>
+	<key>Sensors connected to %@, %@ and %@</key>
+	<string>Capteurs connectés au %1$@, au %2$@ et au %3$@</string>
+	<key>Sensors connected to %@, %@, %@ and %@</key>
+	<string>Capteurs connectés au %1$@, au %2$@, au %3$@ et au %4$@</string>
+	<key>Sensors disconnected from %@ and %@</key>
+	<string>Capteurs déconnectés du %1$@ et du %2$@</string>
+	<key>Sensors disconnected from %@, %@ and %@</key>
+	<string>Capteurs déconnectés du %1$@, du %2$@ et du %3$@</string>
+	<key>Sensors disconnected from %@, %@, %@ and %@</key>
+	<string>Capteurs déconnectés du %1$@, du %2$@, du %3$@ et du %4$@</string>
+	<key>Switch to graph mode</key>
+	<string>Passer au mode graphique</string>
+	<key>Switch to grid mode</key>
+	<string>Passer au mode grille</string>
+	<key>Touch</key>
+	<string>Toucher</string>
+	<key>Touch Sensor</key>
+	<string>Capteur tactile</string>
+	<key>Touched</key>
+	<string>Touché</string>
+	<key>Ultrasonic</key>
+	<string>À ultrasons</string>
+	<key>Ultrasonic Sensor</key>
+	<string>Capteur à ultrasons</string>
+	<key>White</key>
+	<string>Blanc</string>
+	<key>Yellow</key>
+	<string>Jaune</string>
+	<key>cm</key>
+	<string>cm</string>
+	<key>missing</key>
+	<string>manquant</string>
+</dict>
+</plist>

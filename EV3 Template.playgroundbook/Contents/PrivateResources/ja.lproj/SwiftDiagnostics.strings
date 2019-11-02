@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%0 initializer is inaccessible due to '%select{private|fileprivate|internal|%error|%error}1' protection level</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: '%select{private|fileprivate|internal|%error|%error}1'の保護レベルが原因で、%0初期化子にアクセスできません</string>
+	<key>%0 is not a %select{binary|prefix unary|postfix unary}1 operator</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0は%select{バイナリ|前置単項|後置単項}1演算子ではありません</string>
+	<key>%0 is unavailable: %1</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0は使用できません: %1</string>
+	<key>%1 is not %select{convertible to|a subtype of}0 %2</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %1は%2%select{に変換可能|の派生型}0ではありません</string>
+	<key>'%select{var|let}0' cannot appear nested inside another 'var' or 'let' pattern</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: '%select{var|let}0'は別の'var'または'let'パターンの中にネストできません</string>
+	<key>';' statements are not allowed</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: ';'文は許可されません</string>
+	<key>'=' must have consistent whitespace on both sides</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: '='には両側に同じ数の空白が必要です</string>
+	<key>'switch' statement body must have at least one 'case' or 'default' block</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'switch'文の本文には少なくとも1つの'case'または'default'ブロックが必要です</string>
+	<key>adjacent operators are in non-associative precedence group %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 隣接する演算子が、結合性がない優先グループ%0に含まれています</string>
+	<key>ambiguous reference to member %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: メンバー%0への参照があいまいです</string>
+	<key>ambiguous use of %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0の使いかたがあいまいです</string>
+	<key>ambiguous use of operator %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 演算子%0の使いかたがあいまいです</string>
+	<key>argument labels '%0' do not match any available overloads</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 使用されている引数ラベル'%0'が使用できるものと一致していません。呼び出そうとしている関数または初期化子を確認して、一致する引数を使用してください。</string>
+	<key>argument passed to call that takes no arguments</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 引数を取らない呼び出しに引数が渡されました</string>
+	<key>argument type %0 does not conform to expected type %1</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 引数の%0型が期待された%1型に適合していません</string>
+	<key>assigning a variable to itself</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 変数をそれ自体に割り当てています</string>
+	<key>binary operator '%0' cannot be applied to operands of type %1 and %2</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: バイナリ演算子'%0'は%1型および%2型のオペランドには適用できません</string>
+	<key>binary operator '%0' cannot be applied to two %1 operands</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: バイナリ演算子'%0'は2つの%1オペランドには適用できません</string>
+	<key>cannot assign to immutable expression of type %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0型の式はイミュータブル（変更不可）であるため、別の値を指定することはできません。</string>
+	<key>cannot assign to value: %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 値に代入できません: %0</string>
+	<key>cannot assign value of type %0 to type %1</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0型の値を%1型に代入することはできません</string>
+	<key>cannot call value of non-function type %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 関数ではない%0型の値を呼び出すことはできません</string>
+	<key>cannot convert value of type %0 to expected argument type %1</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0型の値を、期待される引数の%1型に変換することはできません</string>
+	<key>cannot force unwrap value of non-optional type %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 非オプショナル型%0の値を強制的にアンラップすることはできません</string>
+	<key>cannot invoke %select{|initializer for type }1'%0' with no arguments</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 引数なしで'%0'%select{|型の初期化子}1を呼び出すことはできません</string>
+	<key>cannot invoke %select{|initializer for type }2'%0' with an argument list of type '%1'</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: '%1'型の引数リストで'%0'%select{|型の初期化子}2を呼び出すことはできません</string>
+	<key>cannot subscript a value of type %0 with an index of type %1</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %1型のインデックスを含む%0型の値をサブスクリプトにすることはできません</string>
+	<key>closure expression is unused</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: クロージャ式は使用されていません</string>
+	<key>consecutive statements on a line must be separated by ';'</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 複数の命令文を1行に並べるには';'で区切る必要があります</string>
+	<key>curried function declaration syntax has been removed; use a single parameter list</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: カリー化関数宣言構文は削除されています。単一のパラメータリストを使用してください</string>
+	<key>editor placeholder in source file</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: このプレースホルダに入力する必要があります</string>
+	<key>empty collection literal requires an explicit type</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 空のコレクションリテラルには明示的な型が必要です</string>
+	<key>expected '%0' separator</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: '%0'セパレータが必要です</string>
+	<key>expected '(' in argument list of function declaration</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 関数宣言の引数リストでは'('が必要です</string>
+	<key>expected ')' in expression list</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 式に')'がありません</string>
+	<key>expected ';' in 'for' statement</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'for'文には';'が必要です</string>
+	<key>expected 'in' after for-each pattern</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: for-eachパターンの後には'in'が必要です</string>
+	<key>expected 'while' after body of 'repeat' statement</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'repeat'文の後には'while'が必要です</string>
+	<key>expected '{' after 'else'</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'else'文の後には'{'が必要です</string>
+	<key>expected '{' after 'if' condition</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'if'の条件の後には'{'が必要です</string>
+	<key>expected '{' after 'repeat'</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'repeat'の後には'{'が必要です</string>
+	<key>expected '{' after 'switch' subject expression</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'switch'サブジェクト式の後には'{'が必要です</string>
+	<key>expected '{' after 'while' condition</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'while'の条件の後には'{'が必要です</string>
+	<key>expected '{' in 'for' statement</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'for'文では'{'が必要です</string>
+	<key>expected '{' in body of function declaration</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 関数宣言の本文には'{'が必要です</string>
+	<key>expected '{' to start the body of for-each loop</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: for-eachループの本文を開始するには'{'が必要です</string>
+	<key>expected '}' at end of brace statement</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: かっこ文の末尾には'}'が必要です</string>
+	<key>expected '}' at end of closure</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: クロージャの末尾には'}'が必要です</string>
+	<key>expected Sequence expression for for-each loop</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: for-eachループではSequence式が必要です</string>
+	<key>expected a digit after integer literal prefix</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 整数リテラルプレフィックスの後には数字が必要です</string>
+	<key>expected condition in 'for' statement</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'for'文には条件が必要です</string>
+	<key>expected expression</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 式が必要です</string>
+	<key>expected expression after operator</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 演算子の後には式が必要です</string>
+	<key>expected expression after unary operator</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 単項演算子の後には式が必要です</string>
+	<key>expected expression in 'switch' statement</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: この'switch'文には式が必要です</string>
+	<key>expected expression in assignment</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 代入では式が必要です</string>
+	<key>expected expression in list of expressions</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 式のリストでは式が必要です</string>
+	<key>expected expression, var, or let in 'if' condition</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'if'の条件には式、var、またはletが必要です</string>
+	<key>expected expression, var, or let in 'while' condition</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'while'の条件には式、var、またはletが必要です</string>
+	<key>expected identifier after '.' expression</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: '.'の後には識別子が必要です</string>
+	<key>expected identifier in %0 declaration</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0宣言では識別子が必要です</string>
+	<key>expected initial value after '='</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: '='の後には値が必要です</string>
+	<key>expected initialization in a 'for' statement</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'for'文では初期化が必要です</string>
+	<key>expected member name following '.'</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: '.'の後にはメンバー名が必要です</string>
+	<key>expected member name or constructor call after type name</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 型名の後にはメンバー名またはコンストラクタ呼び出しが必要です</string>
+	<key>expected parameter name followed by ':'</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: ':'の前にパラメータ名が必要です</string>
+	<key>expected parameter type following ':'</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: ':'の後にパラメータ型が必要です</string>
+	<key>expected pattern</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: パターンが必要です</string>
+	<key>expected type</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 型が必要です</string>
+	<key>expression resolves to an unused function</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 式が、使用されていない関数に解決されます</string>
+	<key>expression resolves to an unused l-value</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 式が、使用されていない左辺値に解決されます</string>
+	<key>extra argument in call</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 呼び出しに余分な引数があります</string>
+	<key>extraneous '}' at top level</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 最上位レベルに余分な'}'があります</string>
+	<key>extraneous argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %select{呼び出し|サブスクリプト}2に無関係な%select{|複数の}0引数ラベル'%1'があります</string>
+	<key>extraneous whitespace after '.' is not permitted</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: '.'の後に空白を含めることはできません</string>
+	<key>found an unexpected second identifier in %0 declaration; is there an accidental break?</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0宣言で予期しない2つ目の識別子が見つかりました。誤って改行したのでしょうか?</string>
+	<key>incorrect argument label%select{|s}0 in %select{call|subscript}3 (have '%1', expected '%2')</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %select{呼び出し|サブスクリプト}3の%select{|複数の}0引数ラベルが正しくありません（'%1'が指定されていますが、'%2'が必要です）</string>
+	<key>instance member %1 cannot be used on type %0; did you mean to use a value of this type instead?</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: インスタンスメンバー%1は%0型では使用できません。代わりにこの型の値を使用するつもりでしたか?</string>
+	<key>invalid character in source file</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: ソースファイルに無効な文字があります</string>
+	<key>invalid redeclaration of %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0の再宣言が無効です</string>
+	<key>keyword '%0' cannot be used as an identifier here</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: キーワード'%0'はここでは識別子として使用できません</string>
+	<key>left side of mutating operator isn't mutable: %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 変更する演算子の左辺がミュータブルではありません: %0</string>
+	<key>missing argument for parameter #%0 in call</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 呼び出しにパラメータ#%0の引数がありません</string>
+	<key>missing argument for parameter %0 in call</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 呼び出しにパラメータ%0の引数がありません</string>
+	<key>missing argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %select{呼び出し|サブスクリプト}2に%select{|複数の}0引数ラベル'%1'がありません</string>
+	<key>missing condition in a 'while' statement</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: この'while'文に条件を追加する必要があります</string>
+	<key>missing condition in an 'if' statement</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'if'文には条件が必要です</string>
+	<key>operator with postfix spacing cannot start a subexpression</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 後置のスペースを含む演算子は部分式を開始できません</string>
+	<key>parameter requires an explicit type</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: パラメータには明示的な型が必要です</string>
+	<key>partial application of %select{function with 'inout' parameters|'mutating' method|'super.init' initializer chain|'self.init' initializer delegation}0 is not allowed</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %select{'inout'パラメータを含む関数|'mutating'メソッド|'super.init'初期化子チェーン|'self.init'初期化子の委譲}0の部分適用は許可されていません</string>
+	<key>reference to member %0 cannot be resolved without a contextual type</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: メンバー%0への参照は、型のコンテクストがないため解決できません</string>
+	<key>single-quoted string literal found, use '\"'</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 単一引用符で囲まれた文字列リテラルが見つかりました、'\"'を使用してください</string>
+	<key>top-level statement cannot begin with a closure expression</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 最上位レベルの命令文をクロージャ式で始めることはできません</string>
+	<key>type %0 does not conform to protocol %1</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0型が%1プロトコルに適合していません</string>
+	<key>type %0 has no member %1</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0型にメンバー%1がありません</string>
+	<key>type annotation missing in pattern</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: パターンに型の注釈がありません</string>
+	<key>type of expression is ambiguous without more context</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: その他のコンテクストがないため式の型があいまいです</string>
+	<key>unary operator cannot be separated from its operand</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 単項演算子をそのオペランドから切り離すことはできません</string>
+	<key>unexpected '%0' separator</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 予期しない'%0'セパレータがありました</string>
+	<key>unexpected 'else' immediately following 'if' condition</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 'if'の条件の直後に予期しない'else'がありました</string>
+	<key>unnamed parameters must be written with the empty name '_'</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 無名パラメータは空の名前'_'を使って記述する必要があります</string>
+	<key>unterminated string literal</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 文字列リテラルが終了していません</string>
+	<key>use of '=' in a boolean context, did you mean '=='?</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: '='が使用されていますが、これは代入演算子です。ブール値の比較のための'=='のつもりでしたか?</string>
+	<key>use of local variable %0 before its declaration</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 変数%0は宣言してから使用する必要があります</string>
+	<key>use of undeclared type %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 宣言されていない%0型が使用されています</string>
+	<key>use of unresolved %select{identifier|operator}1 %0</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 解決されていない%select{識別子|演算子}1%0が使用されています</string>
+	<key>value of tuple type %0 has no member %1</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: タプル型%0の値にメンバー%1がありません</string>
+	<key>value of type %0 has no member %1</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: %0型の値にメンバー%1がありません</string>
+	<key>variable used within its own initial value</key>
+	<string>エラーが起きました。この行のコードを確認して、修正してください。
+
+エラー: 同じ変数を使用してその初期値を設定することはできません</string>
+</dict>
+</plist>

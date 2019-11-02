@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ connected to %@</key>
+	<string>%1$@已连接到%2$@</string>
+	<key>1.</key>
+	<string>1.</string>
+	<key>2.</key>
+	<string>2.</string>
+	<key>3.</key>
+	<string>3.</string>
+	<key>Add new brick</key>
+	<string>添加新程序块</string>
+	<key>Ambient</key>
+	<string>环境</string>
+	<key>Available Bricks</key>
+	<string>可用程序块</string>
+	<key>Black</key>
+	<string>黑色</string>
+	<key>Blue</key>
+	<string>蓝色</string>
+	<key>Brown</key>
+	<string>褐色</string>
+	<key>Bumps</key>
+	<string>凹凸</string>
+	<key>Cancel</key>
+	<string>取消</string>
+	<key>Change mode</key>
+	<string>更改模式</string>
+	<key>Color</key>
+	<string>颜色</string>
+	<key>Connect EV3 Brick</key>
+	<string>连接 EV3 程序块</string>
+	<key>Connect your EV3 Brick to this iPad.</key>
+	<string>将 EV3 程序块连接到此 iPad。</string>
+	<key>Connected to %@</key>
+	<string>已连接到 %@</string>
+	<key>Degrees</key>
+	<string>角度</string>
+	<key>Disconnect</key>
+	<string>断开连接</string>
+	<key>Dismiss</key>
+	<string>关闭</string>
+	<key>EV3 Brick</key>
+	<string>EV3 程序块</string>
+	<key>EV3 actions</key>
+	<string>EV3 操作</string>
+	<key>Enable both Bluetooth and iPhone/iPad/iPod.</key>
+	<string>同时启用蓝牙和 iPhone/iPad/iPod。</string>
+	<key>Enter a new name for your EV3 Brick</key>
+	<string>为 EV3 程序块输入新名称</string>
+	<key>Error During User Program</key>
+	<string>运行用户程序时出错</string>
+	<key>Expected %@ on Port %@ in call %@, actual: %@</key>
+	<string>调用 %3$@ 时预期 %1$@ 在端口 %2$@ 上，实际：%4$@</string>
+	<key>Green</key>
+	<string>绿色</string>
+	<key>Gyroscope</key>
+	<string>陀螺仪</string>
+	<key>How do I connect?</key>
+	<string>如何连接？</string>
+	<key>How to connect your EV3</key>
+	<string>如何连接 EV3</string>
+	<key>Inches</key>
+	<string>英寸</string>
+	<key>Infrared</key>
+	<string>红外线</string>
+	<key>Infrared Sensor</key>
+	<string>红外线传感器</string>
+	<key>Large Motor</key>
+	<string>大型电机</string>
+	<key>Light</key>
+	<string>光线</string>
+	<key>Light Sensor</key>
+	<string>光线传感器</string>
+	<key>Medium Motor</key>
+	<string>中型电机</string>
+	<key>Missing Sensor</key>
+	<string>缺少传感器</string>
+	<key>Motor connected to %@</key>
+	<string>电机已连接到%@</string>
+	<key>Motor disconnected from %@</key>
+	<string>电机已与%@断开连接</string>
+	<key>Motors connected to %@ and %@</key>
+	<string>电机已连接到%1$@和%2$@</string>
+	<key>Motors connected to %@, %@ and %@</key>
+	<string>电机已连接到%1$@、%2$@和%3$@</string>
+	<key>Motors connected to %@, %@, %@ and %@</key>
+	<string>电机已连接到%1$@、%2$@、%3$@和%4$@</string>
+	<key>Motors disconnected from %@ and %@</key>
+	<string>电机已与%1$@和%2$@断开连接</string>
+	<key>Motors disconnected from %@, %@ and %@</key>
+	<string>电机已与%1$@、%2$@和%3$@断开连接</string>
+	<key>Motors disconnected from %@, %@, %@ and %@</key>
+	<string>电机已与%1$@、%2$@、%3$@和%4$@断开连接</string>
+	<key>No connection</key>
+	<string>无连接</string>
+	<key>None</key>
+	<string>无</string>
+	<key>OK</key>
+	<string>好</string>
+	<key>On your EV3 Brick, go to Settings and open Bluetooth.</key>
+	<string>在 EV3 程序块上，前往“设置”并打开“蓝牙”。</string>
+	<key>Port 1</key>
+	<string>端口 1</string>
+	<key>Port 2</key>
+	<string>端口 2</string>
+	<key>Port 3</key>
+	<string>端口 3</string>
+	<key>Port 4</key>
+	<string>端口 4</string>
+	<key>Port A</key>
+	<string>端口 A</string>
+	<key>Port B</key>
+	<string>端口 B</string>
+	<key>Port C</key>
+	<string>端口 C</string>
+	<key>Port D</key>
+	<string>端口 D</string>
+	<key>Power</key>
+	<string>电源</string>
+	<key>Proximity</key>
+	<string>近程</string>
+	<key>Rate</key>
+	<string>速率</string>
+	<key>Red</key>
+	<string>红色</string>
+	<key>Reflect</key>
+	<string>反射</string>
+	<key>Remote</key>
+	<string>远程</string>
+	<key>Rename</key>
+	<string>重新命名</string>
+	<key>Rename EV3</key>
+	<string>给 EV3 重新命名</string>
+	<key>Reset</key>
+	<string>重设</string>
+	<key>Rotations</key>
+	<string>圈数</string>
+	<key>Seek</key>
+	<string>搜寻器</string>
+	<key>Sensor connected to %@</key>
+	<string>传感器已连接到%@</string>
+	<key>Sensor disconnected from %@</key>
+	<string>传感器已与%@断开连接</string>
+	<key>Sensors connected to %@ and %@</key>
+	<string>传感器已连接到%1$@和%2$@</string>
+	<key>Sensors connected to %@, %@ and %@</key>
+	<string>传感器已连接到%1$@、%2$@和%3$@</string>
+	<key>Sensors connected to %@, %@, %@ and %@</key>
+	<string>传感器已连接到%1$@、%2$@、%3$@和%4$@</string>
+	<key>Sensors disconnected from %@ and %@</key>
+	<string>传感器已与%1$@和%2$@断开连接</string>
+	<key>Sensors disconnected from %@, %@ and %@</key>
+	<string>传感器已与%1$@、%2$@和%3$@断开连接</string>
+	<key>Sensors disconnected from %@, %@, %@ and %@</key>
+	<string>传感器已与%1$@、%2$@、%3$@和%4$@断开连接</string>
+	<key>Switch to graph mode</key>
+	<string>切换到图形模式</string>
+	<key>Switch to grid mode</key>
+	<string>切换到网格模式</string>
+	<key>Touch</key>
+	<string>触碰</string>
+	<key>Touch Sensor</key>
+	<string>触动传感器</string>
+	<key>Touched</key>
+	<string>已触碰</string>
+	<key>Ultrasonic</key>
+	<string>超声波</string>
+	<key>Ultrasonic Sensor</key>
+	<string>超声波传感器</string>
+	<key>White</key>
+	<string>白色</string>
+	<key>Yellow</key>
+	<string>黄色</string>
+	<key>cm</key>
+	<string>厘米</string>
+	<key>missing</key>
+	<string>缺少</string>
+</dict>
+</plist>

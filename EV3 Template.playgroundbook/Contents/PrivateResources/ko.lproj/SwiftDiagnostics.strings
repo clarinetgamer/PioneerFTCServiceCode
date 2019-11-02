@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%0 initializer is inaccessible due to '%select{private|fileprivate|internal|%error|%error}1' protection level</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: '%select{개인|파일 개인|내부|%error|%error}1' 보안 단계 때문에 %0 이니셜라이저에 접근할 수 었습니다.</string>
+	<key>%0 is not a %select{binary|prefix unary|postfix unary}1 operator</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0은(는) %select{이항|접미 단항|후미 단항}1 연산자가 아닙니다.</string>
+	<key>%0 is unavailable: %1</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0을(를) 사용할 수 없습니다. %1</string>
+	<key>%1 is not %select{convertible to|a subtype of}0 %2</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %1은(는) %2%select{(으)로 전환할 수 없습니다.|의 부유형이 아닙니다.}0</string>
+	<key>'%select{var|let}0' cannot appear nested inside another 'var' or 'let' pattern</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 다른 'var' 또는 'let' 패턴 안에 '%select{var|let}0'을 내포되도록 표시할 수 었습니다.</string>
+	<key>';' statements are not allowed</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: ';' 구문이 허용되지 않습니다.</string>
+	<key>'=' must have consistent whitespace on both sides</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: '='는 양쪽에 같은 양의 공백이 있어야 합니다.</string>
+	<key>'switch' statement body must have at least one 'case' or 'default' block</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'switch' 구문에는 최소 한 개의 'case' 또는 'default' 블록이 있어야 합니다.</string>
+	<key>adjacent operators are in non-associative precedence group %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 인접 연산자는 비연합 우선 그룹입니다. %0</string>
+	<key>ambiguous reference to member %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 구성원 %0에 대한 규정되지 않은 참조입니다.</string>
+	<key>ambiguous use of %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0에 대한 규정되지 않은 사용 방식입니다.</string>
+	<key>ambiguous use of operator %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 연산자에 대한 규정되지 않은 사용 방식입니다.</string>
+	<key>argument labels '%0' do not match any available overloads</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 사용 중인 '%0' 인수 레이블과 일치하는 사용 가능한 레이블이 없습니다. 호출하려는 함수 또는 이니셜라이저에서 일치하는 인수를 사용하도록 확인하십시오.</string>
+	<key>argument passed to call that takes no arguments</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 인수를 받지 않는 항목을 호출하도록 인수가 전달되었습니다.</string>
+	<key>argument type %0 does not conform to expected type %1</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 유형의 인수는 예상 유형 %1와(과) 일치하지 않습니다.</string>
+	<key>assigning a variable to itself</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 변수를 같은 변수에 할당했습니다.</string>
+	<key>binary operator '%0' cannot be applied to operands of type %1 and %2</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 이항 연산자 '%0'은(는) %1 및 %2 유형의 피연산자에 적용할 수 없습니다.</string>
+	<key>binary operator '%0' cannot be applied to two %1 operands</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 이항 연산자 '%0'은(는) 두 개의 %1 피연산자에 적용할 수 없습니다.</string>
+	<key>cannot assign to immutable expression of type %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 유형의 표현식은 변이할 수 없기 때문에(절대 변경될 수 없음) 다른 값을 줄 수 없습니다.</string>
+	<key>cannot assign to value: %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 값에 할당할 수 없습니다.</string>
+	<key>cannot assign value of type %0 to type %1</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 유형의 값을 %1 유형에 할당할 수 없습니다.</string>
+	<key>cannot call value of non-function type %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 유형의 비함수 값을 호출할 수 없습니다.</string>
+	<key>cannot convert value of type %0 to expected argument type %1</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 유형의 값을 예상 인수 유형 %1(으)로 변환할 수 없습니다.</string>
+	<key>cannot force unwrap value of non-optional type %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 필수 유형 %0의 값은 강제로 풀 수 없습니다.</string>
+	<key>cannot invoke %select{|initializer for type }1'%0' with no arguments</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 인수 없이는 '%0' %select{|유형에 대한 이니셜라이저}1를 호출할 수 없습니다.</string>
+	<key>cannot invoke %select{|initializer for type }2'%0' with an argument list of type '%1'</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: '%1' 유형의 인수 목록으로는 '%0' %select{|유형의 이니셜라이저}2를 호출할 수 없습니다.</string>
+	<key>cannot subscript a value of type %0 with an index of type %1</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %1 유형의 인덱스에 %0 유형의 값을 첨자로 처리할 수 없습니다. </string>
+	<key>closure expression is unused</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 클로저 표현이 사용되지 않았습니다.</string>
+	<key>consecutive statements on a line must be separated by ';'</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 한 줄에 구문을 연속으로 작성하려면 ';'으로 구분해야 합니다.</string>
+	<key>curried function declaration syntax has been removed; use a single parameter list</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 커리화된 함수 선언 구문법이 삭제되었습니다. 단일 매개변수 목록을 사용하십시오.</string>
+	<key>editor placeholder in source file</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 이 위치 지정자에 값을 채워야 합니다.</string>
+	<key>empty collection literal requires an explicit type</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 비어 있는 컬렉션 리터럴에는 단일 유형을 사용해야 합니다.</string>
+	<key>expected '%0' separator</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: '%0' 구분자가 필요합니다.</string>
+	<key>expected '(' in argument list of function declaration</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 함수 선언 인수 목록에는 '('가 필요합니다.</string>
+	<key>expected ')' in expression list</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 표현식에 ')'가 유실되었습니다.</string>
+	<key>expected ';' in 'for' statement</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'for' 구문에는 ';'이 필요합니다.</string>
+	<key>expected 'in' after for-each pattern</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 각 패턴 뒤에는 'in'이 필요합니다.</string>
+	<key>expected 'while' after body of 'repeat' statement</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'repeat' 구문 뒤에는 'while'이 필요합니다.</string>
+	<key>expected '{' after 'else'</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'else' 구문 뒤에는 '{'가 필요합니다.</string>
+	<key>expected '{' after 'if' condition</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'if' 조건 뒤에는 '{'가 필요합니다.</string>
+	<key>expected '{' after 'repeat'</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'repeat' 뒤에는 '{'가 필요합니다.</string>
+	<key>expected '{' after 'switch' subject expression</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'switch' 대상 표현 뒤에는 가{'가 필요합니다.</string>
+	<key>expected '{' after 'while' condition</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'while' 조건 뒤에는 '{'가 필요합니다.</string>
+	<key>expected '{' in 'for' statement</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'for' 구문에는 '{'가 필요합니다.</string>
+	<key>expected '{' in body of function declaration</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 함수 선언 본문에는 가{'가 필요합니다.</string>
+	<key>expected '{' to start the body of for-each loop</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 각 루프의 본문을 시작하려면 '{'가 필요합니다.</string>
+	<key>expected '}' at end of brace statement</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 괄호 구문 끝에는 '}'가 필요합니다.</string>
+	<key>expected '}' at end of closure</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 클로저 끝에는 '}'가 필요합니다.</string>
+	<key>expected Sequence expression for for-each loop</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 각 루프에 순서 표현이 필요합니다.</string>
+	<key>expected a digit after integer literal prefix</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 정수 리터럴 접미사 뒤에는 숫자가 필요합니다.</string>
+	<key>expected condition in 'for' statement</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'for' 구문에는 조건이 필요합니다.</string>
+	<key>expected expression</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 표현식이 필요합니다.</string>
+	<key>expected expression after operator</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 연산자 뒤에는 표현식이 필요합니다.</string>
+	<key>expected expression after unary operator</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 단항 연산자 뒤에는 표현식이 필요합니다.</string>
+	<key>expected expression in 'switch' statement</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'switch' 구문에는 표현식이 필요합니다.</string>
+	<key>expected expression in assignment</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 할당에는 표현식이 필요합니다.</string>
+	<key>expected expression in list of expressions</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 표현식 목록에는 표현식이 필요합니다.</string>
+	<key>expected expression, var, or let in 'if' condition</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'if' 조건에는 표현식, var 또는 let이 필요합니다.</string>
+	<key>expected expression, var, or let in 'while' condition</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'while' 조건에는 표현식, var 또는 let이 필요합니다.</string>
+	<key>expected identifier after '.' expression</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: '.' 뒤에는 식별자가 필요합니다.</string>
+	<key>expected identifier in %0 declaration</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 선언문에는 식별자가 필요합니다.</string>
+	<key>expected initial value after '='</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: '=' 뒤에는 값이 필요합니다.</string>
+	<key>expected initialization in a 'for' statement</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'for' 구문에는 초기화가 필요합니다.</string>
+	<key>expected member name following '.'</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: '.' 뒤에는 구성원 이름이 필요합니다.</string>
+	<key>expected member name or constructor call after type name</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 유형 이름 뒤에는 구성원 이름 또는 생성자 호출이 필요합니다.</string>
+	<key>expected parameter name followed by ':'</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: ':' 뒤에는 매개변수 이름이 필요합니다.</string>
+	<key>expected parameter type following ':'</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: ':' 뒤에는 매개변수 유형이 필요합니다.</string>
+	<key>expected pattern</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 패턴이 필요합니다.</string>
+	<key>expected type</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 유형이 필요합니다.</string>
+	<key>expression resolves to an unused function</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 표현식이 사용되지 않은 함수로 분해됩니다.</string>
+	<key>expression resolves to an unused l-value</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 표현식이 사용되지 않은 l값으로 분해됩니다.</string>
+	<key>extra argument in call</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 필요 없는 인수가 있습니다.</string>
+	<key>extraneous '}' at top level</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 상단에 필요 없는 '}'가 있습니다.</string>
+	<key>extraneous argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %select{호출|첨자}2에서 label%select{|s}0 '%1' 인수는 관련이 없습니다.</string>
+	<key>extraneous whitespace after '.' is not permitted</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: '.' 뒤에는 공백을 둘 수 없습니다.</string>
+	<key>found an unexpected second identifier in %0 declaration; is there an accidental break?</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 선언문에 필요 없는 두 번째 식별자를 발견했습니다. 실수로 줄바꿈을 했는지 확인하십시오.</string>
+	<key>incorrect argument label%select{|s}0 in %select{call|subscript}3 (have '%1', expected '%2')</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %select{호출|첨자}3에서 label%select{|s}0 인수가 올바르지 않습니다(‘%2’ 대신에 '%1'을(를) 받음).</string>
+	<key>instance member %1 cannot be used on type %0; did you mean to use a value of this type instead?</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 인스턴스 구성원 %1은(는) %0 유형에 사용할 수 없습니다. 이 유형의 값을 사용하려고 했습니까?</string>
+	<key>invalid character in source file</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 소스 파일에 유효하지 않은 문자가 있습니다.</string>
+	<key>invalid redeclaration of %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0의 재선언이 유효하지 않습니다.</string>
+	<key>keyword '%0' cannot be used as an identifier here</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 여기에서 '%0' 키워드는 식별자로 사용할 수 없습니다.</string>
+	<key>left side of mutating operator isn't mutable: %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 변이 연산자의 왼쪽이 변이 불가능합니다. %0</string>
+	<key>missing argument for parameter #%0 in call</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 매개변수 #%0에 인수가 유실되었습니다.</string>
+	<key>missing argument for parameter %0 in call</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 매개변수 %0에 인수가 유실되었습니다.</string>
+	<key>missing argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %select{호출|첨자}2에서 label%select{|s}0 '%1' 인수가 유실되었습니다.</string>
+	<key>missing condition in a 'while' statement</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'while' 구문에 조건을 추가해야 합니다.</string>
+	<key>missing condition in an 'if' statement</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'if' 구문에는 조건이 필요합니다.</string>
+	<key>operator with postfix spacing cannot start a subexpression</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 후위 공백이 있는 연산자는 부분식을 시작할 수 없습니다.</string>
+	<key>parameter requires an explicit type</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 매개변수에는 단일 유형을 사용해야 합니다.</string>
+	<key>partial application of %select{function with 'inout' parameters|'mutating' method|'super.init' initializer chain|'self.init' initializer delegation}0 is not allowed</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %select{'inout' 매개변수가 있는 함수|'mutating' 메소드|'super.init' 이니셜라이저 체인|'self.init' 이니셜라이저 위임}0의 부분 적용은 허용되지 않습니다.</string>
+	<key>reference to member %0 cannot be resolved without a contextual type</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 문맥 유형 없이는 구성원 %0에 대한 참조를 분해할 수 없습니다.</string>
+	<key>single-quoted string literal found, use '\"'</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 단일 인용 문자열 리터럴이 발견되었습니다, '\"'를 사용하십시오.</string>
+	<key>top-level statement cannot begin with a closure expression</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 상위 단계의 구문은 클로저 표혀으로 시작할 수 없습니다.</string>
+	<key>type %0 does not conform to protocol %1</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 유형은 예상 유형 %1 프로토콜과 일치하지 않습니다.</string>
+	<key>type %0 has no member %1</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 유형 %0에 %1 구성원이 없습니다.</string>
+	<key>type annotation missing in pattern</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 패턴에 주석 유형이 유실되었습니다.</string>
+	<key>type of expression is ambiguous without more context</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 문맥이 부족하여 표현 유형이 규정되지 않았습니다.</string>
+	<key>unary operator cannot be separated from its operand</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 단항 연산자는 피연산자와 분리할 수 없습니다.</string>
+	<key>unexpected '%0' separator</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 필요 없는 '%0' 구분자입니다.</string>
+	<key>unexpected 'else' immediately following 'if' condition</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 'if' 조건 뒤에 필요 없는 'else'가 바로 붙었습니다.</string>
+	<key>unnamed parameters must be written with the empty name '_'</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 이름이 없는 매개변수는 '_'로 이름 없이 작성해야 합니다.</string>
+	<key>unterminated string literal</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 문자열 리터럴이 종료되지 않았습니다.</string>
+	<key>use of '=' in a boolean context, did you mean '=='?</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 불리언을 비교하는 상황에서 할당 연산자인 '='를 사용했습니다. '=='를 사용하려고 했습니까?</string>
+	<key>use of local variable %0 before its declaration</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: %0 변수를 사용하려면 먼저 변수를 선언해야 합니다.</string>
+	<key>use of undeclared type %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 선언되지 않은 유형 %0을(를) 사용했습니다.</string>
+	<key>use of unresolved %select{identifier|operator}1 %0</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 분해되지 않은 %select{식별자|연산자}1 %0을(를) 사용했습니다.</string>
+	<key>value of tuple type %0 has no member %1</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 투플 유형 %0의 값에 %1 구성원이 없습니다.</string>
+	<key>value of type %0 has no member %1</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 유형 %0의 값에 %1 구성원이 없습니다.</string>
+	<key>variable used within its own initial value</key>
+	<string>이런, 오류가 발생했습니다. 이 라인의 코드를 확인하고 오류를 수정해 보세요.
+
+오류: 초기값을 설정하려면 동일한 변수는 사용할 수 없습니다.</string>
+</dict>
+</plist>

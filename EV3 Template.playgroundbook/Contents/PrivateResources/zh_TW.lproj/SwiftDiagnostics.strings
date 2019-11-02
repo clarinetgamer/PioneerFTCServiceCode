@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%0 initializer is inaccessible due to '%select{private|fileprivate|internal|%error|%error}1' protection level</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：無法取用 %0 初始化程式，因為 '%select{private|fileprivate|internal|%錯誤|%錯誤}1' 保護層級</string>
+	<key>%0 is not a %select{binary|prefix unary|postfix unary}1 operator</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：%0 不是 %select{二元|前綴一元|後綴一元}1 運算子</string>
+	<key>%0 is unavailable: %1</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：%0 無法使用：%1</string>
+	<key>%1 is not %select{convertible to|a subtype of}0 %2</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：%1 不是 %select{可轉換為|子類型}0 %2</string>
+	<key>'%select{var|let}0' cannot appear nested inside another 'var' or 'let' pattern</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「%select{var|let}0」不能嵌套在其他「var」或「let」模式內</string>
+	<key>';' statements are not allowed</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：不允許「;」語句</string>
+	<key>'=' must have consistent whitespace on both sides</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「=」兩側的空格數必須相同</string>
+	<key>'switch' statement body must have at least one 'case' or 'default' block</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「switch」語句的主體必須包含至少一個「case」或「default」區塊</string>
+	<key>adjacent operators are in non-associative precedence group %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：相鄰的運算子位於非結合的優先群組 %0</string>
+	<key>ambiguous reference to member %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：成員 %0 的參照不明</string>
+	<key>ambiguous use of %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：%0 的使用不明</string>
+	<key>ambiguous use of operator %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：運算子 %0 的使用不明</string>
+	<key>argument labels '%0' do not match any available overloads</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：你正在使用的引數標籤「%0」與任何可用的項目均不相符。請檢查你嘗試呼叫的函數或初始化程式，並確認使用相符的引數。</string>
+	<key>argument passed to call that takes no arguments</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：傳送呼叫的引數沒有使用引數</string>
+	<key>argument type %0 does not conform to expected type %1</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：引數類型 %0 不符合預期的類型 %1</string>
+	<key>assigning a variable to itself</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：正在指定變數到其本身</string>
+	<key>binary operator '%0' cannot be applied to operands of type %1 and %2</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：二元運算子「%0」無法套用到類型 %1 和 %2 的運算元</string>
+	<key>binary operator '%0' cannot be applied to two %1 operands</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：二元運算子「%0」無法套用到兩個 %1 運算元</string>
+	<key>cannot assign to immutable expression of type %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：類型 %0 的表示式無法變異（永久不能更動），所以你不能為它指定不同的值。</string>
+	<key>cannot assign to value: %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：無法指定到數值：%0</string>
+	<key>cannot assign value of type %0 to type %1</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：無法指定類型 %0 數值到類型 %1</string>
+	<key>cannot call value of non-function type %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：無法呼叫非函數類型 %0 的數值</string>
+	<key>cannot convert value of type %0 to expected argument type %1</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：無法將類型 %0 數值轉換成預期引數類型 %1</string>
+	<key>cannot force unwrap value of non-optional type %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：你無法強制解開非選用性類型 %0 的數值</string>
+	<key>cannot invoke %select{|initializer for type }1'%0' with no arguments</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：沒有引數無法呼叫 %select{|類型的初始化程式}1「%0」</string>
+	<key>cannot invoke %select{|initializer for type }2'%0' with an argument list of type '%1'</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：無法使用類型「%1」的引數列表呼叫 %select{類型的初始化程式}2「%0」</string>
+	<key>cannot subscript a value of type %0 with an index of type %1</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：無法以類型 %1 的索引為類型 %0 數值加下標</string>
+	<key>closure expression is unused</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：未使用閉包表示式</string>
+	<key>consecutive statements on a line must be separated by ';'</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：一行上的連續語句必須以「;」區隔</string>
+	<key>curried function declaration syntax has been removed; use a single parameter list</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：柯里化函數宣告語法已移除，請使用單參數列表</string>
+	<key>editor placeholder in source file</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：你需要填入此預留位置</string>
+	<key>empty collection literal requires an explicit type</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：空白的文字集合需要明確的類型</string>
+	<key>expected '%0' separator</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：預期是「%0」分隔符號</string>
+	<key>expected '(' in argument list of function declaration</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在函數宣告的引數列表中預期「(」</string>
+	<key>expected ')' in expression list</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：表示式中遺失「)」</string>
+	<key>expected ';' in 'for' statement</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在「for」語句中預期「;」</string>
+	<key>expected 'in' after for-each pattern</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤： for-each 模式之後需要「in」</string>
+	<key>expected 'while' after body of 'repeat' statement</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「repeat」語句之後需要「while」</string>
+	<key>expected '{' after 'else'</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「else」語句之後需要「{」</string>
+	<key>expected '{' after 'if' condition</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在「if」條件之後預期「{」</string>
+	<key>expected '{' after 'repeat'</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「repeat」之後需要「{」</string>
+	<key>expected '{' after 'switch' subject expression</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在「switch」主題表示式之後預期「{」</string>
+	<key>expected '{' after 'while' condition</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「while」條件之後需要「{」</string>
+	<key>expected '{' in 'for' statement</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在「for」語句中預期「{」</string>
+	<key>expected '{' in body of function declaration</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在函數宣告的主體中預期「{」</string>
+	<key>expected '{' to start the body of for-each loop</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：需要「{」來啟動 for-each 迴圈的主體</string>
+	<key>expected '}' at end of brace statement</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在括號語句結尾預期「}」</string>
+	<key>expected '}' at end of closure</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在閉包結尾預期「}」</string>
+	<key>expected Sequence expression for for-each loop</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在每個 for-each 迴圈中預期序列表示式</string>
+	<key>expected a digit after integer literal prefix</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在整數文字前綴之後預期一個數字</string>
+	<key>expected condition in 'for' statement</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「for」語句中需要一個條件</string>
+	<key>expected expression</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：預期是表示式</string>
+	<key>expected expression after operator</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在運算子之後預期表示式</string>
+	<key>expected expression after unary operator</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在一元運算子之後預期表示式</string>
+	<key>expected expression in 'switch' statement</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「switch」語句中需要一個表示式</string>
+	<key>expected expression in assignment</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在指定中預期表示式</string>
+	<key>expected expression in list of expressions</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在表示式列表中預期表示式</string>
+	<key>expected expression, var, or let in 'if' condition</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在「if」條件中預期是表示式 var 或 let</string>
+	<key>expected expression, var, or let in 'while' condition</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在「while」條件中預期是表示式 var 或 let</string>
+	<key>expected identifier after '.' expression</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在「.」之後預期一個識別碼</string>
+	<key>expected identifier in %0 declaration</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在 %0 宣告中預期一個識別碼</string>
+	<key>expected initial value after '='</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「=」之後需要一個值</string>
+	<key>expected initialization in a 'for' statement</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在「for」語句中預期初始化</string>
+	<key>expected member name following '.'</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在「.」之後預期成員名稱</string>
+	<key>expected member name or constructor call after type name</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在類型名稱之後預期成員名稱或建構者呼叫</string>
+	<key>expected parameter name followed by ':'</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：預期後面是「:」的參數名稱</string>
+	<key>expected parameter type following ':'</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：預期後面是「:」的參數類型</string>
+	<key>expected pattern</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：預期是模式</string>
+	<key>expected type</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：預期是類型</string>
+	<key>expression resolves to an unused function</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：表示式解析到一個未使用的函數</string>
+	<key>expression resolves to an unused l-value</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：表示式解析到一個未使用的 l 值</string>
+	<key>extra argument in call</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：呼叫中存在多餘引數</string>
+	<key>extraneous '}' at top level</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：最上層多餘的「}」</string>
+	<key>extraneous argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在 %select{呼叫|下標}2 中存在無關連的引數 label%select{|s}0「%1」</string>
+	<key>extraneous whitespace after '.' is not permitted</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「.」之後不能有空格</string>
+	<key>found an unexpected second identifier in %0 declaration; is there an accidental break?</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在 %0 宣告中發現未預期的第二識別碼，是否意外中斷？</string>
+	<key>incorrect argument label%select{|s}0 in %select{call|subscript}3 (have '%1', expected '%2')</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在 %select{呼叫|下標}3 中存在不正確的引數 label%select{|s}0（存在「%1」，預期為「%2」）</string>
+	<key>instance member %1 cannot be used on type %0; did you mean to use a value of this type instead?</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：實例成員 %1 無法在類型 %0 上使用，你是刻意使用這種類型的值嗎？</string>
+	<key>invalid character in source file</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：來源檔案中的字元無效</string>
+	<key>invalid redeclaration of %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：%0 重新宣告無效</string>
+	<key>keyword '%0' cannot be used as an identifier here</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：關鍵字「%0」無法在此做為識別碼使用</string>
+	<key>left side of mutating operator isn't mutable: %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：變異運算子的左側不可變異：%0</string>
+	<key>missing argument for parameter #%0 in call</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：呼叫中的參數 #%0 遺失引數</string>
+	<key>missing argument for parameter %0 in call</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：呼叫中的參數 %0 遺失引數</string>
+	<key>missing argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：在 %select{呼叫|下標}2 中遺失引數 label%select{|s}0「%1」</string>
+	<key>missing condition in a 'while' statement</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：需要在「while」語句中加入一個條件</string>
+	<key>missing condition in an 'if' statement</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「if」語句中需要一個條件</string>
+	<key>operator with postfix spacing cannot start a subexpression</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：運算子後綴帶空格，無法起始子表示式</string>
+	<key>parameter requires an explicit type</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：參數需要明確的類型</string>
+	<key>partial application of %select{function with 'inout' parameters|'mutating' method|'super.init' initializer chain|'self.init' initializer delegation}0 is not allowed</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：不允許套用部分的 %select{包含 '讀寫' 參數的函數|'變異' 方法|'super.init' 初始化程式鏈|'self.init' 初始化程式委派}0</string>
+	<key>reference to member %0 cannot be resolved without a contextual type</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：沒有內文類型，無法解析成員「%0」的參照</string>
+	<key>single-quoted string literal found, use '\"'</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：找到單引號的字串文字，使用 '\"'</string>
+	<key>top-level statement cannot begin with a closure expression</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：最上層語句的開頭不能是閉包表示式</string>
+	<key>type %0 does not conform to protocol %1</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：類型 %0 不符合協定 %1</string>
+	<key>type %0 has no member %1</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：類型 %0 沒有成員 %1</string>
+	<key>type annotation missing in pattern</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：模式中遺失類型註解</string>
+	<key>type of expression is ambiguous without more context</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：表示式的類型不明，需要更多內文</string>
+	<key>unary operator cannot be separated from its operand</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：一元運算子不能從其運算元中分隔</string>
+	<key>unexpected '%0' separator</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：未預期的「%0」分隔符號</string>
+	<key>unexpected 'else' immediately following 'if' condition</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：「if」條件之後未預期的「else」</string>
+	<key>unnamed parameters must be written with the empty name '_'</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：未命名的參數必須寫入空白名稱「_」</string>
+	<key>unterminated string literal</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：未終止的字串文字</string>
+	<key>use of '=' in a boolean context, did you mean '=='?</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：你在布林比較內容中使用了「=」指定運算子，你是指「==」嗎？</string>
+	<key>use of local variable %0 before its declaration</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：使用前，你需要先宣告變數 %0</string>
+	<key>use of undeclared type %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：使用未宣告的類型 %0</string>
+	<key>use of unresolved %select{identifier|operator}1 %0</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：使用未解析的 %select{識別碼|運算子}1 %0</string>
+	<key>value of tuple type %0 has no member %1</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：元組類型 %0 的值沒有成員 %1</string>
+	<key>value of type %0 has no member %1</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：類型 %0 的值沒有成員 %1</string>
+	<key>variable used within its own initial value</key>
+	<string>哎呀！發生錯誤了。請檢查這行程式碼並嘗試將它修復。
+
+錯誤：不可使用相同的變數來設定其初始值</string>
+</dict>
+</plist>

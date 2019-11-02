@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>ev3.brickLightOff</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`brickLightOff` 函数会关闭程序块状态灯。</string>
+			</dict>
+		</dict>
+		<key>ev3.brickLightOn</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`brickLightOn` 函数控制程序块状态灯。程序块状态灯环绕着 EV3 程序块表面的程序块按钮。你可以打开程序块状态灯（绿色、橙色或红色），关闭它或使它间歇性闪烁。</string>
+			</dict>
+		</dict>
+		<key>ev3.display</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`display` 函数可在 EV3 程序块显示屏的任意位置显示文字。</string>
+			</dict>
+		</dict>
+		<key>ev3.displayCircle</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`displayCircle` 函数会在显示屏上绘制圆圈。</string>
+			</dict>
+		</dict>
+		<key>ev3.displayImage</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`displayImage` 函数会绘制图形图像文件。它可让你从 EV3 程序块上可用的图像文件列表中进行选取。</string>
+			</dict>
+		</dict>
+		<key>ev3.displayLine</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`displayLine` 函数会在显示屏上的任意两点间绘制直线。</string>
+			</dict>
+		</dict>
+		<key>ev3.displayPoint</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`displayPoint` 函数会在显示屏上绘制单个像素点。</string>
+			</dict>
+		</dict>
+		<key>ev3.displayRectangle</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`displayRectangle` 函数会在显示屏上绘制矩形。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureGyroAngle</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureGyroAngle` 函数使用陀螺仪传感器测量角度。角度基于最后一次重设的传感器进行测量。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureGyroRate</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureGyroRate` 函数使用陀螺仪传感器测量转动速率，单位为度/秒。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureLightAmbient</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureLightAmbient` 函数使用颜色传感器测量环境光强度。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureLightColor</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureLightColor` 函数使用颜色传感器探测颜色。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureLightReflection</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureLightReflection` 函数使用颜色传感器测量反射光线强度。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureMotorDegrees</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureMotorDegrees` 函数测量当前电机的转动度数。电机转动以度为单位，基于程序开始时它的位置或最后一次重设的传感器进行测量。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureMotorPower</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureMotorPower` 函数测量当前的电机功率。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureMotorRotations</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureMotorRotations` 函数测量当前电机的转动圈数。电机转动以圈数为单位，基于程序开始时它的位置或最后一次重设的传感器进行测量。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureTouch</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureTouch` 函数测量触动传感器的状态。触动传感器可被“按下”或“松开”</string>
+			</dict>
+		</dict>
+		<key>ev3.measureTouchCount</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureTouchCount` 函数在程序开始后或最后一次重设传感器后，测量触动传感器被触碰的次数。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureUltrasonicCentimeters</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureUltrasonicCentimeters` 函数使用超声波传感器测量与物体的距离，单位为厘米。</string>
+			</dict>
+		</dict>
+		<key>ev3.measureUltrasonicInches</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`measureUltrasonicInches` 函数使用超声波传感器测量与物体的距离，单位为英寸。</string>
+			</dict>
+		</dict>
+		<key>ev3.motorOff</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`motorOff` 函数会关闭电机。它通常用于使程序中早前通过“motorOn”函数启动的电机停止运转。如果 withBrake 为“真”，电机会立即停止运转。电机会停留在停止运转的位置，直至另一个函数启动它或程序结束。如果 withBrake 为“假”，电机电源会立即切断。电机运转会在任何剩余动量的作用下逐渐减弱，直至停止运转或另一个函数开始运行。</string>
+			</dict>
+		</dict>
+		<key>ev3.motorOn</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`motorOn` 函数控制电机。你可以启动或关闭电机，控制其功率，或启动电机并运转特定的时长或圈数。“motorOn”函数会启动电机，然后立即执行程序中的下一个代码块，除非有 forSeconds、forDegrees 或 forRotations 参数指定了持续时间。你可以使用 withPower 参数控制电机的速度和方向。电机会持续运转，直至程序中的下一条指令使其停止运转或改变其运转状态，或直至程序结束。</string>
+			</dict>
+		</dict>
+		<key>ev3.move</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`move` 函数可让机器人前进、后退、转弯或停下。为有两个大型电机的机器人小车使用“move”函数，其中一个电机驱动小车的左侧传动，另一个电机驱动右侧传动。你可以让两个电机以不同的速度运转，或以不同的方向运转，使机器人转弯。“move”函数会同时启动两个电机，然后立即执行程序中的下一条指令，除非有 forSeconds、forDegrees 或 forRotations 参数指定了持续时间。你可以使用 leftPower 和 rightPower 参数控制电机的速度和方向。电机会持续运转，直至程序中的下一条指令使其停止运转或改变其运转状态，或直至程序结束。</string>
+			</dict>
+		</dict>
+		<key>ev3.playSound</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`playSound` 函数使用 EV3 程序块的内置扬声器播放声音。你可以播放预录制的声音文件或指定音符或音调。</string>
+			</dict>
+		</dict>
+		<key>ev3.resetGyro</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`resetGyro` 函数可重设陀螺仪计数器。</string>
+			</dict>
+		</dict>
+		<key>ev3.resetMotor</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`resetMotor` 函数可重设电机圈数计数器。</string>
+			</dict>
+		</dict>
+		<key>ev3.resetTouchCount</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>The `resetTouchCount` function allows you to reset the touch counter.</string>
+			</dict>
+		</dict>
+		<key>ev3.stopMove</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`stopMove` 函数会同时关闭两个电机。使用“stopMove”函数，使程序中早前通过“move”函数启动的机器人停止运转。如果 withBrake 为“真”，电机会立即停止运转。电机会停留在停止运转的位置，直至另一个函数启动它们或程序结束。如果 withBrake 为“假”，电机电源会立即切断。电机运转会在任何剩余动量的作用下逐渐减弱，直至停止运转或另一个函数开始运行。</string>
+			</dict>
+		</dict>
+		<key>ev3.stopSound</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`stopSound` 函数会停止 EV3 程序块当前播放的任何声音。这常用于停止程序中早前通过“playSound”函数开始播放的声音，而不等待声音播放完。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitFor</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitFor` 函数可让程序等待一段时间（以秒为单位），再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForGyroAngle</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForGyroAngle` 函数可让程序等待角度大于或小于期望阈值后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForGyroRate</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForGyroRate` 函数可让程序等待转动速率（以度/秒为单位）大于或小于期望阈值后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForLightAmbient</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForLightAmbient` 函数可让程序等待测量的环境光强度大于或小于期望阈值后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForLightColor</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForLightColor` 函数可让程序等待颜色传感器探测到特定颜色后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForLightReflection</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForLightReflection` 函数可让程序等待测量的反射光线强度大于或小于期望阈值后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForMotorDegrees</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForMotorDegrees` 函数可让程序等待电机的转动（以度为单位）大于或小于期望阈值后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForMotorPower</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForMotorPower` 函数可让程序等待当前输送给电机的功率大于或小于期望阈值后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForMotorRotations</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForMotorRotations` 函数可让程序等待电机的转动（以圈数为单位）大于或小于期望阈值后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForTouch</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForTouch` 函数可让程序等待触动传感器被按下后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForTouchCount</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForTouchCount` 函数可让程序等待触动传感器被触碰特定次数后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForTouchReleased</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForTouchReleased` 函数可让程序等待触动传感器被松开后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForUltrasonicCentimeters</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForUltrasonicCentimeters` 函数可让程序等待距离（以厘米为单位）大于或小于期望阈值后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForUltrasonicDecrease</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForUltrasonicDecrease` 函数可让程序等待测量的距离缩小后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForUltrasonicInches</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForUltrasonicInches` 函数可让程序等待距离（以英寸为单位）大于或小于期望阈值后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+		<key>ev3.waitForUltrasonicIncrease</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>`waitForUltrasonicIncrease` 函数可让程序等待测量的距离增大后，再执行程序中的下一条指令。</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

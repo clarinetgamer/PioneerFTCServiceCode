@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%0 initializer is inaccessible due to '%select{private|fileprivate|internal|%error|%error}1' protection level</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 sıfırlayıcısına “%select{private|fileprivate|internal|%error|%error}1” koruma düzeyi nedeniyle erişilemiyor</string>
+	<key>%0 is not a %select{binary|prefix unary|postfix unary}1 operator</key>
+	<string>Bir saniye, bir hata var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0, bir %select{ikili|ön ek tekil|son ek tekil}1 işlem operatörü değil</string>
+	<key>%0 is unavailable: %1</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 kullanılamıyor: %1</string>
+	<key>%1 is not %select{convertible to|a subtype of}0 %2</key>
+	<string>Bir saniye, bir hata var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %1, %2 %select{öğesine dönüştürülebilir|öğesinin bir alt tipi}0 değil</string>
+	<key>'%select{var|let}0' cannot appear nested inside another 'var' or 'let' pattern</key>
+	<string>Bir saniye, bir hata var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: “%select{var|let}0”, başka bir “var” veya “let” örüntüsünün içinde görünemez</string>
+	<key>';' statements are not allowed</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: ';' ifadelerine izin verilmiyor.</string>
+	<key>'=' must have consistent whitespace on both sides</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: '=' iki tarafta da aynı miktarda boş alana sahip olmalıdır</string>
+	<key>'switch' statement body must have at least one 'case' or 'default' block</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'switch' ifade gövdesinin en az bir 'case' veya 'default' bloğu olmalıdır</string>
+	<key>adjacent operators are in non-associative precedence group %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Yakın operatörler ilişkisel olmayan %0 öncelik grubunda</string>
+	<key>ambiguous reference to member %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 üyesine belirsiz başvuru</string>
+	<key>ambiguous use of %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 öğesinin belirsiz kullanımı</string>
+	<key>ambiguous use of operator %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 operatörünün belirsiz kullanımı</string>
+	<key>argument labels '%0' do not match any available overloads</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Kullandığın argüman etiketleri '%0' kullanılabilir hiçbir şeyle eşleşmiyor. Çağırmaya çalıştığın işlevi veya sıfırlayıcıyı denetle ve eşleşen argümanlar kullandığından emin ol.</string>
+	<key>argument passed to call that takes no arguments</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Hiçbir argüman almayan çağrıya geçirilen argüman</string>
+	<key>argument type %0 does not conform to expected type %1</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 argüman tipi beklenen %1 tipine uymuyor</string>
+	<key>assigning a variable to itself</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Bir değişkeni kendisine atama</string>
+	<key>binary operator '%0' cannot be applied to operands of type %1 and %2</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: İkili operatör “%0”, %1 ve %2 tipi işlenenlere uygulanamıyor</string>
+	<key>binary operator '%0' cannot be applied to two %1 operands</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: İkili operatör ’%0’, iki %1 işlenenine uygulanamıyor</string>
+	<key>cannot assign to immutable expression of type %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 tipinin ifadesi değişmez (asla değiştirilemez), sen de farklı bir değer veremezsin.</string>
+	<key>cannot assign to value: %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Değere atanamıyor: %0</string>
+	<key>cannot assign value of type %0 to type %1</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 tipinin değeri %1 tipine atanamıyor</string>
+	<key>cannot call value of non-function type %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: İşlev olmayan %0 tipinin değeri çağırılamıyor</string>
+	<key>cannot convert value of type %0 to expected argument type %1</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 tipinin değeri %1 beklenen argüman tipine dönüştürülemiyor</string>
+	<key>cannot force unwrap value of non-optional type %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: İsteğe bağlı olmayan %0 tipinin değerini açmaya zorlayamazsın</string>
+	<key>cannot invoke %select{|initializer for type }1'%0' with no arguments</key>
+	<string>Bir saniye, bir hata var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Argüman olmadan “%0”%select{| tipi için ilk değer atayıcı}1 çağrılamıyor</string>
+	<key>cannot invoke %select{|initializer for type }2'%0' with an argument list of type '%1'</key>
+	<string>Bir saniye, bir hata var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: “%1” tipindeki argüman listesiyle “%0”%select{| tipi için ilk değer atayıcı}2 çağrılamıyor</string>
+	<key>cannot subscript a value of type %0 with an index of type %1</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 tipinin değeri %1 tipi indeksi ile indislenemiyor</string>
+	<key>closure expression is unused</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Kapanış ifadesi kullanılmıyor</string>
+	<key>consecutive statements on a line must be separated by ';'</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Bir çizgideki ardışık ifadeler ';' ile ayrılmalıdır</string>
+	<key>curried function declaration syntax has been removed; use a single parameter list</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Taşınan işlev bildirim sözdizimi silindi; tek parametre listesi kullan</string>
+	<key>editor placeholder in source file</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Bu yer tutucuyu doldurman gerekiyor.</string>
+	<key>empty collection literal requires an explicit type</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Boş koleksiyon sınama dizgisi açık bir tip gerektiriyor</string>
+	<key>expected '%0' separator</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Beklenen '%0' ayırıcı</string>
+	<key>expected '(' in argument list of function declaration</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: işlev bildirimi argüman listesinde beklenen '('</string>
+	<key>expected ')' in expression list</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: İfadende ')' eksik</string>
+	<key>expected ';' in 'for' statement</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Bir 'for' ifadesi için beklenen ';'</string>
+	<key>expected 'in' after for-each pattern</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: for-each örüntüsünden sonra 'in' gerekir</string>
+	<key>expected 'while' after body of 'repeat' statement</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'repeat' ifadesinden sonra bir 'while' gerekir</string>
+	<key>expected '{' after 'else'</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'else' ifadesinden sonra bir '{' gerekir</string>
+	<key>expected '{' after 'if' condition</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'if' koşulundan sonra beklenen '{'</string>
+	<key>expected '{' after 'repeat'</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'repeat' öğesinden sonra bir '{' gerekir</string>
+	<key>expected '{' after 'switch' subject expression</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'switch' konu ifadesinden sonra beklenen '{'</string>
+	<key>expected '{' after 'while' condition</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'while' koşulundan sonra bir '{' gerekir</string>
+	<key>expected '{' in 'for' statement</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Bir 'for' ifadesi için beklenen '{'</string>
+	<key>expected '{' in body of function declaration</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: işlev bildirimi gövdesinde beklenen '{'</string>
+	<key>expected '{' to start the body of for-each loop</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: for-each döngüsünün gövdesini başlatmak için bir '{' gerekir</string>
+	<key>expected '}' at end of brace statement</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Kaşlı ayraç ifadesinin sonunda beklenen '}'</string>
+	<key>expected '}' at end of closure</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Kapanışın sonunda beklenen '}'</string>
+	<key>expected Sequence expression for for-each loop</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: for-each döngüsünde beklenen Diziliş ifadesi</string>
+	<key>expected a digit after integer literal prefix</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Tamsayı sınama dizgisi ön ekinden sonra basamak bekleniyor</string>
+	<key>expected condition in 'for' statement</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'for' ifadesinde bir koşul gerekir</string>
+	<key>expected expression</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Beklenen ifade</string>
+	<key>expected expression after operator</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Operatörden sonra beklenen ifade</string>
+	<key>expected expression after unary operator</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Birli operatörden sonra beklenen ifade</string>
+	<key>expected expression in 'switch' statement</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'switch' ifadenden sonra bir ifade gerekir</string>
+	<key>expected expression in assignment</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Atamada beklenen ifade</string>
+	<key>expected expression in list of expressions</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: İfadeler listesinde beklenen ifade</string>
+	<key>expected expression, var, or let in 'if' condition</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'if' koşulunda beklenen ifade, var veya let</string>
+	<key>expected expression, var, or let in 'while' condition</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: ‘while’ koşulunda beklenen ifade, var veya let</string>
+	<key>expected identifier after '.' expression</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: '.' öğesinden sonra tanıtıcı bekleniyor</string>
+	<key>expected identifier in %0 declaration</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 bildiriminde beklenen tanıtıcı</string>
+	<key>expected initial value after '='</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: '=' öğesinden sonra bir değer gerekir</string>
+	<key>expected initialization in a 'for' statement</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Bir 'for' ifadesi için beklenen ilk değer atama</string>
+	<key>expected member name following '.'</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: '.' sonrasında beklenen üye adı</string>
+	<key>expected member name or constructor call after type name</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Tip adından sonra sonrasında beklenen üye adı veya yapıcı çağrısı</string>
+	<key>expected parameter name followed by ':'</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: '.' ardından beklenen parametre adı</string>
+	<key>expected parameter type following ':'</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: ':' ardından beklenen parametre tipi</string>
+	<key>expected pattern</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Beklenen örüntü</string>
+	<key>expected type</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Beklenen tip</string>
+	<key>expression resolves to an unused function</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: İfade kullanılmayan bir işleve çözümleniyor</string>
+	<key>expression resolves to an unused l-value</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: İfade kullanılmayan bir I-değerine çözümleniyor</string>
+	<key>extra argument in call</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Çağrıda ekstra argüman</string>
+	<key>extraneous '}' at top level</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: En üst düzeyde ekstra ’}’</string>
+	<key>extraneous argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %select{Çağrıda|Alttaki betikte}2 ilgili olmayan “%1” etiketi%select{|}0</string>
+	<key>extraneous whitespace after '.' is not permitted</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: '.' öğesinden sonra boş alan olamaz</string>
+	<key>found an unexpected second identifier in %0 declaration; is there an accidental break?</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 bildiriminde beklenmeyen ikinci bir tanıtıcı bulundu, yanlışlıkla bir kesme mi var?</string>
+	<key>incorrect argument label%select{|s}0 in %select{call|subscript}3 (have '%1', expected '%2')</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %select{Çağrıda|Alttaki betikte}3 bulunan argüman etiketi %select{|}0 yanlış (“%2” bekleniyordu ama “%1” var)</string>
+	<key>instance member %1 cannot be used on type %0; did you mean to use a value of this type instead?</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Örnek üye %1, %0 tipinde kullanılamıyor; bunun yerine bu tipin değerini kullanmayı mı demek istediniz?</string>
+	<key>invalid character in source file</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Kaynak dosyada geçersiz karakter</string>
+	<key>invalid redeclaration of %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Geçersiz %0 bildirimi</string>
+	<key>keyword '%0' cannot be used as an identifier here</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: '%0' anahtar sözcüğü burada tanıtıcı olarak kullanılamıyor</string>
+	<key>left side of mutating operator isn't mutable: %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Değişen operatörün sol tarafı değişken değil: %0</string>
+	<key>missing argument for parameter #%0 in call</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Çağrıda #%0 parametresi için eksik argüman</string>
+	<key>missing argument for parameter %0 in call</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Çağrıda %0 parametresi için eksik argüman</string>
+	<key>missing argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %select{Çağrıda|Alttaki yazıda}2 “%1” argüman etiketi %select{|}0 yok</string>
+	<key>missing condition in a 'while' statement</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'while' ifadene bir koşul eklemen gerekir</string>
+	<key>missing condition in an 'if' statement</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'if' ifadesinde bir koşul gerekir</string>
+	<key>operator with postfix spacing cannot start a subexpression</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Postfix aralığı olan operatör bir alt ifade başlatamıyor</string>
+	<key>parameter requires an explicit type</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Parametre açık bir tip gerektiriyor</string>
+	<key>partial application of %select{function with 'inout' parameters|'mutating' method|'super.init' initializer chain|'self.init' initializer delegation}0 is not allowed</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %select{“inout” parametreleri olan fonksiyonun|”mutating” metodunun|”super.init” ilk değer atayıcı zincirinin|”self.init” ilk değer atayıcı temsilcisinin}0 kısmî uygulamasına izin verilmiyor</string>
+	<key>reference to member %0 cannot be resolved without a contextual type</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 üyesine başvuru bağlamsal bir tip olmadan çözümlenemiyor</string>
+	<key>single-quoted string literal found, use '\"'</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Tek tırnaklı sınama dizgisi bulundu, '\"' kullan</string>
+	<key>top-level statement cannot begin with a closure expression</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Üst düzey ifade kapanış ifadesi ile başlayamaz</string>
+	<key>type %0 does not conform to protocol %1</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 tipi %1 protokolüne uymuyor</string>
+	<key>type %0 has no member %1</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 tipinin %1 üyesi yok</string>
+	<key>type annotation missing in pattern</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Örüntüde tip açıklaması eksik</string>
+	<key>type of expression is ambiguous without more context</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: İfade tipi daha fazla bağlam olmadan belirsiz</string>
+	<key>unary operator cannot be separated from its operand</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Birli operatör işleneninden ayrılamaz</string>
+	<key>unexpected '%0' separator</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: beklenmeyen '%0' ayırıcı</string>
+	<key>unexpected 'else' immediately following 'if' condition</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: 'if' koşulundan hemen sonra beklenmeyen 'else'</string>
+	<key>unnamed parameters must be written with the empty name '_'</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Adsız parametreler '_' boş adıyla yazılmalıdır</string>
+	<key>unterminated string literal</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Sonlanmamış sınama dizgisi</string>
+	<key>use of '=' in a boolean context, did you mean '=='?</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Bir boole karşılaştırma bağlamında atama operatörü olan ’=‘ kullandın, '==' öğesini mi kastettin?</string>
+	<key>use of local variable %0 before its declaration</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Kullanmadan önce %0 değişkenini tanımlaman gerekir</string>
+	<key>use of undeclared type %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Bildirilmemiş %0 tipinin kullanımı</string>
+	<key>use of unresolved %select{identifier|operator}1 %0</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: Çözümlenmemiş %0 %select{tanıtıcısı|operatörü}1 kullanımı</string>
+	<key>value of tuple type %0 has no member %1</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 veri grubu tipi değerinin %1 üyesi yok</string>
+	<key>value of type %0 has no member %1</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: %0 veri grubu tipi değerinin %1 üyesi yok</string>
+	<key>variable used within its own initial value</key>
+	<string>Bir saniye, bir hatan var. Düzeltmeyi denemek için bu satırdaki kodunu denetle.
+
+Hata: İlk değerini ayarlamak için aynı değişkeni kullanamazsın</string>
+</dict>
+</plist>

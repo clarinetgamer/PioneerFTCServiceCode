@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%0 initializer is inaccessible due to '%select{private|fileprivate|internal|%error|%error}1' protection level</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: l’inizializzatore %0 non è accessibile a causa del livello di protezione '%select{privato|file privato|interno|%errore|%errore}1'</string>
+	<key>%0 is not a %select{binary|prefix unary|postfix unary}1 operator</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: %0 non è un operatore %select{binario|prefisso unario|postfisso unario}1</string>
+	<key>%0 is unavailable: %1</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: %0 non è disponibile: %1</string>
+	<key>%1 is not %select{convertible to|a subtype of}0 %2</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: %1 non è %select{convertibile in|un sottotipo di}0 %2</string>
+	<key>'%select{var|let}0' cannot appear nested inside another 'var' or 'let' pattern</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: '%select{var|let}0' non può essere nidificato all’interno di un altro schema 'var' or 'let'</string>
+	<key>';' statements are not allowed</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: le istruzioni ';' non sono consentite</string>
+	<key>'=' must have consistent whitespace on both sides</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: '=' deve avere la stessa quantità di spazio da entrambi i lati</string>
+	<key>'switch' statement body must have at least one 'case' or 'default' block</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il corpo dell’istruzione 'switch' deve avere almeno un blocco ‘case' o 'default'</string>
+	<key>adjacent operators are in non-associative precedence group %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: gli operatori adiacenti sono nel gruppo di precedenza non associativa %0</string>
+	<key>ambiguous reference to member %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: riferimento ambiguo al membro %0</string>
+	<key>ambiguous use of %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: utilizzo ambiguo di %0</string>
+	<key>ambiguous use of operator %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: utilizzo ambiguo dell’operatore %0</string>
+	<key>argument labels '%0' do not match any available overloads</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: le etichette per gli argomenti '%0' che stai utilizzando non corrispondono a niente che sia disponibile. Controlla la funzione o l’inizializzatore che stai cercando di richiamare e assicurati di utilizzare gli argomenti corrispondenti.</string>
+	<key>argument passed to call that takes no arguments</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: argomento passato a richiamo che non accetta argomenti</string>
+	<key>argument type %0 does not conform to expected type %1</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il tipo di argomento %0 non è conforme al tipo %1 previsto</string>
+	<key>assigning a variable to itself</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: variabile assegnata a sé stessa</string>
+	<key>binary operator '%0' cannot be applied to operands of type %1 and %2</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: l’operatore binario '%0' non può essere applicato a operandi di tipo %1 e %2</string>
+	<key>binary operator '%0' cannot be applied to two %1 operands</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: l’operatore binario '%0' non può essere applicato a due operandi %1</string>
+	<key>cannot assign to immutable expression of type %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: l’espressione di tipo %0 è immutabile (non può mai essere modificata), quindi non puoi affidargli un valore diverso.</string>
+	<key>cannot assign to value: %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: impossibile assegnare al valore: %0</string>
+	<key>cannot assign value of type %0 to type %1</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: impossibile assegnare il valore di tipo %0 al tipo %1</string>
+	<key>cannot call value of non-function type %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: impossibile richiamare il valore del tipo di non-funzione %0</string>
+	<key>cannot convert value of type %0 to expected argument type %1</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: impossibile convertire il valore di tipo %0 nell’argomento previsto di tipo %1</string>
+	<key>cannot force unwrap value of non-optional type %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: impossibile eseguire la rivelazione forzata del tipo non opzionale %0</string>
+	<key>cannot invoke %select{|initializer for type }1'%0' with no arguments</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: impossibile invocare %select{|inizalizzatore per tipo }1'%0' senza argomenti</string>
+	<key>cannot invoke %select{|initializer for type }2'%0' with an argument list of type '%1'</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: impossibile invocare %select{|inizalizzatore per tipo }2'%0' con un elenco di argomenti di tipo '%1'</string>
+	<key>cannot subscript a value of type %0 with an index of type %1</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: impossibile utilizzare un valore di tipo %0 con un indice di tipo %1</string>
+	<key>closure expression is unused</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: espressione di chiusura inutilizzata</string>
+	<key>consecutive statements on a line must be separated by ';'</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: le istruzioni consecutive su una riga devono essere separate da ';'</string>
+	<key>curried function declaration syntax has been removed; use a single parameter list</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è stata rimossa la sintassi di dichiarazione di applicazione parziale della funzione; utilizza un elenco di parametri singolo</string>
+	<key>editor placeholder in source file</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessario riempire questo segnaposto</string>
+	<key>empty collection literal requires an explicit type</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il letterale vuoto della raccolta richiede un tipo esplicito</string>
+	<key>expected '%0' separator</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto separatore '%0'</string>
+	<key>expected '(' in argument list of function declaration</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto '(' nell'elenco degli argomenti della dichiarazione della funzione</string>
+	<key>expected ')' in expression list</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: ')' mancante nell’espressione</string>
+	<key>expected ';' in 'for' statement</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto ';' in istruzione 'for'</string>
+	<key>expected 'in' after for-each pattern</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessario 'in' dopo uno schema for-each</string>
+	<key>expected 'while' after body of 'repeat' statement</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessario 'while' dopo un’istruzione 'repeat'</string>
+	<key>expected '{' after 'else'</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessario '{' dopo un’istruzione 'else'</string>
+	<key>expected '{' after 'if' condition</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto '{' dopo la condizione 'if'</string>
+	<key>expected '{' after 'repeat'</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessario '{' dopo 'repeat'</string>
+	<key>expected '{' after 'switch' subject expression</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto '{' dopo l’espressione soggetto 'switch'</string>
+	<key>expected '{' after 'while' condition</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessario '{' dopo una condizione 'while'</string>
+	<key>expected '{' in 'for' statement</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto '{' in istruzione 'for'</string>
+	<key>expected '{' in body of function declaration</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto '{' nel corpo della dichiarazione della funzione</string>
+	<key>expected '{' to start the body of for-each loop</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessario '{' per iniziare il corpo di un ciclo for-each</string>
+	<key>expected '}' at end of brace statement</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto '}' alla fine dell’istruzione tra parentesi</string>
+	<key>expected '}' at end of closure</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto '}' alla fine della chiusura</string>
+	<key>expected Sequence expression for for-each loop</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: prevista espressione sequenza nel ciclo for-each</string>
+	<key>expected a digit after integer literal prefix</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: prevista cifra dopo prefisso letterale intero</string>
+	<key>expected condition in 'for' statement</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessaria una condizione nell’istruzione 'for'</string>
+	<key>expected expression</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: prevista espressione</string>
+	<key>expected expression after operator</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: prevista espressione dopo l’operatore</string>
+	<key>expected expression after unary operator</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: prevista espressione dopo l’operatore unario</string>
+	<key>expected expression in 'switch' statement</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessaria un’espressone in nell’istruzione 'switch'</string>
+	<key>expected expression in assignment</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: prevista espressione nell’assegnazione</string>
+	<key>expected expression in list of expressions</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: prevista espressione nell'elenco di espressioni</string>
+	<key>expected expression, var, or let in 'if' condition</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: prevista espressione, var o let in condizione 'if'</string>
+	<key>expected expression, var, or let in 'while' condition</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: prevista espressione, var o let in condizione 'while'</string>
+	<key>expected identifier after '.' expression</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto un identificatore dopo '.'</string>
+	<key>expected identifier in %0 declaration</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto identificatore in dichiarazione %0</string>
+	<key>expected initial value after '='</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessario un valore dopo '='</string>
+	<key>expected initialization in a 'for' statement</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: prevista inizializzazione in un’istruzione 'for'</string>
+	<key>expected member name following '.'</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto nome del membro dopo '.'</string>
+	<key>expected member name or constructor call after type name</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto nome del membro o richiamo a un costruttore dopo il nome del tipo</string>
+	<key>expected parameter name followed by ':'</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto nome del parametro seguito da ':'</string>
+	<key>expected parameter type following ':'</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto tipo di parametro dopo ':'</string>
+	<key>expected pattern</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto schema</string>
+	<key>expected type</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: previsto tipo</string>
+	<key>expression resolves to an unused function</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: l’espressione si risolve in una funzione inutilizzata</string>
+	<key>expression resolves to an unused l-value</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: l’espressione si risolve in un l-value inutilizzato</string>
+	<key>extra argument in call</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: argomento superfluo nel richiamo</string>
+	<key>extraneous '}' at top level</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: '}' superfluo al livello superiore</string>
+	<key>extraneous argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: etichetta di argomento estranea %select{|s}0 '%1' in %select{richiama|pedice}2</string>
+	<key>extraneous whitespace after '.' is not permitted</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: impossibile avere uno spazio dopo '.'</string>
+	<key>found an unexpected second identifier in %0 declaration; is there an accidental break?</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: trovato un secondo identificatore imprevisto nella dichiarazione %0; è presente un break accidentale?</string>
+	<key>incorrect argument label%select{|s}0 in %select{call|subscript}3 (have '%1', expected '%2')</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: etichetta di argomento errata %select{|s}0 in %select{richiama|pedice}3 (ha '%1', attendeva '%2')</string>
+	<key>instance member %1 cannot be used on type %0; did you mean to use a value of this type instead?</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il membro dell’istanza %1 non può essere utilizzato sul tipo %0; volevi forse utilizzare un valore di questo tipo al suo posto?</string>
+	<key>invalid character in source file</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: carattere non valido nel file sorgente</string>
+	<key>invalid redeclaration of %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: nuova dichiarazione di %0 non valida</string>
+	<key>keyword '%0' cannot be used as an identifier here</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: la parola chiave '%0' non può essere utilizzata come identificatore qui</string>
+	<key>left side of mutating operator isn't mutable: %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il lato sinistro dell’operatore di mutazione non è mutabile: %0</string>
+	<key>missing argument for parameter #%0 in call</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: argomento mancante per il parametro #%0 nel richiamo</string>
+	<key>missing argument for parameter %0 in call</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: argomento mancante per il parametro %0 nel richiamo</string>
+	<key>missing argument label%select{|s}0 '%1' in %select{call|subscript}2</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: etichetta di argomento mancante %select{|s}0 '%1' in %select{richiama|pedice}2</string>
+	<key>missing condition in a 'while' statement</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessario aggiungere una condizione all’istruzione 'while'</string>
+	<key>missing condition in an 'if' statement</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessaria una condizione in un’istruzione 'if'</string>
+	<key>operator with postfix spacing cannot start a subexpression</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: l’operatore con spaziatura postfissa non può iniziare con una sotto-espressione</string>
+	<key>parameter requires an explicit type</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il parametro richiede un tipo esplicito</string>
+	<key>partial application of %select{function with 'inout' parameters|'mutating' method|'super.init' initializer chain|'self.init' initializer delegation}0 is not allowed</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: l'applicazione parziale di %select{funzione con parametri 'inout'|metodo 'mutating'|catena inizializzatore 'super.init'|delegazione inizializzatore 'self.init'}0 non è consentita</string>
+	<key>reference to member %0 cannot be resolved without a contextual type</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il riferimento al membro %0 non può essere risolto senza un tipo contestuale</string>
+	<key>single-quoted string literal found, use '\"'</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: trovato letterale con stringa tra virgolette singole, utilizza '\"'</string>
+	<key>top-level statement cannot begin with a closure expression</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: l’istruzione di livello superiore non può iniziare con un’espressione di chiusura</string>
+	<key>type %0 does not conform to protocol %1</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il tipo %0 non è conforme al protocollo %1</string>
+	<key>type %0 has no member %1</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il tipo %0 non ha nessun membro %1</string>
+	<key>type annotation missing in pattern</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: nello schema manca l’indicazione del tipo</string>
+	<key>type of expression is ambiguous without more context</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il tipo di espressione è ambiguo senza altro contesto</string>
+	<key>unary operator cannot be separated from its operand</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: l’operatore unario non può essere separato dall’operando</string>
+	<key>unexpected '%0' separator</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: separatore '%0' imprevisto</string>
+	<key>unexpected 'else' immediately following 'if' condition</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: 'else' imprevisto subito dopo la condizione 'if'</string>
+	<key>unnamed parameters must be written with the empty name '_'</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: i parametri senza nome devono essere scritti con il nome vuoto '_'</string>
+	<key>unterminated string literal</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: letterale stringa non terminato</string>
+	<key>use of '=' in a boolean context, did you mean '=='?</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: hai utilizzato '=', un operatore di assegnazione, nel contesto di un confronto booleano. Intendevi utilizzare '=='?</string>
+	<key>use of local variable %0 before its declaration</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: è necessario dichiarare la variabile %0 prima di poterla utilizzare</string>
+	<key>use of undeclared type %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: utilizzo del tipo non dichiarato %0</string>
+	<key>use of unresolved %select{identifier|operator}1 %0</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: utilizzo di %select{identificatore|operatore}1 %0 non risolto</string>
+	<key>value of tuple type %0 has no member %1</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il valore della tupla di tipo %0 non ha nessun membro %1</string>
+	<key>value of type %0 has no member %1</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: il valore di tipo %0 non ha nessun membro %1</string>
+	<key>variable used within its own initial value</key>
+	<string>Ups, c’è un errore. Controlla il codice attorno a questa riga e prova a correggerlo. 
+
+Errore: impossibile utilizzare la stessa variabile per impostare il suo valore iniziale</string>
+</dict>
+</plist>
