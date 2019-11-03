@@ -57,7 +57,7 @@ class LMEV3ConnectManager //LM = LEGO mindstorms
 
                 if error != nil
                 {
-                    print("選擇EV3時錯誤：\(error.debugDescription)")
+                    print("EV3：\(error.debugDescription)")
                 }
 
                 if let accessory = self.eaManager.connectedAccessories.first
