@@ -29,7 +29,9 @@ class JoystickViewController: UIViewController {
     
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var codeBackgroundView: UIView!
-    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var directionsLabel: UILabel!
+
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -52,25 +54,33 @@ class JoystickViewController: UIViewController {
     
     @IBAction func leftButtonPressed(_ sender: Any) {
 //        let _ = simpleTurn(isLeft: true)
-        let command = MoveForwardCommand(runFunction: simpleTurnLeft)
-        commands.append(command)    }
+        let command = MoveLeftCommand(runFunction: simpleTurnLeft)
+        commands.append(command)
+        tableView.reloadData()
+
+    }
     
     @IBAction func rightButtonPressed(_ sender: Any) {
 //        let _ = simpleTurn(isLeft: false)
-        let command = MoveForwardCommand(runFunction: simpleTurnRight)
+        let command = MoveRightCommand(runFunction: simpleTurnRight)
         commands.append(command)
+        tableView.reloadData()
     }
     
     @IBAction func upButtonPressed(_ sender: Any) {
 //        let _ = moveRotations(forward: true)
         let command = MoveForwardCommand(runFunction: simpleForwardMove)
         commands.append(command)
+        tableView.reloadData()
+
     }
     
     @IBAction func downButtonPressed(_ sender: Any) {
 //        let _ = moveRotations(forward: false)
-        let command = MoveForwardCommand(runFunction: simpleBackwardMove)
+        let command = MoveBackwardCommand(runFunction: simpleBackwardMove)
         commands.append(command)
+        tableView.reloadData()
+
     }
     
     
@@ -79,7 +89,9 @@ class JoystickViewController: UIViewController {
     }
     
     @IBAction func instructionsButtonsPressed(_ sender: UIButton) {
-        
+        if let text = directionsLabel.text {
+        SpeakTextManager.shared.speak(text)
+        }
     }
     
     @IBAction func goButtonsPressed(_ sender: UIButton) {
@@ -147,6 +159,24 @@ class JoystickViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
                 command.runFunction()
             }
+        }
+    }
+}
+
+extension JoystickViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return commands.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
+        cell.textLabel?.text = commands[indexPath.row].directionText
+        return cell
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete){
+            commands.remove(at: indexPath.row)
+            tableView.reloadData()
         }
     }
 }
