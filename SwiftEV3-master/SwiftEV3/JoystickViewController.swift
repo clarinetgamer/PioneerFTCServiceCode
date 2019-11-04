@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  SwiftEV3
 //
-//  Created by 謝飛飛 on 2019/6/13.
-//  Copyright © 2019 謝飛飛. All rights reserved.
+//  Created by CFHS-FTC on 2019/6/13.
+//  Copyright © 2019 CFHS-FTC. All rights reserved.
 //
 
 import UIKit
@@ -18,8 +18,17 @@ class JoystickViewController: UIViewController {
     let defaultPorts: OutputPort = [.B, .C] //WHY?
     
     
+    var commands: [Command] = []   {
+        didSet{
+            debugPrint("commands: \(commands.map { $0.directionText })")
+        }
+    }
+    
+    
+    
+    
     @IBOutlet var buttons: [UIButton]!
-    @IBOutlet weak var codeTextView: UITextView!
+    @IBOutlet weak var codeBackgroundView: UIView!
     
     
     // MARK: - Life Cycle
@@ -33,48 +42,65 @@ class JoystickViewController: UIViewController {
     
     @IBAction func btnBLE(_ sender: Any) {
         lmManager.eaManager.showBluetoothAccessoryPicker(withNameFilter: nil) { (e) in
-        
+            
         }
     }
     
     @objc func eV3ConnectSuccess() {
         
     }
-                
+    
     @IBAction func leftButtonPressed(_ sender: Any) {
-        simpleTurn(isLeft: true)
-
-//        let slowSpeed = Int16(25)
-//        let fastSpeed = Int16(75)
-//
-//        let command = Ev3Command(commandType: .directNoReply)
-//        command.turnMotorAtPower(ports: rightPort,
-//                                 power: fastSpeed)
-//        command.turnMotorAtPower(ports: leftPort,
-//                                 power: slowSpeed)
-//        command.startMotor(ports: defaultPorts)
-//        lmManager.brick?.sendCommand(command)
-    }
-
+//        let _ = simpleTurn(isLeft: true)
+        let command = MoveForwardCommand(runFunction: simpleTurnLeft)
+        commands.append(command)    }
+    
     @IBAction func rightButtonPressed(_ sender: Any) {
-        simpleTurn(isLeft: false)
+//        let _ = simpleTurn(isLeft: false)
+        let command = MoveForwardCommand(runFunction: simpleTurnRight)
+        commands.append(command)
     }
     
     @IBAction func upButtonPressed(_ sender: Any) {
-        moveRotations(forward: true)
+//        let _ = moveRotations(forward: true)
+        let command = MoveForwardCommand(runFunction: simpleForwardMove)
+        commands.append(command)
     }
-
+    
     @IBAction func downButtonPressed(_ sender: Any) {
-        moveRotations(forward: false)
+//        let _ = moveRotations(forward: false)
+        let command = MoveForwardCommand(runFunction: simpleBackwardMove)
+        commands.append(command)
     }
-
+    
     
     @IBAction func stopButtonPressed(_ sender: Any) {
 //        lmManager.brick?.directCommand.stopMotor(onPorts: defaultPorts, withBrake: true)
     }
     
+    @IBAction func instructionsButtonsPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func goButtonsPressed(_ sender: UIButton) {
+        runQueue()
+    }
+
     // MARK: - Private Methods
-    private func simpleTurn(isLeft: Bool) {
+    @objc private func simpleTurnLeft() {
+        let _ = simpleTurn(isLeft: true)
+    }
+    @objc private func simpleTurnRight(){
+        let _ = simpleTurn(isLeft: false)
+    }
+    @objc private func simpleForwardMove(){
+        let _ = moveRotations(1, forward: true)
+    }
+    @objc private func simpleBackwardMove(){
+        let _ = moveRotations(1, forward: false)
+    }
+
+    private func simpleTurn(isLeft: Bool, shouldSend: Bool = true) -> Ev3Command {
         let command = Ev3Command(commandType: .directNoReply)
         let step: UInt32 = 175
         command.stepMotorSync(ports: defaultPorts,
@@ -82,12 +108,14 @@ class JoystickViewController: UIViewController {
                               turnRatio: (isLeft) ? -200 : 200,
                               step: step,
                               brake: true)
-        
-        command.startMotor(ports: defaultPorts)
-        lmManager.brick?.sendCommand(command)
+        if (shouldSend) {
+            command.startMotor(ports: defaultPorts)
+            lmManager.brick?.sendCommand(command)
+        }
+        return command
     }
     
-    private func moveRotations(_ rotations: Double = 1, forward: Bool) {
+    private func moveRotations(_ rotations: Double = 1, forward: Bool, shouldSend: Bool = true) -> Ev3Command {
         let command = Ev3Command(commandType: .directNoReply)
         let step: UInt32 = UInt32(365 * rotations)
         command.stepMotorSync(ports: defaultPorts,
@@ -95,9 +123,11 @@ class JoystickViewController: UIViewController {
                               turnRatio: 0,
                               step: step,
                               brake: true)
-        
+        if (shouldSend){
         command.startMotor(ports: defaultPorts)
         lmManager.brick?.sendCommand(command)
+    }
+        return command
     }
     
     private func themeUI() {
@@ -106,7 +136,17 @@ class JoystickViewController: UIViewController {
             button.layer.borderWidth = 0.5
             button.layer.cornerRadius = 8
         }
-        codeTextView.layer.borderColor = UIColor.black.cgColor
-        codeTextView.layer.borderWidth = 4
+        codeBackgroundView.layer.borderColor = UIColor.black.cgColor
+        codeBackgroundView.layer.borderWidth = 4
+    }
+    
+    private func runQueue() {
+        for (idx, command) in commands.enumerated() {
+            let secondsSpacing: TimeInterval = 4
+            let delay =  (secondsSpacing * TimeInterval(idx))
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                command.runFunction()
+            }
+        }
     }
 }

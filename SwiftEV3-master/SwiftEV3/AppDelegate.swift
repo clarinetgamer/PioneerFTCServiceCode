@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  SwiftEV3
 //
-//  Created by 謝飛飛 on 2019/6/13.
-//  Copyright © 2019 謝飛飛. All rights reserved.
+//  Created by CFHS-FTC on 2019/6/13.
+//  Copyright © 2019 CFHS-FTC. All rights reserved.
 //
 
 import UIKit
