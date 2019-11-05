@@ -17,7 +17,7 @@ protocol Command {
 
 extension Command {
     var runLength: TimeInterval{
-        return 2
+        return 3
     }
 }
 
@@ -56,7 +56,7 @@ struct MoveLeftCommand: Command {
     }
     
     var runLength: TimeInterval{
-        return 1
+        return 2
     }
 
 }
@@ -73,7 +73,7 @@ struct MoveRightCommand: Command {
     }
     
     var runLength: TimeInterval{
-           return 1
+           return 2
        }
     
 }

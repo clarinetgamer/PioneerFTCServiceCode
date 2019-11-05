@@ -60,6 +60,7 @@ class JoystickViewController: UIViewController {
         let command = MoveLeftCommand(runFunction: simpleTurnLeft)
         commands.append(command)
         tableView.reloadData()
+        SpeakTextManager.shared.speak("added \(command.directionText)")
 
     }
     
@@ -68,6 +69,8 @@ class JoystickViewController: UIViewController {
         let command = MoveRightCommand(runFunction: simpleTurnRight)
         commands.append(command)
         tableView.reloadData()
+        SpeakTextManager.shared.speak("added \(command.directionText)")
+
     }
     
     @IBAction func upButtonPressed(_ sender: Any) {
@@ -75,6 +78,7 @@ class JoystickViewController: UIViewController {
         let command = MoveForwardCommand(runFunction: simpleForwardMove)
         commands.append(command)
         tableView.reloadData()
+        SpeakTextManager.shared.speak("added \(command.directionText)")
 
     }
     
@@ -83,6 +87,7 @@ class JoystickViewController: UIViewController {
         let command = MoveBackwardCommand(runFunction: simpleBackwardMove)
         commands.append(command)
         tableView.reloadData()
+        SpeakTextManager.shared.speak("added \(command.directionText)")
 
     }
     
