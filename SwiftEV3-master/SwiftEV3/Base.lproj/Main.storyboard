@@ -63,12 +63,18 @@
                                             <action selector="downButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8t-D2-DbJ"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-G5-56u">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-G5-56u">
                                         <rect key="frame" x="406.5" y="0.0" width="195" height="144"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNX-b2-IG1">
-                                                <rect key="frame" x="0.0" y="0.0" width="195" height="68"/>
-                                                <state key="normal" image="plus" catalog="system"/>
+                                                <rect key="frame" x="63.5" y="1" width="68" height="65.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="wNX-b2-IG1" secondAttribute="height" multiplier="1:1" id="Sa3-5I-ZzR"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="checkmark.rectangle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="checkButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v88-QF-9cj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFg-4Y-is4">
                                                 <rect key="frame" x="0.0" y="76" width="195" height="68"/>
@@ -112,14 +118,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FLH-cI-dxF">
                                         <rect key="frame" x="0.0" y="0.0" width="488" height="456"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Story and Instructions Go Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xs-A1-jAa">
-                                                <rect key="frame" x="0.0" y="0.0" width="488" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Story and Instructions Go Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xs-A1-jAa">
+                                                <rect key="frame" x="0.0" y="0.0" width="488" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="awL-iW-fTn" userLabel="Spacer View">
-                                                <rect key="frame" x="0.0" y="20.5" width="488" height="435.5"/>
+                                                <rect key="frame" x="0.0" y="31.5" width="488" height="424.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -224,8 +230,8 @@
         <image name="arrow.right" catalog="system" width="64" height="48"/>
         <image name="arrow.up" catalog="system" width="60" height="64"/>
         <image name="arrowtriangle.right.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="checkmark.rectangle" catalog="system" width="64" height="46"/>
         <image name="connect-button" width="1024" height="351"/>
-        <image name="plus" catalog="system" width="64" height="56"/>
         <image name="questionmark.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>

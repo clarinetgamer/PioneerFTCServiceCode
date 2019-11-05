@@ -30,6 +30,7 @@
 		0D3A8DFA22B16905008E8E9B /* Ev3BrickChangedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3A8DEB22B16905008E8E9B /* Ev3BrickChangedDelegate.swift */; };
 		8E19E66022B8EE14000D12E9 /* LMEV3ConnectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19E65F22B8EE14000D12E9 /* LMEV3ConnectManager.swift */; };
 		BB612C9C236FCE7D00644133 /* SpeakTextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB612C9B236FCE7D00644133 /* SpeakTextManager.swift */; };
+		BB612C9E237120A600644133 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB612C9D237120A600644133 /* Tasks.swift */; };
 		BB734315236FA41F00420184 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB734314236FA41F00420184 /* Command.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		0D3A8DEB22B16905008E8E9B /* Ev3BrickChangedDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ev3BrickChangedDelegate.swift; sourceTree = "<group>"; };
 		8E19E65F22B8EE14000D12E9 /* LMEV3ConnectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMEV3ConnectManager.swift; sourceTree = "<group>"; };
 		BB612C9B236FCE7D00644133 /* SpeakTextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakTextManager.swift; sourceTree = "<group>"; };
+		BB612C9D237120A600644133 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		BB734314236FA41F00420184 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				0D3A8DCA22B168B7008E8E9B /* AppDelegate.swift */,
 				0D3A8DCC22B168B7008E8E9B /* JoystickViewController.swift */,
 				BB734314236FA41F00420184 /* Command.swift */,
+				BB612C9D237120A600644133 /* Tasks.swift */,
 				BB612C9B236FCE7D00644133 /* SpeakTextManager.swift */,
 				8E19E65F22B8EE14000D12E9 /* LMEV3ConnectManager.swift */,
 				0D3A8DCE22B168B7008E8E9B /* Main.storyboard */,
@@ -206,6 +209,7 @@
 				BB734315236FA41F00420184 /* Command.swift in Sources */,
 				0D3A8DEC22B16905008E8E9B /* ByteTools.swift in Sources */,
 				0D3A8DED22B16905008E8E9B /* Ev3DirectCommand.swift in Sources */,
+				BB612C9E237120A600644133 /* Tasks.swift in Sources */,
 				0D3A8DCD22B168B7008E8E9B /* JoystickViewController.swift in Sources */,
 				BB612C9C236FCE7D00644133 /* SpeakTextManager.swift in Sources */,
 				0D17352822C13B730054B0C3 /* PickerTestViewController.swift in Sources */,

@@ -23,8 +23,11 @@ class JoystickViewController: UIViewController {
             debugPrint("commands: \(commands.map { $0.directionText })")
         }
     }
-    
-    
+    var currentTaskInx = 0
+    var tasks: [Task] = [
+        Task(directionsText: "Geronimo the robot is stuck out on a bridge! Add the Move Forward Command 3 times to drive your robot out and save him.",
+             answer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
+    ]
     
     
     @IBOutlet var buttons: [UIButton]!
@@ -32,7 +35,7 @@ class JoystickViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var directionsLabel: UILabel!
     @IBOutlet weak var goButton: UIButton!
-
+    
     
     
     // MARK: - Life Cycle
@@ -43,6 +46,7 @@ class JoystickViewController: UIViewController {
         lmManager.findEV3Accessory()
         themeUI()
         tableView.isEditing = true
+        setupNextTask()
     }
     
     @IBAction func btnBLE(_ sender: Any) {
@@ -56,56 +60,60 @@ class JoystickViewController: UIViewController {
     }
     
     @IBAction func leftButtonPressed(_ sender: Any) {
-//        let _ = simpleTurn(isLeft: true)
+        //        let _ = simpleTurn(isLeft: true)
         let command = MoveLeftCommand(runFunction: simpleTurnLeft)
         commands.append(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
-
+        
     }
     
     @IBAction func rightButtonPressed(_ sender: Any) {
-//        let _ = simpleTurn(isLeft: false)
+        //        let _ = simpleTurn(isLeft: false)
         let command = MoveRightCommand(runFunction: simpleTurnRight)
         commands.append(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
-
+        
     }
     
     @IBAction func upButtonPressed(_ sender: Any) {
-//        let _ = moveRotations(forward: true)
+        //        let _ = moveRotations(forward: true)
         let command = MoveForwardCommand(runFunction: simpleForwardMove)
         commands.append(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
-
+        
     }
     
     @IBAction func downButtonPressed(_ sender: Any) {
-//        let _ = moveRotations(forward: false)
+        //        let _ = moveRotations(forward: false)
         let command = MoveBackwardCommand(runFunction: simpleBackwardMove)
         commands.append(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
-
+        
     }
     
     
     @IBAction func stopButtonPressed(_ sender: Any) {
-//        lmManager.brick?.directCommand.stopMotor(onPorts: defaultPorts, withBrake: true)
+        //        lmManager.brick?.directCommand.stopMotor(onPorts: defaultPorts, withBrake: true)
     }
     
     @IBAction func instructionsButtonsPressed(_ sender: UIButton) {
         if let text = directionsLabel.text {
-        SpeakTextManager.shared.speak(text)
+            SpeakTextManager.shared.speak(text)
         }
     }
     
     @IBAction func goButtonsPressed(_ sender: UIButton) {
         runQueue()
     }
-
+    
+    @IBAction func checkButtonsPressed(_ sender: UIButton) {
+        assesStudentWork()
+    }
+    
     // MARK: - Private Methods
     @objc private func simpleTurnLeft() {
         let _ = simpleTurn(isLeft: true)
@@ -119,7 +127,7 @@ class JoystickViewController: UIViewController {
     @objc private func simpleBackwardMove(){
         let _ = moveRotations(1, forward: false)
     }
-
+    
     private func simpleTurn(isLeft: Bool, shouldSend: Bool = true) -> Ev3Command {
         let command = Ev3Command(commandType: .directNoReply)
         let step: UInt32 = 175
@@ -144,9 +152,9 @@ class JoystickViewController: UIViewController {
                               step: step,
                               brake: true)
         if (shouldSend){
-        command.startMotor(ports: defaultPorts)
-        lmManager.brick?.sendCommand(command)
-    }
+            command.startMotor(ports: defaultPorts)
+            lmManager.brick?.sendCommand(command)
+        }
         return command
     }
     
@@ -176,6 +184,29 @@ class JoystickViewController: UIViewController {
             self?.goButton.isUserInteractionEnabled = true
         }
     }
+    
+    private func setupNextTask() {
+        let task = tasks[currentTaskInx]
+        directionsLabel.text = task.directionsText
+    }
+    private func assesStudentWork(){
+        let task = tasks[currentTaskInx]
+        let commandTypes = commands.map { type(of: $0) }
+        guard (task.answer.count == commandTypes.count) else {
+            SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
+            return
+        }
+        var correct = true
+        for (idx, answer) in task.answer.enumerated() {
+            let command = commandTypes[idx]
+            if (answer != command){
+                correct = false
+                break
+            }
+        }
+        
+        SpeakTextManager.shared.speak(correct ? "Good job! There are no errors. Try running your code." : "There is an error in your code. Re-listen to what you currently have and revise your code.")
+    }
 }
 
 extension JoystickViewController: UITableViewDelegate, UITableViewDataSource {
@@ -197,7 +228,7 @@ extension JoystickViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete
     }
-
+    
     func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
         return false
     }
