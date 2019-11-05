@@ -31,7 +31,9 @@ class JoystickViewController: UIViewController {
     @IBOutlet weak var codeBackgroundView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var directionsLabel: UILabel!
+    @IBOutlet weak var goButton: UIButton!
 
+    
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -40,6 +42,7 @@ class JoystickViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(eV3ConnectSuccess), name: LMEV3ConnectSuccess, object: nil)
         lmManager.findEV3Accessory()
         themeUI()
+        tableView.isEditing = true
     }
     
     @IBAction func btnBLE(_ sender: Any) {
@@ -153,12 +156,19 @@ class JoystickViewController: UIViewController {
     }
     
     private func runQueue() {
+        goButton.isUserInteractionEnabled = false
         for (idx, command) in commands.enumerated() {
-            let secondsSpacing: TimeInterval = 4
-            let delay =  (secondsSpacing * TimeInterval(idx))
+            let delay =  (command.runLength * TimeInterval(idx))
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                SpeakTextManager.shared.speak(command.directionText)
                 command.runFunction()
             }
+        }
+        let delay = commands.reduce(0) { (result, command) -> TimeInterval in
+            return result + command.runLength
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+            self?.goButton.isUserInteractionEnabled = true
         }
     }
 }
@@ -178,5 +188,17 @@ extension JoystickViewController: UITableViewDelegate, UITableViewDataSource {
             commands.remove(at: indexPath.row)
             tableView.reloadData()
         }
+    }
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+
+    func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let movedObject = commands[sourceIndexPath.row]
+        commands.remove(at: sourceIndexPath.row)
+        commands.insert(movedObject, at: destinationIndexPath.row)
     }
 }

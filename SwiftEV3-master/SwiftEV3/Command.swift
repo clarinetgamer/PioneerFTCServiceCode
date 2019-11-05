@@ -12,6 +12,13 @@ import Foundation
 protocol Command {
     var directionText: String { get }
     var runFunction: () -> Void { get }
+    var runLength: TimeInterval { get }
+}
+
+extension Command {
+    var runLength: TimeInterval{
+        return 2
+    }
 }
 
 struct MoveForwardCommand: Command {
@@ -47,6 +54,11 @@ struct MoveLeftCommand: Command {
     init(runFunction: @escaping () -> Void) {
         self.runFunction = runFunction
     }
+    
+    var runLength: TimeInterval{
+        return 1
+    }
+
 }
     
 struct MoveRightCommand: Command {
@@ -59,6 +71,10 @@ struct MoveRightCommand: Command {
     init(runFunction: @escaping () -> Void) {
         self.runFunction = runFunction
     }
+    
+    var runLength: TimeInterval{
+           return 1
+       }
     
 }
     

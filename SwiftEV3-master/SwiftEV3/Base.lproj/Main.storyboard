@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IhY-Fq-HQk">
-                                <rect key="frame" x="20" y="58" width="196" height="60"/>
+                                <rect key="frame" x="20" y="58" width="60" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnm-Uu-WM5">
                                         <rect key="frame" x="0.0" y="0.5" width="60" height="59"/>
@@ -43,14 +43,6 @@
                                             <constraint firstAttribute="width" constant="60" id="bah-i6-x8X"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="questionmark.circle" catalog="system"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTD-Pp-hMd">
-                                        <rect key="frame" x="68" y="0.0" width="60" height="60"/>
-                                        <state key="normal" image="arrow.counterclockwise" catalog="system"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C0-db-kb7">
-                                        <rect key="frame" x="136" y="0.0" width="60" height="60"/>
-                                        <state key="normal" image="arrow.clockwise" catalog="system"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -198,6 +190,7 @@
                     <connections>
                         <outlet property="codeBackgroundView" destination="dtN-fA-Arg" id="fDE-1R-Rs3"/>
                         <outlet property="directionsLabel" destination="8xs-A1-jAa" id="kfT-Xv-euI"/>
+                        <outlet property="goButton" destination="Ax2-7O-w55" id="4HG-ZO-nID"/>
                         <outlet property="tableView" destination="3KG-T7-dYJ" id="CVb-1B-VJf"/>
                         <outletCollection property="buttons" destination="9jy-3m-Fue" collectionClass="NSMutableArray" id="nXU-3j-NHl"/>
                         <outletCollection property="buttons" destination="aMI-i3-VM2" collectionClass="NSMutableArray" id="uAG-Jd-fFY"/>
@@ -226,8 +219,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
-        <image name="arrow.counterclockwise" catalog="system" width="56" height="64"/>
         <image name="arrow.down" catalog="system" width="60" height="64"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="arrow.right" catalog="system" width="64" height="48"/>
