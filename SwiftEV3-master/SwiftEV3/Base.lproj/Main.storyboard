@@ -46,7 +46,58 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VCR-sT-QwS">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtN-fA-Arg">
+                                <rect key="frame" x="16" y="124" width="992" height="464"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ddi-6m-SBb" userLabel="Middle Stack View">
+                                <rect key="frame" x="20" y="128" width="984" height="456"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FLH-cI-dxF">
+                                        <rect key="frame" x="0.0" y="0.0" width="488" height="456"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Story and Instructions Go Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xs-A1-jAa">
+                                                <rect key="frame" x="0.0" y="0.0" width="488" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="awL-iW-fTn" userLabel="Spacer View">
+                                                <rect key="frame" x="0.0" y="31.5" width="488" height="424.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3KG-T7-dYJ">
+                                        <rect key="frame" x="496" y="0.0" width="488" height="456"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Rq1-ih-WdA" style="IBUITableViewCellStyleDefault" id="23G-qf-gKv">
+                                                <rect key="frame" x="0.0" y="28" width="488" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="23G-qf-gKv" id="KBG-GB-J00">
+                                                    <rect key="frame" x="0.0" y="0.0" width="488" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rq1-ih-WdA">
+                                                            <rect key="frame" x="15" y="0.0" width="458" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="G02-Dm-6NS"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="384-he-scj"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VCR-sT-QwS" userLabel="Bottom Stack View">
                                 <rect key="frame" x="8" y="604" width="1008" height="144"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMI-i3-VM2" userLabel="^ Button">
@@ -108,57 +159,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtN-fA-Arg">
-                                <rect key="frame" x="16" y="124" width="992" height="464"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ddi-6m-SBb">
-                                <rect key="frame" x="20" y="128" width="984" height="456"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FLH-cI-dxF">
-                                        <rect key="frame" x="0.0" y="0.0" width="488" height="456"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Story and Instructions Go Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xs-A1-jAa">
-                                                <rect key="frame" x="0.0" y="0.0" width="488" height="31.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <view contentMode="scaleToFill" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="awL-iW-fTn" userLabel="Spacer View">
-                                                <rect key="frame" x="0.0" y="31.5" width="488" height="424.5"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3KG-T7-dYJ">
-                                        <rect key="frame" x="496" y="0.0" width="488" height="456"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Rq1-ih-WdA" style="IBUITableViewCellStyleDefault" id="23G-qf-gKv">
-                                                <rect key="frame" x="0.0" y="28" width="488" height="43.5"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="23G-qf-gKv" id="KBG-GB-J00">
-                                                    <rect key="frame" x="0.0" y="0.0" width="488" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rq1-ih-WdA">
-                                                            <rect key="frame" x="15" y="0.0" width="458" height="43.5"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="G02-Dm-6NS"/>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="384-he-scj"/>
-                                        </connections>
-                                    </tableView>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBC-dI-Lb1">
                                 <rect key="frame" x="20" y="128" width="488" height="456"/>
                                 <connections>
@@ -196,12 +196,16 @@
                     <connections>
                         <outlet property="codeBackgroundView" destination="dtN-fA-Arg" id="fDE-1R-Rs3"/>
                         <outlet property="directionsLabel" destination="8xs-A1-jAa" id="kfT-Xv-euI"/>
+                        <outlet property="downButton" destination="iv9-7M-6b6" id="bJc-qp-gOc"/>
                         <outlet property="goButton" destination="Ax2-7O-w55" id="4HG-ZO-nID"/>
+                        <outlet property="leftButton" destination="9jy-3m-Fue" id="88y-Bb-akE"/>
+                        <outlet property="rightButton" destination="2eA-Tn-WNk" id="qXy-Ai-xGe"/>
                         <outlet property="tableView" destination="3KG-T7-dYJ" id="CVb-1B-VJf"/>
+                        <outlet property="upButton" destination="aMI-i3-VM2" id="e7Z-k6-kmp"/>
                         <outletCollection property="buttons" destination="9jy-3m-Fue" collectionClass="NSMutableArray" id="nXU-3j-NHl"/>
-                        <outletCollection property="buttons" destination="aMI-i3-VM2" collectionClass="NSMutableArray" id="uAG-Jd-fFY"/>
                         <outletCollection property="buttons" destination="iv9-7M-6b6" collectionClass="NSMutableArray" id="tqJ-YH-rBl"/>
                         <outletCollection property="buttons" destination="2eA-Tn-WNk" collectionClass="NSMutableArray" id="Xcx-JU-ENw"/>
+                        <outletCollection property="buttons" destination="aMI-i3-VM2" collectionClass="NSMutableArray" id="uAG-Jd-fFY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

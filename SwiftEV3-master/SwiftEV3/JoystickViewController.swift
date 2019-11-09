@@ -35,6 +35,10 @@ class JoystickViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var directionsLabel: UILabel!
     @IBOutlet weak var goButton: UIButton!
+    @IBOutlet weak var leftButton: UIButton!
+    @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var downButton: UIButton!
+    @IBOutlet weak var upButton: UIButton!
     
     
     
@@ -170,7 +174,8 @@ class JoystickViewController: UIViewController {
     }
     
     private func runQueue() {
-        goButton.isUserInteractionEnabled = false
+        userCanUseButton(false)
+
         for (idx, command) in commands.enumerated() {
             let delay =  (command.runLength * TimeInterval(idx))
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
@@ -182,7 +187,7 @@ class JoystickViewController: UIViewController {
             return result + command.runLength
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-            self?.goButton.isUserInteractionEnabled = true
+            self?.userCanUseButton(true)
         }
     }
     
@@ -190,7 +195,7 @@ class JoystickViewController: UIViewController {
         let task = tasks[currentTaskInx]
         directionsLabel.text = task.directionsText
     }
-    private func assesStudentWork(){
+    private func assesStudentWork() {
         let task = tasks[currentTaskInx]
         let commandTypes = commands.map { type(of: $0) }
         guard (task.answer.count == commandTypes.count) else {
@@ -208,6 +213,14 @@ class JoystickViewController: UIViewController {
         
         SpeakTextManager.shared.speak(correct ? "Good job! There are no errors. Try running your code." : "There is an error in your code. Re-listen to what you currently have and revise your code.")
     }
+    private func userCanUseButton(_ canUse: Bool) {
+        goButton.isUserInteractionEnabled = canUse
+        leftButton.isUserInteractionEnabled = canUse
+        rightButton.isUserInteractionEnabled = canUse
+        downButton.isUserInteractionEnabled = canUse
+        upButton.isUserInteractionEnabled = canUse
+    }
+    
 }
 
 extension JoystickViewController: UITableViewDelegate, UITableViewDataSource {
