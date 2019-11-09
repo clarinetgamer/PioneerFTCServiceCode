@@ -107,6 +107,7 @@ class JoystickViewController: UIViewController {
     }
     
     @IBAction func goButtonsPressed(_ sender: UIButton) {
+        //SpeakTextManager.shared.speak("Your code consists of ")
         runQueue()
     }
     
