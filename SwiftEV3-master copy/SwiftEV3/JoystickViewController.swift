@@ -196,16 +196,12 @@ class JoystickViewController: UIViewController {
     
     private func moveArm(_ rotations: Double = 1, up: Bool, shouldSend: Bool = true) -> Ev3Command {
         let command = Ev3Command(commandType: .directNoReply)
-        let step: UInt32 = UInt32(360 * rotations)
+        let step: UInt32 = UInt32(30 * rotations)
         command.stepMotorAtSpeed(ports: armPorts,
                                  speed: up ? 25 : -25,
                                  steps: step,
                                  brake: true)
-//        command.stepMotorSync(ports: [armPorts],
-//                              speed: up ? 25 : -25,
-//                              turnRatio: 0,
-//                              step: step,
-//                              brake: true)
+
         if (shouldSend){
             command.startMotor(ports: defaultPorts)
             lmManager.brick?.sendCommand(command)
