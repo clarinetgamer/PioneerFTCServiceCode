@@ -32,7 +32,7 @@ struct MoveForwardCommand: Command {
         self.runFunction = runFunction
     }
 }
-    
+
 struct MoveBackwardCommand: Command {
     var directionText: String {
         return "Move Backward"
@@ -58,9 +58,9 @@ struct MoveLeftCommand: Command {
     var runLength: TimeInterval{
         return 2
     }
-
-}
     
+}
+
 struct MoveRightCommand: Command {
     var directionText: String {
         return "Move Right"
@@ -73,9 +73,41 @@ struct MoveRightCommand: Command {
     }
     
     var runLength: TimeInterval{
-           return 2
-       }
+        return 2
+    }
     
 }
+struct ArmUpCommand: Command {
+    var directionText: String {
+        return "Arm Up"
+    }
     
+    var runFunction: () -> Void
+    
+    init(runFunction: @escaping () -> Void) {
+        self.runFunction = runFunction
+    }
+    
+    var runLength: TimeInterval{
+        return 2
+    }
+    
+}
+
+struct ArmDownCommand: Command {
+    var directionText: String {
+        return "Arm Down"
+    }
+    
+    var runFunction: () -> Void
+    
+    init(runFunction: @escaping () -> Void) {
+        self.runFunction = runFunction
+    }
+    
+    var runLength: TimeInterval{
+        return 2
+    }
+    
+}
 

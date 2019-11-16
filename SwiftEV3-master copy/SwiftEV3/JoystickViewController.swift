@@ -13,9 +13,11 @@ class JoystickViewController: UIViewController {
     let lmManager = LMEV3ConnectManager.shared
     let motionManager = CMMotionManager.init()
     
+    let armPort: OutputPort = .A
     let rightPort: OutputPort = .C
     let leftPort: OutputPort = .B
     let defaultPorts: OutputPort = [.B, .C] //WHY?
+    let armPorts: OutputPort = [.A]
     
     
     var commands: [Command] = []   {
@@ -30,6 +32,8 @@ class JoystickViewController: UIViewController {
     ]
     
     
+    @IBOutlet var stepperButtons: [UIButton]!
+    @IBOutlet var armButtons: [UIButton]!
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var codeBackgroundView: UIView!
     @IBOutlet weak var tableView: UITableView!
@@ -39,7 +43,7 @@ class JoystickViewController: UIViewController {
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var downButton: UIButton!
     @IBOutlet weak var upButton: UIButton!
-    
+    @IBOutlet weak var stepperLabel: UILabel!
     
     
     // MARK: - Life Cycle
@@ -98,7 +102,21 @@ class JoystickViewController: UIViewController {
         SpeakTextManager.shared.speak("added \(command.directionText)")
         
     }
-    
+    @IBAction func armUp(_ sender: Any) {
+        //let _ = moveArm(up: true)
+        let command = ArmUpCommand(runFunction: simpleArmUp)
+       commands.append(command)
+       tableView.reloadData()
+       SpeakTextManager.shared.speak("added \(command.directionText)")
+     }
+     
+     @IBAction func armDown(_ sender: Any) {
+       // let _ = moveArm(up: false)
+        let command = ArmDownCommand(runFunction: simpleArmDown)
+      commands.append(command)
+      tableView.reloadData()
+      SpeakTextManager.shared.speak("added \(command.directionText)")
+     }
     
     @IBAction func stopButtonPressed(_ sender: Any) {
         //        lmManager.brick?.directCommand.stopMotor(onPorts: defaultPorts, withBrake: true)
@@ -119,7 +137,20 @@ class JoystickViewController: UIViewController {
         assesStudentWork()
     }
     
+    @IBAction func minusStepper(_ sender: Any) {
+    }
+    
+    @IBAction func addStepper(_ sender: Any) {
+    }
+    
+ 
+    
     // MARK: - Private Methods
+    @objc private func simpleArmUp() {
+        let _ = moveArm(up: true)    }
+    @objc private func simpleArmDown() {
+        let _ = moveArm(up: false)
+    }
     @objc private func simpleTurnLeft() {
         let _ = simpleTurn(isLeft: true)
     }
@@ -163,19 +194,53 @@ class JoystickViewController: UIViewController {
         return command
     }
     
+    private func moveArm(_ rotations: Double = 1, up: Bool, shouldSend: Bool = true) -> Ev3Command {
+        let command = Ev3Command(commandType: .directNoReply)
+        let step: UInt32 = UInt32(360 * rotations)
+        command.stepMotorAtSpeed(ports: armPorts,
+                                 speed: up ? 25 : -25,
+                                 steps: step,
+                                 brake: true)
+//        command.stepMotorSync(ports: [armPorts],
+//                              speed: up ? 25 : -25,
+//                              turnRatio: 0,
+//                              step: step,
+//                              brake: true)
+        if (shouldSend){
+            command.startMotor(ports: defaultPorts)
+            lmManager.brick?.sendCommand(command)
+        }
+        return command
+    }
+    
     private func themeUI() {
         for button in buttons {
             button.layer.borderColor = UIColor.lightGray.cgColor
             button.layer.borderWidth = 0.5
             button.layer.cornerRadius = 8
         }
+        
         codeBackgroundView.layer.borderColor = UIColor.black.cgColor
         codeBackgroundView.layer.borderWidth = 4
+        
+        for button in armButtons {
+            button.layer.borderColor = UIColor.lightGray.cgColor
+            button.layer.borderWidth = 0.5
+            button.layer.cornerRadius = 8
+            
+        }
+        
+        for button in stepperButtons {
+            button.layer.borderColor = UIColor.lightGray.cgColor
+            button.layer.borderWidth = 0.5
+            button.layer.cornerRadius = 8
+            
+        }
     }
     
     private func runQueue() {
         userCanUseButton(false)
-
+        
         for (idx, command) in commands.enumerated() {
             let delay =  (command.runLength * TimeInterval(idx))
             DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
