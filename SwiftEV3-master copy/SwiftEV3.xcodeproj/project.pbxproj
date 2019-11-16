@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0D17352722C13B730054B0C3 /* PickerTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTestViewController.swift; sourceTree = "<group>"; };
-		0D3A8DC722B168B7008E8E9B /* SwiftEV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftEV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D3A8DC722B168B7008E8E9B /* Pioneer Coder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pioneer Coder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3A8DCA22B168B7008E8E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D3A8DCC22B168B7008E8E9B /* JoystickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickViewController.swift; sourceTree = "<group>"; };
 		0D3A8DCF22B168B7008E8E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		0D3A8DC822B168B7008E8E9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D3A8DC722B168B7008E8E9B /* SwiftEV3.app */,
+				0D3A8DC722B168B7008E8E9B /* Pioneer Coder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			);
 			name = SwiftEV3;
 			productName = SwiftEV3;
-			productReference = 0D3A8DC722B168B7008E8E9B /* SwiftEV3.app */;
+			productReference = 0D3A8DC722B168B7008E8E9B /* Pioneer Coder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -380,7 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mark.deveolper.SwiftEV3.ohmy-test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pioneer Coder";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mark.deveolper.SwiftEV3.ohmy-test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pioneer Coder";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
