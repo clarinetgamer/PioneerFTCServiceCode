@@ -25,10 +25,14 @@ class JoystickViewController: UIViewController {
             debugPrint("commands: \(commands.map { $0.directionText })")
         }
     }
-    var currentTaskInx = 0
+    var currentTaskIdx = 0
     var tasks: [Task] = [
-        Task(directionsText: "Geronimo the robot is stuck out on a bridge! Add the Move Forward Command 3 times to drive your robot out and save him.",
-             answer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
+        Task(lessonNum: 1,
+            directionsText: "Geronimo the robot is stuck out on a bridge! Add the Move Forward Command 3 times to drive your robot out and save him.",
+             simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self]),
+        Task(lessonNum: 2,
+        directionsText: "DUmmy Lesson",
+         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
     ]
     
     
@@ -37,6 +41,7 @@ class JoystickViewController: UIViewController {
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var codeBackgroundView: UIView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var lessonTitleLabel: UILabel!
     @IBOutlet weak var directionsLabel: UILabel!
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
@@ -126,6 +131,19 @@ class JoystickViewController: UIViewController {
         if let text = directionsLabel.text {
             SpeakTextManager.shared.speak(text)
         }
+    }
+    
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        let lastIdx = tasks.count - 1
+        guard currentTaskIdx < lastIdx else { return }
+        currentTaskIdx += 1
+        setupNextTask()
+    }
+    
+    @IBAction func previousButtonPressed(_ sender: Any) {
+        guard currentTaskIdx > 0 else { return }
+        currentTaskIdx -= 1
+        setupNextTask()
     }
     
     @IBAction func goButtonsPressed(_ sender: UIButton) {
@@ -253,18 +271,19 @@ class JoystickViewController: UIViewController {
     }
     
     private func setupNextTask() {
-        let task = tasks[currentTaskInx]
+        let task = tasks[currentTaskIdx]
+        lessonTitleLabel.text = "Lesson \(task.lessonNum)"
         directionsLabel.text = task.directionsText
     }
     private func assesStudentWork() {
-        let task = tasks[currentTaskInx]
+        let task = tasks[currentTaskIdx]
         let commandTypes = commands.map { type(of: $0) }
-        guard (task.answer.count == commandTypes.count) else {
+        guard (task.simpleAnswer.count == commandTypes.count) else {
             SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
             return
         }
         var correct = true
-        for (idx, answer) in task.answer.enumerated() {
+        for (idx, answer) in task.simpleAnswer.enumerated() {
             let command = commandTypes[idx]
             if (answer != command){
                 correct = false

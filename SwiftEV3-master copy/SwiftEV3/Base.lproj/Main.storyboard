@@ -3,7 +3,7 @@
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Joystick View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="JoystickViewController" customModule="SwiftEV3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="JoystickViewController" customModule="Pioneer_Coder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,6 +33,35 @@
                                     <action selector="goButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUe-US-POz"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="400" translatesAutoresizingMaskIntoConstraints="NO" id="9oV-Cm-YGq">
+                                <rect key="frame" x="192" y="34" width="640" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmY-jn-4LT">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="A3o-H3-hRb"/>
+                                            <constraint firstAttribute="height" constant="60" id="fx1-on-aBg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="&lt;- Previous">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="previousButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="neY-Kj-Bfz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0T-q4-Dee">
+                                        <rect key="frame" x="520" y="0.0" width="120" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Next -&gt;">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHv-cc-AXF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IhY-Fq-HQk">
                                 <rect key="frame" x="20" y="58" width="60" height="60"/>
                                 <subviews>
@@ -236,11 +265,13 @@
                             <constraint firstItem="lBC-dI-Lb1" firstAttribute="bottom" secondItem="FLH-cI-dxF" secondAttribute="bottom" id="Ya0-xd-zck"/>
                             <constraint firstItem="VCR-sT-QwS" firstAttribute="top" secondItem="jT6-NI-N1Q" secondAttribute="bottom" constant="20" id="ZcC-PA-ShL"/>
                             <constraint firstItem="lBC-dI-Lb1" firstAttribute="trailing" secondItem="FLH-cI-dxF" secondAttribute="trailing" id="bWj-6l-tqN"/>
+                            <constraint firstItem="dtN-fA-Arg" firstAttribute="top" secondItem="9oV-Cm-YGq" secondAttribute="bottom" constant="30" id="c3v-4c-McE"/>
                             <constraint firstItem="dtN-fA-Arg" firstAttribute="leading" secondItem="ddi-6m-SBb" secondAttribute="leading" constant="-4" id="cOH-IF-xJO"/>
                             <constraint firstItem="IhY-Fq-HQk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d5z-kG-E3S"/>
                             <constraint firstItem="lBC-dI-Lb1" firstAttribute="leading" secondItem="FLH-cI-dxF" secondAttribute="leading" id="gUt-xB-dXz"/>
                             <constraint firstItem="aLa-yr-f67" firstAttribute="top" secondItem="dtN-fA-Arg" secondAttribute="bottom" constant="20" id="hoN-qC-jP8"/>
                             <constraint firstItem="ddi-6m-SBb" firstAttribute="top" secondItem="Ax2-7O-w55" secondAttribute="bottom" constant="20" id="jae-27-B3Y"/>
+                            <constraint firstItem="9oV-Cm-YGq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mk0-Uh-2AZ"/>
                             <constraint firstItem="jT6-NI-N1Q" firstAttribute="top" secondItem="dtN-fA-Arg" secondAttribute="bottom" constant="20" id="naI-LM-lcH"/>
                             <constraint firstItem="VCR-sT-QwS" firstAttribute="top" secondItem="aLa-yr-f67" secondAttribute="bottom" constant="20" id="pBg-cP-e6T"/>
                             <constraint firstItem="Ax2-7O-w55" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qLW-3e-iIO"/>
@@ -258,6 +289,7 @@
                         <outlet property="downButton" destination="iv9-7M-6b6" id="bJc-qp-gOc"/>
                         <outlet property="goButton" destination="Ax2-7O-w55" id="4HG-ZO-nID"/>
                         <outlet property="leftButton" destination="9jy-3m-Fue" id="88y-Bb-akE"/>
+                        <outlet property="lessonTitleLabel" destination="NyZ-63-wVF" id="PRw-g7-knv"/>
                         <outlet property="rightButton" destination="2eA-Tn-WNk" id="qXy-Ai-xGe"/>
                         <outlet property="stepperLabel" destination="DAD-kl-FeO" id="Ttj-bp-3xF"/>
                         <outlet property="tableView" destination="3KG-T7-dYJ" id="CVb-1B-VJf"/>
@@ -279,7 +311,7 @@
         <!--Picker Test View Controller-->
         <scene sceneID="WsM-K3-UAD">
             <objects>
-                <viewController id="Sn8-N4-k72" customClass="PickerTestViewController" customModule="SwiftEV3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Sn8-N4-k72" customClass="PickerTestViewController" customModule="Pioneer_Coder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iJS-y1-Oww">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -9,6 +9,7 @@
 import Foundation
 
 struct Task {
+    var lessonNum: Int 
     var directionsText: String
-    var answer: [Command.Type]
+    var simpleAnswer: [Command.Type]
 }
