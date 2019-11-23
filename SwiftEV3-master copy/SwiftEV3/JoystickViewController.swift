@@ -31,7 +31,7 @@ class JoystickViewController: UIViewController {
             directionsText: "Geronimo the robot is stuck out on a bridge! Add the Move Forward Command 3 times to drive your robot out and save him.",
              simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self]),
         Task(lessonNum: 2,
-        directionsText: "",
+        directionsText: "1Bot",
          simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
         //This is where complex answer goes on later lessons
     ]
