@@ -54,13 +54,15 @@ class JoystickViewController: UIViewController {
     var armButtons: [UIButton] {
         return [armUpButton, armDownButton]
     }
-
+    
 
     @IBOutlet weak var codeBackgroundView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lessonTitleLabel: UILabel!
     @IBOutlet weak var stepperLabel: UILabel!
     @IBOutlet weak var directionsLabel: UILabel!
+
+    
     
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
@@ -74,7 +76,12 @@ class JoystickViewController: UIViewController {
     @IBOutlet weak var armUpButton: UIButton!
     @IBOutlet weak var armDownButton: UIButton!
     
-    
+    @IBOutlet weak var instructionsButton: UIButton!
+
+    @IBOutlet weak var helpButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var previousButton: UIButton!
+
 
     
 
@@ -92,11 +99,38 @@ class JoystickViewController: UIViewController {
         applyAccessibility()
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        directionsLabel.isHidden = true
-//    }
-//
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+            setupListeners()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        removeListeners()
+    }
+    
+
+    // MARK: - Listeners
+    private func setupListeners() {
+        NotificationCenter.default.addObserver(self,selector: #selector(applicationDidBecomeActive),name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+    
+    private func removeListeners() {
+        NotificationCenter.default.removeObserver(self,name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+    
+    @objc func applicationDidBecomeActive() {
+        if (UIAccessibility.isVoiceOverRunning) {
+            instructionsButton.isHidden = true
+            helpButton.isHidden = true
+
+        } else {
+            instructionsButton.isHidden = false
+            helpButton.isHidden = false
+
+        }
+    }
+    
     private func applyAccessibility() {
         //non changing buttons
         setupButton(goButton, text: "Run your code")
@@ -108,10 +142,12 @@ class JoystickViewController: UIViewController {
         setupButton(stepperMinusButton, text: "Decrease your count")
         setupButton(armUpButton, text: "Add an arm up command ")
         setupButton(armDownButton, text: "Add an arm down command ")
-        
+        setupButton(nextButton, text: "Go forward a lesson")
+        setupButton(previousButton, text: "Go backward a lesson")
+
         //non changing labels
         setupLabel(stepperLabel, text: "Your current count is at \(stepperCount)")
-        
+
 
     }
     
