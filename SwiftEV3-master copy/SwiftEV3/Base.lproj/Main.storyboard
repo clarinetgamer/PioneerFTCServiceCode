@@ -289,8 +289,12 @@
                         <outlet property="directionsLabel" destination="8xs-A1-jAa" id="kfT-Xv-euI"/>
                         <outlet property="downButton" destination="iv9-7M-6b6" id="bJc-qp-gOc"/>
                         <outlet property="goButton" destination="Ax2-7O-w55" id="4HG-ZO-nID"/>
+                        <outlet property="helpButton" destination="Nnm-Uu-WM5" id="vYr-bx-QKb"/>
+                        <outlet property="instructionsButton" destination="lBC-dI-Lb1" id="ydy-MQ-TTO"/>
                         <outlet property="leftButton" destination="9jy-3m-Fue" id="88y-Bb-akE"/>
                         <outlet property="lessonTitleLabel" destination="NyZ-63-wVF" id="PRw-g7-knv"/>
+                        <outlet property="nextButton" destination="y0T-q4-Dee" id="0bB-Dt-eXL"/>
+                        <outlet property="previousButton" destination="bmY-jn-4LT" id="nMK-2D-qJV"/>
                         <outlet property="rightButton" destination="2eA-Tn-WNk" id="qXy-Ai-xGe"/>
                         <outlet property="stepperAddButton" destination="kdA-nV-b0L" id="8Va-7D-JcE"/>
                         <outlet property="stepperLabel" destination="DAD-kl-FeO" id="Ttj-bp-3xF"/>
