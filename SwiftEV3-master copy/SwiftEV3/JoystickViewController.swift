@@ -175,6 +175,10 @@ class JoystickViewController: UIViewController {
     
     // MARK: - Private Methods
     private func addCommand(_ command: Command) {
+        defer{
+            stepperCount = 0
+        }
+        
         guard (stepperCount > 1) else {
             commands.append(command)
             return
