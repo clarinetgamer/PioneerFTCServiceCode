@@ -35,7 +35,15 @@ class JoystickViewController: UIViewController {
          simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
         //This is where complex answer goes on later lessons
     ]
-    var stepperCount: Int = 0
+    var stepperCount: Int = 0 {
+        didSet {
+            guard (stepperCount != 0) else {
+                stepperLabel.text = "#"
+                return
+            }
+            stepperLabel.text = "\(stepperCount)"
+        }
+    }
     
     @IBOutlet var stepperButtons: [UIButton]!
     @IBOutlet var armButtons: [UIButton]!
@@ -157,7 +165,7 @@ class JoystickViewController: UIViewController {
     }
     
     @IBAction func minusStepper(_ sender: Any) {
-        guard (stepperCount >= 0) else {
+        guard (stepperCount > 0) else {
             SpeakTextManager.shared.speak("The count cannot be lower than zero")
             return
         }
@@ -187,6 +195,11 @@ class JoystickViewController: UIViewController {
         for _ in (1...stepperCount) {
             commands.append(command)
         }
+    }
+    
+    private func clearAllCommands() {
+        commands = []
+        tableView.reloadData()
     }
     
     @objc private func simpleArmUp() {
@@ -299,6 +312,7 @@ class JoystickViewController: UIViewController {
         let task = tasks[currentTaskIdx]
         lessonTitleLabel.text = "Lesson \(task.lessonNum)"
         directionsLabel.text = task.directionsText
+        clearAllCommands()
     }
     private func assesStudentWork() {
         let task = tasks[currentTaskIdx]
