@@ -157,9 +157,11 @@ class JoystickViewController: UIViewController {
     }
     
     @IBAction func minusStepper(_ sender: Any) {
+        
     }
     
     @IBAction func addStepper(_ sender: Any) {
+        
     }
     
  
