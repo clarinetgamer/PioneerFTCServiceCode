@@ -13,6 +13,11 @@ protocol Command {
     var directionText: String { get }
     var runFunction: () -> Void { get }
     var runLength: TimeInterval { get }
+    var id: CommandId { get }
+}
+
+enum CommandId {
+    case left, right, forward, backward, armUp, armDown
 }
 
 extension Command {
@@ -31,6 +36,8 @@ struct MoveForwardCommand: Command {
     init(runFunction: @escaping () -> Void) {
         self.runFunction = runFunction
     }
+    
+    var id: CommandId = .forward
 }
 
 struct MoveBackwardCommand: Command {
@@ -43,6 +50,8 @@ struct MoveBackwardCommand: Command {
     init(runFunction: @escaping () -> Void) {
         self.runFunction = runFunction
     }
+    var id: CommandId = .backward
+
 }
 struct MoveLeftCommand: Command {
     var directionText: String {
@@ -58,7 +67,8 @@ struct MoveLeftCommand: Command {
     var runLength: TimeInterval{
         return 2
     }
-    
+    var id: CommandId = .left
+
 }
 
 struct MoveRightCommand: Command {
@@ -75,7 +85,8 @@ struct MoveRightCommand: Command {
     var runLength: TimeInterval{
         return 2
     }
-    
+    var id: CommandId = .right
+
 }
 struct ArmUpCommand: Command {
     var directionText: String {
@@ -91,7 +102,8 @@ struct ArmUpCommand: Command {
     var runLength: TimeInterval{
         return 2
     }
-    
+    var id: CommandId = .armUp
+
 }
 
 struct ArmDownCommand: Command {
@@ -108,6 +120,7 @@ struct ArmDownCommand: Command {
     var runLength: TimeInterval{
         return 2
     }
-    
+    var id: CommandId = .armDown
+
 }
 

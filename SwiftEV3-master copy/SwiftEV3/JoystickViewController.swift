@@ -31,12 +31,11 @@ class JoystickViewController: UIViewController {
             directionsText: "Geronimo the robot is stuck out on a bridge! Add the Move Forward Command 3 times to drive your robot out and save him.",
              simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self]),
         Task(lessonNum: 2,
-        directionsText: " Geronimo the robot is a priate collecting treasure. Go and collect the missing pirate treasure located at E4 on the grid.",
+        directionsText: " Geronimo the robot is a priate collecting treasure. He starts at the point A1 on a grid. Go and collect the missing pirate treasure located at E4 on the grid.",
         complexAnswer: ("E", 4)),
-        Task(lessonNum: 3,
-               directionsText: "Ants",
-                simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
-        //This is where complex answer goes on later lessons
+//        Task(lessonNum: 3,
+//               directionsText: "Ants",
+//                simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
     ]
     var stepperCount: Int = 0 {
         didSet {
@@ -455,9 +454,67 @@ class JoystickViewController: UIViewController {
     
     
     private func postionForTask() -> (String, Int) {
-        return ("A", 1) // temp
+        var letterResult = 1 // A
+        var numberResult = 1
         
+        var currentDirection: FacingDirection = .forward
+        
+        for command in commands {
+            switch command.id {
+            case .left:
+                currentDirection = currentDirection.turnLeft()
+            case .right:
+                currentDirection = currentDirection.turnRight()
+            case .forward:
+                switch currentDirection {
+                case .left:
+                    guard (letterResult > 0 && letterResult < 13) else { continue }
+                    letterResult -= 1
+                case .right:
+                    guard (letterResult > 0 && letterResult < 13) else { continue }
+                    letterResult += 1
+                case .forward:
+                    guard (numberResult > 0 && numberResult < 6) else { continue }
+                    numberResult += 1
+                case .backwards:
+                    guard (numberResult > 0 && numberResult < 6) else { continue }
+                    numberResult -= 1
+                }
+                
+            case .backward:
+                switch currentDirection {
+                case .right:
+                    guard (letterResult > 0 && letterResult < 13) else {
+                        continue
+                    }
+                    letterResult -= 1
+                case .left:
+                    guard (letterResult > 0 && letterResult < 13) else {
+                        continue
+                    }
+                    letterResult += 1
+                case .backwards:
+                    guard (numberResult > 0 && numberResult < 6) else {
+                        continue
+                    }
+                    numberResult += 1
+                case .forward:
+                    guard (numberResult > 0 && numberResult < 6) else {
+                        continue
+                    }
+                    numberResult -= 1
+                }
+                               
+            case .armUp, .armDown:
+                break
+            }
+            
+            
+        }
+        
+        return (letterResult.assiciatedLetter, numberResult)
     }
+    
     
     private func userCanUseButton(_ canUse: Bool) {
         goButton.isUserInteractionEnabled = canUse
@@ -497,4 +554,50 @@ extension JoystickViewController: UITableViewDelegate, UITableViewDataSource {
         commands.remove(at: sourceIndexPath.row)
         commands.insert(movedObject, at: destinationIndexPath.row)
     }
+}
+
+extension Int {
+    var assiciatedLetter: String {
+        switch self {
+        case 1: return "A"
+        case 2: return "B"
+        case 3: return "C"
+        case 4: return "D"
+        case 5: return "E"
+        case 6: return "F"
+        case 7: return "G"
+        case 8: return "H"
+        case 9: return "I"
+        case 10: return "J"
+        case 11: return "K"
+        case 12: return "L"
+            
+        default:
+            fatalError("This shouldn't happen...")
+        }
+        
+    }
+}
+
+enum FacingDirection {
+    case left, right, forward, backwards
+    
+    func turnLeft() -> FacingDirection {
+        switch self {
+        case .left: return .backwards
+        case .right: return .forward
+        case .forward: return .left
+        case .backwards: return .right
+        }
+    }
+    
+    func turnRight() -> FacingDirection {
+        switch self {
+        case .left: return .forward
+        case .right: return .backwards
+        case .forward: return .right
+        case .backwards: return .left
+        }
+    }
+
 }
