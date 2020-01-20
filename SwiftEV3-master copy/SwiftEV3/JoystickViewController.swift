@@ -35,7 +35,7 @@ class JoystickViewController: UIViewController {
          simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
         //This is where complex answer goes on later lessons
     ]
-    
+    var stepperCount: Int = 0
     
     @IBOutlet var stepperButtons: [UIButton]!
     @IBOutlet var armButtons: [UIButton]!
@@ -76,7 +76,7 @@ class JoystickViewController: UIViewController {
     @IBAction func leftButtonPressed(_ sender: Any) {
         //        let _ = simpleTurn(isLeft: true)
         let command = MoveLeftCommand(runFunction: simpleTurnLeft)
-        commands.append(command)
+        addCommand(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
         
@@ -85,7 +85,7 @@ class JoystickViewController: UIViewController {
     @IBAction func rightButtonPressed(_ sender: Any) {
         //        let _ = simpleTurn(isLeft: false)
         let command = MoveRightCommand(runFunction: simpleTurnRight)
-        commands.append(command)
+        addCommand(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
         
@@ -94,7 +94,7 @@ class JoystickViewController: UIViewController {
     @IBAction func upButtonPressed(_ sender: Any) {
         //        let _ = moveRotations(forward: true)
         let command = MoveForwardCommand(runFunction: simpleForwardMove)
-        commands.append(command)
+        addCommand(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
         
@@ -103,7 +103,7 @@ class JoystickViewController: UIViewController {
     @IBAction func downButtonPressed(_ sender: Any) {
         //        let _ = moveRotations(forward: false)
         let command = MoveBackwardCommand(runFunction: simpleBackwardMove)
-        commands.append(command)
+        addCommand(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
         
@@ -111,7 +111,7 @@ class JoystickViewController: UIViewController {
     @IBAction func armUp(_ sender: Any) {
         //let _ = moveArm(up: true)
         let command = ArmUpCommand(runFunction: simpleArmUp)
-       commands.append(command)
+       addCommand(command)
        tableView.reloadData()
        SpeakTextManager.shared.speak("added \(command.directionText)")
      }
@@ -119,8 +119,8 @@ class JoystickViewController: UIViewController {
      @IBAction func armDown(_ sender: Any) {
        // let _ = moveArm(up: false)
         let command = ArmDownCommand(runFunction: simpleArmDown)
-      commands.append(command)
-      tableView.reloadData()
+        addCommand(command)
+        tableView.reloadData()
       SpeakTextManager.shared.speak("added \(command.directionText)")
      }
     
@@ -157,16 +157,34 @@ class JoystickViewController: UIViewController {
     }
     
     @IBAction func minusStepper(_ sender: Any) {
+        guard (stepperCount >= 0) else {
+            SpeakTextManager.shared.speak("The count cannot be lower than zero")
+            return
+        }
         
+        stepperCount -= 1
+        SpeakTextManager.shared.speak("Current count is \(stepperCount)")
     }
     
     @IBAction func addStepper(_ sender: Any) {
-        
+        stepperCount += 1
+        SpeakTextManager.shared.speak("Current count is \(stepperCount)")
     }
     
  
     
     // MARK: - Private Methods
+    private func addCommand(_ command: Command) {
+        guard (stepperCount > 1) else {
+            commands.append(command)
+            return
+        }
+        
+        for _ in (1...stepperCount) {
+            commands.append(command)
+        }
+    }
+    
     @objc private func simpleArmUp() {
         let _ = moveArm(up: true)    }
     @objc private func simpleArmDown() {
@@ -185,9 +203,9 @@ class JoystickViewController: UIViewController {
         let _ = moveRotations(1, forward: false)
     }
     
-    private func simpleTurn(isLeft: Bool, shouldSend: Bool = true) -> Ev3Command {
+    private func simpleTurn(isLeft: Bool, rotations: Double = 1, shouldSend: Bool = true) -> Ev3Command {
         let command = Ev3Command(commandType: .directNoReply)
-        let step: UInt32 = 175
+        let step: UInt32 = UInt32(175 * rotations)
         command.stepMotorSync(ports: defaultPorts,
                               speed: 25,
                               turnRatio: (isLeft) ? -200 : 200,
