@@ -45,20 +45,40 @@ class JoystickViewController: UIViewController {
         }
     }
     
-    @IBOutlet var stepperButtons: [UIButton]!
-    @IBOutlet var armButtons: [UIButton]!
     @IBOutlet var buttons: [UIButton]!
+    
+    var stepperButtons: [UIButton] {
+        return [stepperAddButton, stepperMinusButton]
+    }
+    
+    var armButtons: [UIButton] {
+        return [armUpButton, armDownButton]
+    }
+
+
     @IBOutlet weak var codeBackgroundView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lessonTitleLabel: UILabel!
+    @IBOutlet weak var stepperLabel: UILabel!
     @IBOutlet weak var directionsLabel: UILabel!
+    
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var downButton: UIButton!
     @IBOutlet weak var upButton: UIButton!
-    @IBOutlet weak var stepperLabel: UILabel!
     
+    @IBOutlet weak var stepperAddButton: UIButton!
+    @IBOutlet weak var stepperMinusButton: UIButton!
+    
+    @IBOutlet weak var armUpButton: UIButton!
+    @IBOutlet weak var armDownButton: UIButton!
+    
+    
+
+    
+
+
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -69,7 +89,42 @@ class JoystickViewController: UIViewController {
         themeUI()
         tableView.isEditing = true
         setupNextTask()
+        applyAccessibility()
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        directionsLabel.isHidden = true
+//    }
+//
+    private func applyAccessibility() {
+        //non changing buttons
+        setupButton(goButton, text: "Run your code")
+        setupButton(leftButton, text: "Add a left turn command")
+        setupButton(rightButton, text: "Add a right turn command")
+        setupButton(downButton, text: "Add a move backward command")
+        setupButton(upButton, text: "Add a move forward command")
+        setupButton(stepperAddButton, text: "Increase the count")
+        setupButton(stepperMinusButton, text: "Decrease your count")
+        setupButton(armUpButton, text: "Add an arm up command ")
+        setupButton(armDownButton, text: "Add an arm down command ")
+        
+        //non changing labels
+        setupLabel(stepperLabel, text: "Your current count is at \(stepperCount)")
+        
+
+    }
+    
+    private func setupButton(_ button: UIButton, text: String) {
+        button.accessibilityTraits = .button
+        button.accessibilityLabel = text
+        
+    }
+    
+    private func setupLabel(_ label: UILabel, text: String) {
+        label.accessibilityLabel = text
+    }
+    
     
     @IBAction func btnBLE(_ sender: Any) {
         lmManager.eaManager.showBluetoothAccessoryPicker(withNameFilter: nil) { (e) in
