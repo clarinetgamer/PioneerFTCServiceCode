@@ -156,7 +156,6 @@
                                         <state key="normal" image="minus" catalog="system"/>
                                         <connections>
                                             <action selector="minusStepper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HZ-1q-KQR"/>
-                                            <action selector="subtractStepper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLA-0v-AVZ"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAD-kl-FeO">
@@ -284,6 +283,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="armDownButton" destination="VUf-yX-LDF" id="75o-GX-Gcp"/>
+                        <outlet property="armUpButton" destination="bpO-wn-2md" id="hGt-oh-zTB"/>
                         <outlet property="codeBackgroundView" destination="dtN-fA-Arg" id="fDE-1R-Rs3"/>
                         <outlet property="directionsLabel" destination="8xs-A1-jAa" id="kfT-Xv-euI"/>
                         <outlet property="downButton" destination="iv9-7M-6b6" id="bJc-qp-gOc"/>
@@ -291,17 +292,15 @@
                         <outlet property="leftButton" destination="9jy-3m-Fue" id="88y-Bb-akE"/>
                         <outlet property="lessonTitleLabel" destination="NyZ-63-wVF" id="PRw-g7-knv"/>
                         <outlet property="rightButton" destination="2eA-Tn-WNk" id="qXy-Ai-xGe"/>
+                        <outlet property="stepperAddButton" destination="kdA-nV-b0L" id="8Va-7D-JcE"/>
                         <outlet property="stepperLabel" destination="DAD-kl-FeO" id="Ttj-bp-3xF"/>
+                        <outlet property="stepperMinusButton" destination="zDd-RE-cyY" id="Ra9-KD-We3"/>
                         <outlet property="tableView" destination="3KG-T7-dYJ" id="CVb-1B-VJf"/>
                         <outlet property="upButton" destination="aMI-i3-VM2" id="e7Z-k6-kmp"/>
                         <outletCollection property="buttons" destination="9jy-3m-Fue" collectionClass="NSMutableArray" id="nXU-3j-NHl"/>
                         <outletCollection property="buttons" destination="iv9-7M-6b6" collectionClass="NSMutableArray" id="tqJ-YH-rBl"/>
                         <outletCollection property="buttons" destination="2eA-Tn-WNk" collectionClass="NSMutableArray" id="Xcx-JU-ENw"/>
                         <outletCollection property="buttons" destination="aMI-i3-VM2" collectionClass="NSMutableArray" id="uAG-Jd-fFY"/>
-                        <outletCollection property="armButtons" destination="bpO-wn-2md" collectionClass="NSMutableArray" id="ztb-Wo-Zig"/>
-                        <outletCollection property="armButtons" destination="VUf-yX-LDF" collectionClass="NSMutableArray" id="0Tu-Nd-FQk"/>
-                        <outletCollection property="stepperButtons" destination="zDd-RE-cyY" collectionClass="NSMutableArray" id="vb5-Sn-OIh"/>
-                        <outletCollection property="stepperButtons" destination="kdA-nV-b0L" collectionClass="NSMutableArray" id="1mS-mo-1pW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

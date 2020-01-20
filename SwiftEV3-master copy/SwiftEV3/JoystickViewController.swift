@@ -38,22 +38,50 @@ class JoystickViewController: UIViewController {
                 simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
         //This is where complex answer goes on later lessons
     ]
+    var stepperCount: Int = 0 {
+        didSet {
+            guard (stepperCount != 0) else {
+                stepperLabel.text = "#"
+                return
+            }
+            stepperLabel.text = "\(stepperCount)"
+        }
+    }
     
-    
-    @IBOutlet var stepperButtons: [UIButton]!
-    @IBOutlet var armButtons: [UIButton]!
     @IBOutlet var buttons: [UIButton]!
+    
+    var stepperButtons: [UIButton] {
+        return [stepperAddButton, stepperMinusButton]
+    }
+    
+    var armButtons: [UIButton] {
+        return [armUpButton, armDownButton]
+    }
+
+
     @IBOutlet weak var codeBackgroundView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lessonTitleLabel: UILabel!
+    @IBOutlet weak var stepperLabel: UILabel!
     @IBOutlet weak var directionsLabel: UILabel!
+    
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var downButton: UIButton!
     @IBOutlet weak var upButton: UIButton!
-    @IBOutlet weak var stepperLabel: UILabel!
     
+    @IBOutlet weak var stepperAddButton: UIButton!
+    @IBOutlet weak var stepperMinusButton: UIButton!
+    
+    @IBOutlet weak var armUpButton: UIButton!
+    @IBOutlet weak var armDownButton: UIButton!
+    
+    
+
+    
+
+
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -64,7 +92,42 @@ class JoystickViewController: UIViewController {
         themeUI()
         tableView.isEditing = true
         setupNextTask()
+        applyAccessibility()
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        directionsLabel.isHidden = true
+//    }
+//
+    private func applyAccessibility() {
+        //non changing buttons
+        setupButton(goButton, text: "Run your code")
+        setupButton(leftButton, text: "Add a left turn command")
+        setupButton(rightButton, text: "Add a right turn command")
+        setupButton(downButton, text: "Add a move backward command")
+        setupButton(upButton, text: "Add a move forward command")
+        setupButton(stepperAddButton, text: "Increase the count")
+        setupButton(stepperMinusButton, text: "Decrease your count")
+        setupButton(armUpButton, text: "Add an arm up command ")
+        setupButton(armDownButton, text: "Add an arm down command ")
+        
+        //non changing labels
+        setupLabel(stepperLabel, text: "Your current count is at \(stepperCount)")
+        
+
+    }
+    
+    private func setupButton(_ button: UIButton, text: String) {
+        button.accessibilityTraits = .button
+        button.accessibilityLabel = text
+        
+    }
+    
+    private func setupLabel(_ label: UILabel, text: String) {
+        label.accessibilityLabel = text
+    }
+    
     
     @IBAction func btnBLE(_ sender: Any) {
         lmManager.eaManager.showBluetoothAccessoryPicker(withNameFilter: nil) { (e) in
@@ -79,7 +142,7 @@ class JoystickViewController: UIViewController {
     @IBAction func leftButtonPressed(_ sender: Any) {
         //        let _ = simpleTurn(isLeft: true)
         let command = MoveLeftCommand(runFunction: simpleTurnLeft)
-        commands.append(command)
+        addCommand(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
         
@@ -88,7 +151,7 @@ class JoystickViewController: UIViewController {
     @IBAction func rightButtonPressed(_ sender: Any) {
         //        let _ = simpleTurn(isLeft: false)
         let command = MoveRightCommand(runFunction: simpleTurnRight)
-        commands.append(command)
+        addCommand(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
         
@@ -97,7 +160,7 @@ class JoystickViewController: UIViewController {
     @IBAction func upButtonPressed(_ sender: Any) {
         //        let _ = moveRotations(forward: true)
         let command = MoveForwardCommand(runFunction: simpleForwardMove)
-        commands.append(command)
+        addCommand(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
         
@@ -106,7 +169,7 @@ class JoystickViewController: UIViewController {
     @IBAction func downButtonPressed(_ sender: Any) {
         //        let _ = moveRotations(forward: false)
         let command = MoveBackwardCommand(runFunction: simpleBackwardMove)
-        commands.append(command)
+        addCommand(command)
         tableView.reloadData()
         SpeakTextManager.shared.speak("added \(command.directionText)")
         
@@ -114,7 +177,7 @@ class JoystickViewController: UIViewController {
     @IBAction func armUp(_ sender: Any) {
         //let _ = moveArm(up: true)
         let command = ArmUpCommand(runFunction: simpleArmUp)
-       commands.append(command)
+       addCommand(command)
        tableView.reloadData()
        SpeakTextManager.shared.speak("added \(command.directionText)")
      }
@@ -122,8 +185,8 @@ class JoystickViewController: UIViewController {
      @IBAction func armDown(_ sender: Any) {
        // let _ = moveArm(up: false)
         let command = ArmDownCommand(runFunction: simpleArmDown)
-      commands.append(command)
-      tableView.reloadData()
+        addCommand(command)
+        tableView.reloadData()
       SpeakTextManager.shared.speak("added \(command.directionText)")
      }
     
@@ -160,14 +223,43 @@ class JoystickViewController: UIViewController {
     }
     
     @IBAction func minusStepper(_ sender: Any) {
+        guard (stepperCount > 0) else {
+            SpeakTextManager.shared.speak("The count cannot be lower than zero")
+            return
+        }
+        
+        stepperCount -= 1
+        SpeakTextManager.shared.speak("Current count is \(stepperCount)")
     }
     
     @IBAction func addStepper(_ sender: Any) {
+        stepperCount += 1
+        SpeakTextManager.shared.speak("Current count is \(stepperCount)")
     }
     
  
     
     // MARK: - Private Methods
+    private func addCommand(_ command: Command) {
+        defer{
+            stepperCount = 0
+        }
+        
+        guard (stepperCount > 1) else {
+            commands.append(command)
+            return
+        }
+        
+        for _ in (1...stepperCount) {
+            commands.append(command)
+        }
+    }
+    
+    private func clearAllCommands() {
+        commands = []
+        tableView.reloadData()
+    }
+    
     @objc private func simpleArmUp() {
         let _ = moveArm(up: true)    }
     @objc private func simpleArmDown() {
@@ -186,9 +278,9 @@ class JoystickViewController: UIViewController {
         let _ = moveRotations(1, forward: false)
     }
     
-    private func simpleTurn(isLeft: Bool, shouldSend: Bool = true) -> Ev3Command {
+    private func simpleTurn(isLeft: Bool, rotations: Double = 1, shouldSend: Bool = true) -> Ev3Command {
         let command = Ev3Command(commandType: .directNoReply)
-        let step: UInt32 = 175
+        let step: UInt32 = UInt32(175 * rotations)
         command.stepMotorSync(ports: defaultPorts,
                               speed: 25,
                               turnRatio: (isLeft) ? -200 : 200,
@@ -278,6 +370,7 @@ class JoystickViewController: UIViewController {
         let task = tasks[currentTaskIdx]
         lessonTitleLabel.text = "Lesson \(task.lessonNum)"
         directionsLabel.text = task.directionsText
+        clearAllCommands()
     }
     private func assesStudentWork() {
         let task = tasks[currentTaskIdx]
