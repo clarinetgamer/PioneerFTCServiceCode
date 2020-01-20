@@ -31,8 +31,8 @@ class JoystickViewController: UIViewController {
             directionsText: "Geronimo the robot is stuck out on a bridge! Add the Move Forward Command 3 times to drive your robot out and save him.",
              simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self]),
         Task(lessonNum: 2,
-        directionsText: "1Bot, Geronimo the robot is a priate collecting treasure. Go and collect the missing pirate treasure.",
-         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self]),
+        directionsText: " Geronimo the robot is a priate collecting treasure. Go and collect the missing pirate treasure.",
+        complexAnswer: ("E", 4)),
         Task(lessonNum: 3,
                directionsText: "Ants",
                 simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])

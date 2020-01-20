@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -91,8 +91,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBC-dI-Lb1">
+                                                <rect key="frame" x="0.0" y="31.5" width="488" height="30"/>
+                                                <connections>
+                                                    <action selector="instructionsButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSS-Yr-zb8"/>
+                                                </connections>
+                                            </button>
                                             <view contentMode="scaleToFill" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="awL-iW-fTn" userLabel="Spacer View">
-                                                <rect key="frame" x="0.0" y="31.5" width="488" height="360.5"/>
+                                                <rect key="frame" x="0.0" y="61.5" width="488" height="330.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -238,12 +244,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBC-dI-Lb1">
-                                <rect key="frame" x="20" y="128" width="488" height="392"/>
-                                <connections>
-                                    <action selector="instructionsButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSS-Yr-zb8"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -251,7 +251,6 @@
                             <constraint firstItem="9jy-3m-Fue" firstAttribute="leading" secondItem="jT6-NI-N1Q" secondAttribute="leading" id="2bO-PG-yoi"/>
                             <constraint firstItem="jT6-NI-N1Q" firstAttribute="height" secondItem="aLa-yr-f67" secondAttribute="height" id="3AD-Sy-Adw"/>
                             <constraint firstItem="dtN-fA-Arg" firstAttribute="top" secondItem="ddi-6m-SBb" secondAttribute="top" constant="-4" id="72o-mi-RXM"/>
-                            <constraint firstItem="lBC-dI-Lb1" firstAttribute="top" secondItem="FLH-cI-dxF" secondAttribute="top" id="9Gs-WK-iUN"/>
                             <constraint firstItem="iv9-7M-6b6" firstAttribute="trailing" secondItem="aLa-yr-f67" secondAttribute="trailing" id="AEX-wn-dts"/>
                             <constraint firstAttribute="trailing" secondItem="ddi-6m-SBb" secondAttribute="trailing" constant="20" id="CSZ-8A-rQU"/>
                             <constraint firstItem="VCR-sT-QwS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DZI-D7-R8x"/>
@@ -261,13 +260,10 @@
                             <constraint firstItem="2eA-Tn-WNk" firstAttribute="trailing" secondItem="jT6-NI-N1Q" secondAttribute="trailing" id="SBY-eA-bvU"/>
                             <constraint firstItem="NyZ-63-wVF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="SC1-FF-G5X"/>
                             <constraint firstItem="dtN-fA-Arg" firstAttribute="bottom" secondItem="ddi-6m-SBb" secondAttribute="bottom" constant="4" id="Thr-Xc-5mc"/>
-                            <constraint firstItem="lBC-dI-Lb1" firstAttribute="bottom" secondItem="FLH-cI-dxF" secondAttribute="bottom" id="Ya0-xd-zck"/>
                             <constraint firstItem="VCR-sT-QwS" firstAttribute="top" secondItem="jT6-NI-N1Q" secondAttribute="bottom" constant="20" id="ZcC-PA-ShL"/>
-                            <constraint firstItem="lBC-dI-Lb1" firstAttribute="trailing" secondItem="FLH-cI-dxF" secondAttribute="trailing" id="bWj-6l-tqN"/>
                             <constraint firstItem="dtN-fA-Arg" firstAttribute="top" secondItem="9oV-Cm-YGq" secondAttribute="bottom" constant="30" id="c3v-4c-McE"/>
                             <constraint firstItem="dtN-fA-Arg" firstAttribute="leading" secondItem="ddi-6m-SBb" secondAttribute="leading" constant="-4" id="cOH-IF-xJO"/>
                             <constraint firstItem="IhY-Fq-HQk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d5z-kG-E3S"/>
-                            <constraint firstItem="lBC-dI-Lb1" firstAttribute="leading" secondItem="FLH-cI-dxF" secondAttribute="leading" id="gUt-xB-dXz"/>
                             <constraint firstItem="aLa-yr-f67" firstAttribute="top" secondItem="dtN-fA-Arg" secondAttribute="bottom" constant="20" id="hoN-qC-jP8"/>
                             <constraint firstItem="ddi-6m-SBb" firstAttribute="top" secondItem="Ax2-7O-w55" secondAttribute="bottom" constant="20" id="jae-27-B3Y"/>
                             <constraint firstItem="9oV-Cm-YGq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mk0-Uh-2AZ"/>
