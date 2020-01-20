@@ -11,5 +11,18 @@ import Foundation
 struct Task {
     var lessonNum: Int 
     var directionsText: String
-    var simpleAnswer: [Command.Type]
+    var simpleAnswer: [Command.Type]?
+    var complexAnswer: (String, Int)?
+    
+    
+    init(lessonNum: Int, directionsText: String, simpleAnswer: [Command.Type]) {
+        self.lessonNum = lessonNum
+        self.directionsText = directionsText
+        self.simpleAnswer = simpleAnswer
+    }
+    init(lessonNum: Int, directionsText: String, complexAnswer: (String, Int)) {
+        self.lessonNum = lessonNum
+        self.directionsText = directionsText
+        self.complexAnswer = complexAnswer
+    }
 }

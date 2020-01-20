@@ -407,22 +407,55 @@ class JoystickViewController: UIViewController {
     }
     private func assesStudentWork() {
         let task = tasks[currentTaskIdx]
-        let commandTypes = commands.map { type(of: $0) }
-        guard (task.simpleAnswer.count == commandTypes.count) else {
-            SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
+        if let simpleAnswer = task.simpleAnswer {
+            simpleAssess(simpleAnswer)
             return
         }
-        var correct = true
-        for (idx, answer) in task.simpleAnswer.enumerated() {
-            let command = commandTypes[idx]
-            if (answer != command){
-                correct = false
-                break
-            }
+        if let complexAnswer = task.complexAnswer {
+            complexAssess(complexAnswer)
+            return
+        }
+        fatalError("You always need either a simple answer or complex answer")
+    }
+    
+    private func simpleAssess(_ simpleAnswer: [Command.Type]) {
+              let commandTypes = commands.map { type(of: $0) }
+              guard (simpleAnswer.count == commandTypes.count) else {
+                  SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
+                  return
+              }
+              var correct = true
+              for (idx, answer) in simpleAnswer.enumerated() {
+                  let command = commandTypes[idx]
+                  if (answer != command){
+                      correct = false
+                      break
+                  }
+              }
+              
+              SpeakTextManager.shared.speak(correct ? "Good job! There are no errors. Try running your code." : "There is an error in your code. Re-listen to what you currently have and revise your code.")
+    }
+    
+    private func complexAssess(_ complexAnswer: (String, Int)) {
+        let userInput = postionForTask()
+        
+        // correct
+        if (userInput == complexAnswer) {
+             SpeakTextManager.shared.speak("Good job! There are no errors. Try running your code." )
+        } else {
+            // wrong
+           SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
         }
         
-        SpeakTextManager.shared.speak(correct ? "Good job! There are no errors. Try running your code." : "There is an error in your code. Re-listen to what you currently have and revise your code.")
     }
+    
+    
+    
+    private func postionForTask() -> (String, Int) {
+        return ("A", 1) // temp
+        
+    }
+    
     private func userCanUseButton(_ canUse: Bool) {
         goButton.isUserInteractionEnabled = canUse
         leftButton.isUserInteractionEnabled = canUse
