@@ -9,20 +9,29 @@
 import Foundation
 
 struct Task {
-    var lessonNum: Int 
+    var lessonNum: Double
     var directionsText: String
     var simpleAnswer: [Command.Type]?
     var complexAnswer: (String, Int)?
     
-    
-    init(lessonNum: Int, directionsText: String, simpleAnswer: [Command.Type]) {
+    var showTaskButtons: ShowTaskButtons
+
+    init(lessonNum: Double, directionsText: String, simpleAnswer: [Command.Type], showTaskButtons: ShowTaskButtons) {
         self.lessonNum = lessonNum
         self.directionsText = directionsText
         self.simpleAnswer = simpleAnswer
+        self.showTaskButtons = showTaskButtons
     }
-    init(lessonNum: Int, directionsText: String, complexAnswer: (String, Int)) {
+    init(lessonNum: Double, directionsText: String, complexAnswer: (String, Int), showTaskButtons: ShowTaskButtons) {
         self.lessonNum = lessonNum
         self.directionsText = directionsText
         self.complexAnswer = complexAnswer
+        self.showTaskButtons = showTaskButtons
     }
+}
+
+struct ShowTaskButtons {
+    var showDirections: Bool = false
+    var showSteppers: Bool = false
+    var showArm: Bool = false
 }
