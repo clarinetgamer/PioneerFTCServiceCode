@@ -13,20 +13,35 @@ struct Task {
     var directionsText: String
     var simpleAnswer: [Command.Type]?
     var complexAnswer: (String, Int)?
+    var position: Position = .defaultPosition
     
     var showTaskButtons: ShowTaskButtons
 
-    init(lessonNum: Double, directionsText: String, simpleAnswer: [Command.Type], showTaskButtons: ShowTaskButtons) {
+    init(lessonNum: Double,
+         directionsText: String,
+         simpleAnswer: [Command.Type],
+         position: Position? = nil,
+         showTaskButtons: ShowTaskButtons) {
         self.lessonNum = lessonNum
         self.directionsText = directionsText
         self.simpleAnswer = simpleAnswer
         self.showTaskButtons = showTaskButtons
+        if let position = position {
+            self.position = position
+        }
     }
-    init(lessonNum: Double, directionsText: String, complexAnswer: (String, Int), showTaskButtons: ShowTaskButtons) {
+    init(lessonNum: Double,
+         directionsText: String,
+         complexAnswer: (String, Int),
+         position: Position? = nil,
+         showTaskButtons: ShowTaskButtons) {
         self.lessonNum = lessonNum
         self.directionsText = directionsText
         self.complexAnswer = complexAnswer
         self.showTaskButtons = showTaskButtons
+        if let position = position {
+                 self.position = position
+             }
     }
 }
 

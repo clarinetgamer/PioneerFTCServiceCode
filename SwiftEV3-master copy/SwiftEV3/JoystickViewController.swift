@@ -398,7 +398,8 @@ class JoystickViewController: UIViewController {
             return
         }
         if let complexAnswer = task.complexAnswer {
-            complexAssess(complexAnswer)
+          
+            complexAssess(complexAnswer, position: task.position)
             return
         }
         fatalError("You always need either a simple answer or complex answer")
@@ -422,8 +423,8 @@ class JoystickViewController: UIViewController {
               SpeakTextManager.shared.speak(correct ? "Good job! There are no errors. Try running your code." : "There is an error in your code. Re-listen to what you currently have and revise your code.")
     }
     
-    private func complexAssess(_ complexAnswer: (String, Int)) {
-        let userInput = PositionHelper.postionForTask(from: commands)
+    private func complexAssess(_ complexAnswer: (String, Int), position: Position) {
+        let userInput = PositionHelper.postionForTask(from: commands, position: position)
         
         // correct
         if (userInput == complexAnswer) {

@@ -9,9 +9,9 @@
 import Foundation
 
 struct PositionHelper {
-    static func postionForTask(from commands: [Command]) -> (String, Int) {
-        var letterResult = 1 // A
-        var numberResult = 1
+    static func postionForTask(from commands: [Command], position: Position) -> (String, Int) {
+        var letterResult = position.letterNum
+        var numberResult = position.number
         
         var currentDirection: FacingDirection = .forward
         
@@ -70,3 +70,9 @@ struct PositionHelper {
 
 }
 
+struct Position {
+    var letterNum: Int
+    var number: Int
+    
+    static var defaultPosition = Position(letterNum: 1, number: 1)
+}

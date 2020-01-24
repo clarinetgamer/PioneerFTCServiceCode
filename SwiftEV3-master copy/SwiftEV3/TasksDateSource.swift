@@ -30,11 +30,14 @@ struct TaskDateSource {
                                directionsText: " ",
                                complexAnswer: ("A", 1),
                                showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: false)),
-            Task(lessonNum: 4,
+            Task(lessonNum: 3.2,
                                directionsText: " ",
                                complexAnswer: ("A", 1),
-                               showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true)
-            ),
+                               showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true)),
+            Task(lessonNum: 3.3,
+            directionsText: " ",
+            complexAnswer: ("A", 1),
+            showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true)),
     //        Task(lessonNum: 3,
     //               directionsText: "Ants",
     //                simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
