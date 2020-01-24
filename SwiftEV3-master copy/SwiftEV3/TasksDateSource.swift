@@ -41,23 +41,27 @@ struct TaskDateSource {
         lessonNum: 3,
         directionsText: " ",
         complexAnswer: [("L", 3), ("L", 1), ("L", 5)],
+        position: Position(letterNum: 1, number: 5),
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: false))
     
     static var lesson3_1 = Task(
         lessonNum: 3.1,
         directionsText: " ",
-        complexAnswer: [("A", 1)],
+        complexAnswer: [("F", 4), ("G", 4)],
+        position: Position(letterNum: 12, number: 1),
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: false))
     
     static var lesson3_2 = Task(
         lessonNum: 3.2,
         directionsText: " ",
-        complexAnswer: [("A", 1)],
+        complexAnswer: [("F", 2), ("F", 3), ("G", 2), ("G", 3)],
+        position: Position(letterNum: 12, number: 1),
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true))
     
     static var lesson3_3 = Task(
         lessonNum: 3.3,
         directionsText: " ",
-        complexAnswer: [("A", 1)],
+        complexAnswer: [("B", 4), ("K", 4)],
+        position: Position(letterNum: 12, number: 1),
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true))
 }
