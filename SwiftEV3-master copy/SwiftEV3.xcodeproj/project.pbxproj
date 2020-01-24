@@ -29,6 +29,11 @@
 		0D3A8DF922B16905008E8E9B /* Ev3Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3A8DEA22B16905008E8E9B /* Ev3Connection.swift */; };
 		0D3A8DFA22B16905008E8E9B /* Ev3BrickChangedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3A8DEB22B16905008E8E9B /* Ev3BrickChangedDelegate.swift */; };
 		8E19E66022B8EE14000D12E9 /* LMEV3ConnectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19E65F22B8EE14000D12E9 /* LMEV3ConnectManager.swift */; };
+		BAB13DEB23DA941B00F67361 /* Int+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB13DEA23DA941B00F67361 /* Int+extensions.swift */; };
+		BAB13DED23DA943F00F67361 /* FacingDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB13DEC23DA943F00F67361 /* FacingDirection.swift */; };
+		BAB13DEF23DA94A500F67361 /* TasksDateSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB13DEE23DA94A500F67361 /* TasksDateSource.swift */; };
+		BAB13DF123DA953A00F67361 /* JoystickViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB13DF023DA953A00F67361 /* JoystickViewController+UITableView.swift */; };
+		BAB13DF323DA966800F67361 /* PositionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB13DF223DA966800F67361 /* PositionHelper.swift */; };
 		BB612C9C236FCE7D00644133 /* SpeakTextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB612C9B236FCE7D00644133 /* SpeakTextManager.swift */; };
 		BB612C9E237120A600644133 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB612C9D237120A600644133 /* Tasks.swift */; };
 		BB734315236FA41F00420184 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB734314236FA41F00420184 /* Command.swift */; };
@@ -59,6 +64,11 @@
 		0D3A8DEA22B16905008E8E9B /* Ev3Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ev3Connection.swift; sourceTree = "<group>"; };
 		0D3A8DEB22B16905008E8E9B /* Ev3BrickChangedDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ev3BrickChangedDelegate.swift; sourceTree = "<group>"; };
 		8E19E65F22B8EE14000D12E9 /* LMEV3ConnectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMEV3ConnectManager.swift; sourceTree = "<group>"; };
+		BAB13DEA23DA941B00F67361 /* Int+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extensions.swift"; sourceTree = "<group>"; };
+		BAB13DEC23DA943F00F67361 /* FacingDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacingDirection.swift; sourceTree = "<group>"; };
+		BAB13DEE23DA94A500F67361 /* TasksDateSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDateSource.swift; sourceTree = "<group>"; };
+		BAB13DF023DA953A00F67361 /* JoystickViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JoystickViewController+UITableView.swift"; sourceTree = "<group>"; };
+		BAB13DF223DA966800F67361 /* PositionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionHelper.swift; sourceTree = "<group>"; };
 		BB612C9B236FCE7D00644133 /* SpeakTextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakTextManager.swift; sourceTree = "<group>"; };
 		BB612C9D237120A600644133 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		BB734314236FA41F00420184 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
@@ -97,10 +107,15 @@
 				0D3A8DDC22B168EB008E8E9B /* EV3iOS */,
 				0D3A8DCA22B168B7008E8E9B /* AppDelegate.swift */,
 				0D3A8DCC22B168B7008E8E9B /* JoystickViewController.swift */,
+				BAB13DF023DA953A00F67361 /* JoystickViewController+UITableView.swift */,
 				BB734314236FA41F00420184 /* Command.swift */,
 				BB612C9D237120A600644133 /* Tasks.swift */,
+				BAB13DEE23DA94A500F67361 /* TasksDateSource.swift */,
 				BB612C9B236FCE7D00644133 /* SpeakTextManager.swift */,
 				8E19E65F22B8EE14000D12E9 /* LMEV3ConnectManager.swift */,
+				BAB13DEA23DA941B00F67361 /* Int+extensions.swift */,
+				BAB13DEC23DA943F00F67361 /* FacingDirection.swift */,
+				BAB13DF223DA966800F67361 /* PositionHelper.swift */,
 				0D3A8DCE22B168B7008E8E9B /* Main.storyboard */,
 				0D3A8DD322B168BA008E8E9B /* LaunchScreen.storyboard */,
 				0D3A8DD122B168BA008E8E9B /* Assets.xcassets */,
@@ -204,17 +219,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3A8DF122B16905008E8E9B /* Ev3Command.swift in Sources */,
+				BAB13DED23DA943F00F67361 /* FacingDirection.swift in Sources */,
+				BAB13DF323DA966800F67361 /* PositionHelper.swift in Sources */,
 				0D3A8DF022B16905008E8E9B /* Ev3Enums.swift in Sources */,
 				0D3A8DEF22B16905008E8E9B /* Ev3Brick.swift in Sources */,
 				BB734315236FA41F00420184 /* Command.swift in Sources */,
 				0D3A8DEC22B16905008E8E9B /* ByteTools.swift in Sources */,
 				0D3A8DED22B16905008E8E9B /* Ev3DirectCommand.swift in Sources */,
 				BB612C9E237120A600644133 /* Tasks.swift in Sources */,
+				BAB13DEB23DA941B00F67361 /* Int+extensions.swift in Sources */,
 				0D3A8DCD22B168B7008E8E9B /* JoystickViewController.swift in Sources */,
 				BB612C9C236FCE7D00644133 /* SpeakTextManager.swift in Sources */,
 				0D17352822C13B730054B0C3 /* PickerTestViewController.swift in Sources */,
 				0D3A8DF322B16905008E8E9B /* Ev3SimpleSounds.swift in Sources */,
 				0D3A8DFA22B16905008E8E9B /* Ev3BrickChangedDelegate.swift in Sources */,
+				BAB13DF123DA953A00F67361 /* JoystickViewController+UITableView.swift in Sources */,
 				8E19E66022B8EE14000D12E9 /* LMEV3ConnectManager.swift in Sources */,
 				0D3A8DF822B16905008E8E9B /* Ev3BrickButtons.swift in Sources */,
 				0D3A8DF522B16905008E8E9B /* Ev3Port.swift in Sources */,
@@ -224,6 +243,7 @@
 				0D3A8DF922B16905008E8E9B /* Ev3Connection.swift in Sources */,
 				0D3A8DCB22B168B7008E8E9B /* AppDelegate.swift in Sources */,
 				0D3A8DF622B16905008E8E9B /* Ev3Constants.swift in Sources */,
+				BAB13DEF23DA94A500F67361 /* TasksDateSource.swift in Sources */,
 				0D3A8DF722B16905008E8E9B /* Ev3ReportDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

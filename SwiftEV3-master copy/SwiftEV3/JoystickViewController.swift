@@ -19,43 +19,13 @@ class JoystickViewController: UIViewController {
     let defaultPorts: OutputPort = [.B, .C] //WHY?
     let armPorts: OutputPort = [.A]
     
-    
     var commands: [Command] = []   {
         didSet{
             debugPrint("commands: \(commands.map { $0.directionText })")
         }
     }
     var currentTaskIdx = 0
-    var tasks: [Task] = [
-        Task(lessonNum: 1,
-            directionsText: "Geronimo the robot is stuck out on a bridge! Add the Move Forward Command 3 times to drive your robot out and save him.",
-             simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
-             showTaskButtons: ShowTaskButtons(showDirections: false, showSteppers: false, showArm: false)),
-        Task(lessonNum: 2,
-        directionsText: " Geronimo the robot is a pirate collecting treasure. He starts at the point A1 on a grid. Go and collect the missing pirate treasure located at E4 on the grid.",
-        complexAnswer: ("E", 4),
-        showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: false, showArm: false)),
-        Task(lessonNum: 2.1,
-              directionsText: " Geronimo the robot is a pirate collecting treasure. He starts at the point A1 on a grid. Go and collect the missing pirate treasure. Choose a spot to hide the tresure and then help Geronimo find it.",
-              complexAnswer: ("A", 1),
-              showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: false, showArm: false)),
-        Task(lessonNum: 3,
-                    directionsText: " ",
-                    complexAnswer: ("A", 1),
-                    showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: false)),
-        Task(lessonNum: 3.1,
-                           directionsText: " ",
-                           complexAnswer: ("A", 1),
-                           showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: false)),
-        Task(lessonNum: 4,
-                           directionsText: " ",
-                           complexAnswer: ("A", 1),
-                           showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true)
-        ),
-//        Task(lessonNum: 3,
-//               directionsText: "Ants",
-//                simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self])
-    ]
+    var tasks: [Task] = TaskDateSource.allTasks
     var stepperCount: Int = 0 {
         didSet {
             guard (stepperCount != 0) else {
@@ -76,15 +46,12 @@ class JoystickViewController: UIViewController {
         return [armUpButton, armDownButton]
     }
     
-
     @IBOutlet weak var codeBackgroundView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lessonTitleLabel: UILabel!
     @IBOutlet weak var stepperLabel: UILabel!
     @IBOutlet weak var directionsLabel: UILabel!
 
-    
-    
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
@@ -102,11 +69,6 @@ class JoystickViewController: UIViewController {
     @IBOutlet weak var helpButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
-
-
-    
-
-
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -168,20 +130,16 @@ class JoystickViewController: UIViewController {
 
         //non changing labels
         setupLabel(stepperLabel, text: "Your current count is at \(stepperCount)")
-
-
     }
     
     private func setupButton(_ button: UIButton, text: String) {
         button.accessibilityTraits = .button
         button.accessibilityLabel = text
-        
     }
     
     private func setupLabel(_ label: UILabel, text: String) {
         label.accessibilityLabel = text
     }
-    
     
     @IBAction func btnBLE(_ sender: Any) {
         lmManager.eaManager.showBluetoothAccessoryPicker(withNameFilter: nil) { (e) in
@@ -273,7 +231,7 @@ class JoystickViewController: UIViewController {
     }
     
     @IBAction func checkButtonsPressed(_ sender: UIButton) {
-        assesStudentWork()
+        assessStudentWork()
     }
     
     @IBAction func minusStepper(_ sender: Any) {
@@ -431,10 +389,9 @@ class JoystickViewController: UIViewController {
         stepperButtons.forEach { $0.isHidden = !show.showSteppers }
         stepperLabel.isHidden = !show.showSteppers
         armButtons.forEach { $0.isHidden = !show.showArm }
-
-        
     }
-    private func assesStudentWork() {
+    
+    private func assessStudentWork() {
         let task = tasks[currentTaskIdx]
         if let simpleAnswer = task.simpleAnswer {
             simpleAssess(simpleAnswer)
@@ -466,7 +423,7 @@ class JoystickViewController: UIViewController {
     }
     
     private func complexAssess(_ complexAnswer: (String, Int)) {
-        let userInput = postionForTask()
+        let userInput = PositionHelper.postionForTask(from: commands)
         
         // correct
         if (userInput == complexAnswer) {
@@ -478,71 +435,6 @@ class JoystickViewController: UIViewController {
         
     }
     
-    
-    
-    private func postionForTask() -> (String, Int) {
-        var letterResult = 1 // A
-        var numberResult = 1
-        
-        var currentDirection: FacingDirection = .forward
-        
-        for command in commands {
-            switch command.id {
-            case .left:
-                currentDirection = currentDirection.turnLeft()
-            case .right:
-                currentDirection = currentDirection.turnRight()
-            case .forward:
-                switch currentDirection {
-                case .left:
-                    guard (letterResult > 0 && letterResult < 13) else { continue }
-                    letterResult -= 1
-                case .right:
-                    guard (letterResult > 0 && letterResult < 13) else { continue }
-                    letterResult += 1
-                case .forward:
-                    guard (numberResult > 0 && numberResult < 6) else { continue }
-                    numberResult += 1
-                case .backwards:
-                    guard (numberResult > 0 && numberResult < 6) else { continue }
-                    numberResult -= 1
-                }
-                
-            case .backward:
-                switch currentDirection {
-                case .right:
-                    guard (letterResult > 0 && letterResult < 13) else {
-                        continue
-                    }
-                    letterResult -= 1
-                case .left:
-                    guard (letterResult > 0 && letterResult < 13) else {
-                        continue
-                    }
-                    letterResult += 1
-                case .backwards:
-                    guard (numberResult > 0 && numberResult < 6) else {
-                        continue
-                    }
-                    numberResult += 1
-                case .forward:
-                    guard (numberResult > 0 && numberResult < 6) else {
-                        continue
-                    }
-                    numberResult -= 1
-                }
-                               
-            case .armUp, .armDown:
-                break
-            }
-            
-            
-        }
-        
-        return (letterResult.assiciatedLetter, numberResult)
-    }
-    
-    
     private func userCanUseButton(_ canUse: Bool) {
         goButton.isUserInteractionEnabled = canUse
         leftButton.isUserInteractionEnabled = canUse
@@ -553,78 +445,3 @@ class JoystickViewController: UIViewController {
     
 }
 
-extension JoystickViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return commands.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-        cell.textLabel?.text = commands[indexPath.row].directionText
-        return cell
-    }
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if (editingStyle == .delete){
-            commands.remove(at: indexPath.row)
-            tableView.reloadData()
-        }
-    }
-    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-        return .delete
-    }
-    
-    func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let movedObject = commands[sourceIndexPath.row]
-        commands.remove(at: sourceIndexPath.row)
-        commands.insert(movedObject, at: destinationIndexPath.row)
-    }
-}
-
-extension Int {
-    var assiciatedLetter: String {
-        switch self {
-        case 1: return "A"
-        case 2: return "B"
-        case 3: return "C"
-        case 4: return "D"
-        case 5: return "E"
-        case 6: return "F"
-        case 7: return "G"
-        case 8: return "H"
-        case 9: return "I"
-        case 10: return "J"
-        case 11: return "K"
-        case 12: return "L"
-            
-        default:
-            fatalError("This shouldn't happen...")
-        }
-        
-    }
-}
-
-enum FacingDirection {
-    case left, right, forward, backwards
-    
-    func turnLeft() -> FacingDirection {
-        switch self {
-        case .left: return .backwards
-        case .right: return .forward
-        case .forward: return .left
-        case .backwards: return .right
-        }
-    }
-    
-    func turnRight() -> FacingDirection {
-        switch self {
-        case .left: return .forward
-        case .right: return .backwards
-        case .forward: return .right
-        case .backwards: return .left
-        }
-    }
-
-}
