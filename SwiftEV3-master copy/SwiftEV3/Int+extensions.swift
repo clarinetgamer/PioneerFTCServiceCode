@@ -30,3 +30,25 @@ extension Int {
         
     }
 }
+
+extension String {
+    var associatedNumber: Int {
+        switch self {
+        case "A": return 1
+        case "B": return 2
+//        case 3: return "C"
+//        case 4: return "D"
+//        case 5: return "E"
+//        case 6: return "F"
+//        case 7: return "G"
+//        case 8: return "H"
+//        case 9: return "I"
+//        case 10: return "J"
+//        case 11: return "K"
+//        case 12: return "L"
+            
+        default:
+            fatalError("This shouldn't happen...")
+        }
+    }
+}

@@ -14,6 +14,7 @@ struct Task {
     var simpleAnswer: [Command.Type]?
     var complexAnswer: [(String, Int)] = []
     var position: Position = .defaultPosition
+    var askUserForEndPosition: Bool = false
     
     var showTaskButtons: ShowTaskButtons
 
@@ -34,6 +35,7 @@ struct Task {
          directionsText: String,
          complexAnswer: [(String, Int)],
          position: Position? = nil,
+         askUserForEndPosition: Bool = false,
          showTaskButtons: ShowTaskButtons) {
         self.lessonNum = lessonNum
         self.directionsText = directionsText
@@ -42,6 +44,7 @@ struct Task {
         if let position = position {
                  self.position = position
              }
+        self.askUserForEndPosition = askUserForEndPosition
     }
 }
 

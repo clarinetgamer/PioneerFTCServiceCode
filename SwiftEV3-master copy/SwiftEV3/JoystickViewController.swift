@@ -389,6 +389,39 @@ class JoystickViewController: UIViewController {
         stepperButtons.forEach { $0.isHidden = !show.showSteppers }
         stepperLabel.isHidden = !show.showSteppers
         armButtons.forEach { $0.isHidden = !show.showArm }
+        
+        if (task.askUserForEndPosition) {
+            askUserForSuccessfulEndingPosition()
+        }
+        
+    }
+    
+    private func askUserForSuccessfulEndingPosition() {
+        let alertController = UIAlertController(title: "Pick a dot on the grid", message: "", preferredStyle: .alert)
+        alertController.addTextField { textField in
+            textField.placeholder = "Letter goes here"
+        }
+        alertController.addTextField { textField in
+            textField.placeholder = "Number goes here"
+        }
+
+        let confirmAction = UIAlertAction(title: "OK", style: .default) { [weak alertController] _ in
+            guard let alertController = alertController,
+                let textFieldLetter = alertController.textFields?.first,
+                let textFieldNumber = alertController.textFields?.first else { return }
+            let letter = textFieldLetter.text ?? ""
+            let number = Int(textFieldNumber.text ?? "") ?? 1
+            
+            var task = self.tasks[self.currentTaskIdx]
+            task.complexAnswer = [(letter, number)]
+//            self.tasks.remove(at: self.currentTaskIdx)
+//            self.tasks.insert(task, at: self.currentTaskIdx)
+        }
+        alertController.addAction(confirmAction)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true)
     }
     
     private func assessStudentWork() {
