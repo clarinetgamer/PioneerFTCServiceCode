@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_9" orientation="landscape">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad10_2" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,17 +13,18 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="ev3-logo" translatesAutoresizingMaskIntoConstraints="NO" id="OmF-gv-gtw">
-                                <rect key="frame" x="279.33333333333331" y="170.66666666666666" width="253.33333333333331" height="33.666666666666657"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OmF-gv-gtw">
+                                <rect key="frame" x="8" y="305" width="1064" height="200"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.027450980392156862" green="0.11764705882352941" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OmF-gv-gtw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="M78-Ae-qyl"/>
                             <constraint firstItem="OmF-gv-gtw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Teb-VJ-wMc"/>
+                            <constraint firstItem="OmF-gv-gtw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="8" id="hFU-ql-qlb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -36,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ev3-logo" width="253.33332824707031" height="33.666667938232422"/>
+        <image name="logo" width="1000" height="200"/>
     </resources>
 </document>
