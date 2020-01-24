@@ -2,8 +2,8 @@
 //  SpeakTextManager.swift
 //  SwiftEV3
 //
-//  Created by CFHS-FTC on 11/3/19.
-//  Copyright © 2019 謝飛飛. All rights reserved.
+//  Created by Pioneer-Robotics on 11/3/19.
+//  Copyright © 2019 Pioneer-Robotics. All rights reserved.
 //
 
 import AVFoundation

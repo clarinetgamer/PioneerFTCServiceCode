@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  SwiftEV3
 //
-//  Created by CFHS-FTC on 2019/6/13.
-//  Copyright © 2019 CFHS-FTC. All rights reserved.
+//  Created by Pioneer-Robotics on 2019/6/13.
+//  Copyright © 2019 Pioneer-Robotics. All rights reserved.
 //
 
 import UIKit

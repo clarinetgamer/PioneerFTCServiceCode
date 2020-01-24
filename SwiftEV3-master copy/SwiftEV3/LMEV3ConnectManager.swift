@@ -3,7 +3,7 @@
 //  SwiftEV3
 //
 //  Created by Mark33699 on 2019/6/18.
-//  Copyright © 2019 CFHS-FTC. All rights reserved.
+//  Copyright © 2019 Pioneer-Robotics. All rights reserved.
 //
 
 import Foundation

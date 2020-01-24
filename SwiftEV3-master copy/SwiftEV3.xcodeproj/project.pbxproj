@@ -175,7 +175,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "謝飛飛";
+				ORGANIZATIONNAME = "Pioneer-Robotics";
 				TargetAttributes = {
 					0D3A8DC622B168B7008E8E9B = {
 						CreatedOnToolsVersion = 10.2.1;

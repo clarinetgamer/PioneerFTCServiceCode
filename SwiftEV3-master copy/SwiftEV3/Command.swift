@@ -2,8 +2,8 @@
 //  Command.swift
 //  SwiftEV3
 //
-//  Created by CFHS-FTC on 11/3/19.
-//  Copyright © 2019 CFHS-FTC. All rights reserved.
+//  Created by Pioneer-Robotics on 11/3/19.
+//  Copyright © 2019 Pioneer-Robotics. All rights reserved.
 //
 
 import Foundation
