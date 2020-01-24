@@ -54,7 +54,7 @@ struct TaskDateSource {
     
     static var lesson3_2 = Task(
         lessonNum: 3.2,
-        directionsText: "Geronimo the robot is an ant who needs help finding his way to the Queen. The Queen is located at F2, F3, G2, or G3. He currently is at L1 on the grid.Please choose one point to help him find his way to the Queen",
+        directionsText: "Geronimo the robot is an ant who needs help finding his way to the Queen. The Queen is located at F2, F3, G2, or G3. He currently is at L1 on the grid. Please choose one point to help him find his way to the Queen",
         complexAnswer: [("F", 2), ("F", 3), ("G", 2), ("G", 3)],
         position: Position(letterNum: 12, number: 1),
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true))
