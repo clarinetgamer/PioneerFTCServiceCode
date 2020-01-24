@@ -397,9 +397,9 @@ class JoystickViewController: UIViewController {
             simpleAssess(simpleAnswer)
             return
         }
-        if let complexAnswer = task.complexAnswer {
-          
-            complexAssess(complexAnswer, position: task.position)
+        
+        if !task.complexAnswer.isEmpty {
+            complexAssess(task.complexAnswer, position: task.position)
             return
         }
         fatalError("You always need either a simple answer or complex answer")
@@ -423,17 +423,21 @@ class JoystickViewController: UIViewController {
               SpeakTextManager.shared.speak(correct ? "Good job! There are no errors. Try running your code." : "There is an error in your code. Re-listen to what you currently have and revise your code.")
     }
     
-    private func complexAssess(_ complexAnswer: (String, Int), position: Position) {
+    private func complexAssess(_ complexAnswers: [(String, Int)], position: Position) {
         let userInput = PositionHelper.postionForTask(from: commands, position: position)
         
-        // correct
-        if (userInput == complexAnswer) {
-             SpeakTextManager.shared.speak("Good job! There are no errors. Try running your code." )
-        } else {
-            // wrong
-           SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
+        var correctAnswerFound = false
+        for complexAnswer in complexAnswers {
+            if (userInput == complexAnswer) {
+                correctAnswerFound = true
+                SpeakTextManager.shared.speak("Good job! There are no errors. Try running your code." )
+                break
+            }
         }
         
+        if (!correctAnswerFound) {
+            SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
+        }
     }
     
     private func userCanUseButton(_ canUse: Bool) {

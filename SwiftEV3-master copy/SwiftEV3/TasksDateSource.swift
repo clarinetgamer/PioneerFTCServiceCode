@@ -28,36 +28,36 @@ struct TaskDateSource {
     static var lesson2 = Task(
         lessonNum: 2,
         directionsText: "Geronimo the robot is a pirate collecting treasure. He starts at the point A1 on a grid. Go and collect the missing pirate treasure located at E4 on the grid.",
-        complexAnswer: ("E", 4),
+        complexAnswer: [("E", 4)],
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: false, showArm: false))
     
     static var lesson2_1 = Task(
         lessonNum: 2.1,
-        directionsText: " Geronimo the robot is a pirate collecting treasure. He starts at the point A1 on a grid. Go and collect the missing pirate treasure. Choose a spot to hide the tresure and then help Geronimo find it.",
-        complexAnswer: ("A", 1),
+        directionsText: "Geronimo the robot is a pirate collecting treasure. He starts at the point A1 on a grid. Go and collect the missing pirate treasure. Choose a spot to hide the tresure and then help Geronimo find it.",
+        complexAnswer: [("A", 1)],
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: false, showArm: false))
     
     static var lesson3 = Task(
         lessonNum: 3,
         directionsText: " ",
-        complexAnswer: ("A", 1),
+        complexAnswer: [("L", 3), ("L", 1), ("L", 5)],
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: false))
     
     static var lesson3_1 = Task(
         lessonNum: 3.1,
         directionsText: " ",
-        complexAnswer: ("A", 1),
+        complexAnswer: [("A", 1)],
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: false))
     
     static var lesson3_2 = Task(
         lessonNum: 3.2,
         directionsText: " ",
-        complexAnswer: ("A", 1),
+        complexAnswer: [("A", 1)],
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true))
     
     static var lesson3_3 = Task(
         lessonNum: 3.3,
         directionsText: " ",
-        complexAnswer: ("A", 1),
+        complexAnswer: [("A", 1)],
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true))
 }

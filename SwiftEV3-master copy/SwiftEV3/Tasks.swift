@@ -12,7 +12,7 @@ struct Task {
     var lessonNum: Double
     var directionsText: String
     var simpleAnswer: [Command.Type]?
-    var complexAnswer: (String, Int)?
+    var complexAnswer: [(String, Int)] = []
     var position: Position = .defaultPosition
     
     var showTaskButtons: ShowTaskButtons
@@ -32,7 +32,7 @@ struct Task {
     }
     init(lessonNum: Double,
          directionsText: String,
-         complexAnswer: (String, Int),
+         complexAnswer: [(String, Int)],
          position: Position? = nil,
          showTaskButtons: ShowTaskButtons) {
         self.lessonNum = lessonNum
