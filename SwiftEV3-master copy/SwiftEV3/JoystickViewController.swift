@@ -408,14 +408,14 @@ class JoystickViewController: UIViewController {
         let confirmAction = UIAlertAction(title: "OK", style: .default) { [weak alertController] _ in
             guard let alertController = alertController,
                 let textFieldLetter = alertController.textFields?.first,
-                let textFieldNumber = alertController.textFields?.first else { return }
+                let textFieldNumber = alertController.textFields?.last else { return }
             let letter = textFieldLetter.text ?? ""
             let number = Int(textFieldNumber.text ?? "") ?? 1
             
             var task = self.tasks[self.currentTaskIdx]
             task.complexAnswer = [(letter, number)]
-//            self.tasks.remove(at: self.currentTaskIdx)
-//            self.tasks.insert(task, at: self.currentTaskIdx)
+            self.tasks.remove(at: self.currentTaskIdx)
+            self.tasks.insert(task, at: self.currentTaskIdx)
         }
         alertController.addAction(confirmAction)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)

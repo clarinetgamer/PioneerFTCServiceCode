@@ -21,10 +21,10 @@ struct TaskDateSource {
     
     static var lesson1 = Task(
         lessonNum: 1,
-        directionsText: "Geronimo the robot is stuck out on a bridge! Add the Move Forward Command 3 times to drive your robot out and save him.",
+        directionsText: "Practice Connecting To The Robot. You can do this by pressing the connect button.",
         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
         showTaskButtons: ShowTaskButtons(showDirections: false, showSteppers: false, showArm: false))
-    
+//    Geronimo the robot is stuck out on a bridge! Add the Move Forward Command 3 times to drive your robot out and save him.
     static var lesson2 = Task(
         lessonNum: 2,
         directionsText: "Geronimo the robot is a pirate collecting treasure. He starts at the point A1 on a grid. Go and collect the missing pirate treasure located at E4 on the grid.",
@@ -35,6 +35,7 @@ struct TaskDateSource {
         lessonNum: 2.1,
         directionsText: "Geronimo the robot is a pirate collecting treasure. He starts at the point A1 on a grid. Go and collect the missing pirate treasure. Choose a spot to hide the tresure and then help Geronimo find it.",
         complexAnswer: [("A", 1)],
+        askUserForEndPosition: true,
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: false, showArm: false))
     
     static var lesson3 = Task(
