@@ -16,7 +16,9 @@ struct TaskDateSource {
         lesson3,
         lesson3_1,
         lesson3_2,
-        lesson3_3
+        lesson3_3,
+        lesson4_1,
+        lesson4_2
     ]
     
     static var lesson1 = Task(
@@ -65,4 +67,21 @@ struct TaskDateSource {
         complexAnswer: [("B", 4), ("K", 4)],
         position: Position(letterNum: 12, number: 1),
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true))
+    
+    // The answer isn't correct I'm just adding it in so we can work on it later. There will be use of the arm here not in lessons 3.
+    static var lesson4_1 = Task(
+      lessonNum: 4.1,
+      directionsText: "Geronimo the robot is a waiter who is serving water to a table of guests.(Answer not currently correct)",
+      complexAnswer: [("B", 4), ("K", 4)],
+      position: Position(letterNum: 12, number: 1),
+      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true))
+
+    // The answer isn't correct I'm just adding it in so we can work on it later.There will be use of the arm here not in lessons 3. 
+    static var lesson4_2 = Task(
+      lessonNum: 4.2,
+      directionsText: "Geronimo the robot is a waiter who is serving food to a table of guests.(Answer not currently correct)",
+      complexAnswer: [("B", 4), ("K", 4)],
+      position: Position(letterNum: 12, number: 1),
+      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true))
 }
+
