@@ -22,7 +22,7 @@ enum CommandId {
 
 extension Command {
     var runLength: TimeInterval{
-        return 3
+        return 4
     }
 }
 
