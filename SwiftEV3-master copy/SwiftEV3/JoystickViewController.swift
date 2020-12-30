@@ -252,7 +252,7 @@ class JoystickViewController: UIViewController {
         SpeakTextManager.shared.speak("Current count is \(stepperCount)")
     }
     
- 
+    
     
     // MARK: - Private Methods
     private func addCommand(_ command: Command) {
@@ -432,18 +432,23 @@ class JoystickViewController: UIViewController {
     private func assessStudentWork() {
         let task = tasks[currentTaskIdx]
         if let simpleAnswer = task.simpleAnswer {
-            simpleAssess(simpleAnswer)
+            simpleAssess(simpleAnswer, speed: task.speed)
             return
         }
         
         if !task.complexAnswer.isEmpty {
-            complexAssess(task.complexAnswer, position: task.position)
+            complexAssess(task.complexAnswer, position: task.position, speed: task.speed)
             return
         }
         fatalError("You always need either a simple answer or complex answer")
     }
     
-    private func simpleAssess(_ simpleAnswer: [Command.Type]) {
+    private func simpleAssess(_ simpleAnswer: [Command.Type], speed: Double) {
+        if checkSpeed(speed) {
+                SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
+                return
+        }
+        
               let commandTypes = commands.map { type(of: $0) }
               guard (simpleAnswer.count == commandTypes.count) else {
                   SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
@@ -461,7 +466,11 @@ class JoystickViewController: UIViewController {
               SpeakTextManager.shared.speak(correct ? "Good job! There are no errors. Try running your code." : "There is an error in your code. Re-listen to what you currently have and revise your code.")
     }
     
-    private func complexAssess(_ complexAnswers: [(String, Int)], position: Position) {
+    private func complexAssess(_ complexAnswers: [(String, Int)], position: Position, speed: Double) {
+        if checkSpeed(speed) {
+                SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
+                return
+        }
         let userInput = PositionHelper.postionForTask(from: commands, position: position)
         
         var correctAnswerFound = false
@@ -477,7 +486,30 @@ class JoystickViewController: UIViewController {
             SpeakTextManager.shared.speak("There is an error in your code. Re-listen to what you currently have and revise your code.")
         }
     }
-    
+    private func checkSpeed(_ speed: Double) -> Bool {
+        if speed != 0.5 {
+            let selectedIndex = speedStepper.selectedSegmentIndex
+            var answerIsWrong = true
+            switch selectedIndex {
+            case 0:
+                if speed == 0.25 {
+                    answerIsWrong = false
+                }
+            case 2:
+                if speed == 0.75 {
+                    answerIsWrong = false
+                }
+            case 3:
+                if speed == 1 {
+                    answerIsWrong = false
+                }
+            default:
+                fatalError()
+            }
+            return answerIsWrong
+        }
+        return false
+    }
     private func userCanUseButton(_ canUse: Bool) {
         goButton.isUserInteractionEnabled = canUse
         leftButton.isUserInteractionEnabled = canUse

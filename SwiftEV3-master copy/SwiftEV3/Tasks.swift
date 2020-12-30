@@ -17,16 +17,19 @@ struct Task {
     var askUserForEndPosition: Bool = false
     
     var showTaskButtons: ShowTaskButtons
-
+    var speed: Double
+    
     init(lessonNum: Double,
          directionsText: String,
          simpleAnswer: [Command.Type],
          position: Position? = nil,
-         showTaskButtons: ShowTaskButtons) {
+         showTaskButtons: ShowTaskButtons,
+         speed: Double = 0.5) {
         self.lessonNum = lessonNum
         self.directionsText = directionsText
         self.simpleAnswer = simpleAnswer
         self.showTaskButtons = showTaskButtons
+        self.speed = speed
         if let position = position {
             self.position = position
         }
@@ -36,11 +39,13 @@ struct Task {
          complexAnswer: [(String, Int)],
          position: Position? = nil,
          askUserForEndPosition: Bool = false,
-         showTaskButtons: ShowTaskButtons) {
+         showTaskButtons: ShowTaskButtons,
+         speed: Double = 0.5) {
         self.lessonNum = lessonNum
         self.directionsText = directionsText
         self.complexAnswer = complexAnswer
         self.showTaskButtons = showTaskButtons
+        self.speed = speed
         if let position = position {
                  self.position = position
              }

@@ -25,7 +25,8 @@ struct TaskDateSource {
         lessonNum: 1,
         directionsText: "Practice Connecting To The Robot. You can do this by pressing the connect button.",
         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
-        showTaskButtons: ShowTaskButtons(showDirections: false, showSteppers: false, showArm: false, showSpeed: false))
+        showTaskButtons: ShowTaskButtons(showDirections: false, showSteppers: false, showArm: false, showSpeed: true),
+        speed: 0.25)
 
     static var lesson2 = Task(
         lessonNum: 2,
