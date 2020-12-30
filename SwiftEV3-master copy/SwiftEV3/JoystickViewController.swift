@@ -70,6 +70,9 @@ class JoystickViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
     
+    @IBOutlet weak var decStepper: UIStepper!
+    @IBOutlet weak var speedStepper: UISegmentedControl!
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -389,6 +392,8 @@ class JoystickViewController: UIViewController {
         stepperButtons.forEach { $0.isHidden = !show.showSteppers }
         stepperLabel.isHidden = !show.showSteppers
         armButtons.forEach { $0.isHidden = !show.showArm }
+        speedStepper.isHidden = !show.showSpeed
+        decStepper.isHidden = !show.showSteppers
         
         if (task.askUserForEndPosition) {
             askUserForSuccessfulEndingPosition()

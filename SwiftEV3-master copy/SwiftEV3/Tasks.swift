@@ -52,4 +52,5 @@ struct ShowTaskButtons {
     var showDirections: Bool = false
     var showSteppers: Bool = false
     var showArm: Bool = false
+    var showSpeed: Bool = false
 }
