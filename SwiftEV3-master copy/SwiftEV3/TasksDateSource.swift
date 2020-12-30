@@ -84,5 +84,15 @@ struct TaskDateSource {
       complexAnswer: [("B", 4), ("K", 4)],
       position: Position(letterNum: 12, number: 1),
       showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+/* Name Scheme:   lesson(year if greater than 1)(lesson #)_(part#) Year Ex:lesson2y1_1
+  Lesson Assignments
+     Mallika Lesson 1
+     Henry Lesson 2
+     Seth Lesson 2 Bonus
+     Mallika Lesson 3
+     Henry Lesson 4
+     Seth Lesson 5
+    */
+    //Write code here \/
 }
 
