@@ -94,5 +94,10 @@ struct TaskDateSource {
      Seth Lesson 5
     */
     //Write code here \/
-}
+    static var Lesson21_1 = Task(
+        lessonNum: 21.1,
+    directionsText: "Measure and record the roatations. Go forward, wait, back up to start.",
+    simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
 
+}
