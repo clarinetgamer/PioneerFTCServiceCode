@@ -241,5 +241,10 @@ struct TaskDateSource {
     
     
     //This is all task 4 lesson 3
-    
+    static var Lesson34_1 = Task(
+        lessonNum: 34.1,
+    directionsText: "Make Geronimo the robot go to any dot, do a U-turn and go to any other dot.",
+        simpleAnswer: [MoveForwardCommand.self,],
+        //this^ is a placeholder answer because this activity is up to the kid so there is no one answer
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
 }
