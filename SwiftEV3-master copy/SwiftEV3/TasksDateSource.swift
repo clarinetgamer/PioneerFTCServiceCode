@@ -174,6 +174,7 @@ struct TaskDateSource {
     
     
     
+    //LESSON 3
     //This is all task 1 lesson 3 on the worksheet \/
     static var Lesson31_1 = Task(
         lessonNum: 31.1,
@@ -219,7 +220,26 @@ struct TaskDateSource {
     
     
     //This is all task 3 lesson 3 on the worksheet \/
+    static var Lesson33_1 = Task(
+        lessonNum: 33.1,
+    directionsText: "Make Geronimo the robot go to the red dot.",
+        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self, MoveForwardCommand.self,],
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
-    
+    static var Lesson33_2 = Task(
+        lessonNum: 33.2,
+    directionsText: "Make Geronimo the robot do a U-turn.",
+        simpleAnswer: [MoveRightCommand.self, MoveRightCommand.self,],
+        //not sure if this is sorrect- the answer key said 1.2
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
 
+    static var Lesson33_3 = Task(
+        lessonNum: 33.3,
+    directionsText: "Make Geronimo the robot go to the red dot.",
+        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self, MoveForwardCommand.self,],
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+    
+    
+    //This is all task 4 lesson 3
+    
 }
