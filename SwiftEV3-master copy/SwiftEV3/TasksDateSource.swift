@@ -247,4 +247,19 @@ struct TaskDateSource {
         simpleAnswer: [MoveForwardCommand.self,],
         //this^ is a placeholder answer because this activity is up to the kid so there is no one answer
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+    
+    
+    //This is all task 5 lesson 3 on the worksheet \/
+    static var Lesson35_1 = Task(
+        lessonNum: 35.1,
+    directionsText: "Make Geronimo the robot go up to the garden gate. Code a path for him using the code you learned.",
+        simpleAnswer: [MoveForwardCommand.self,
+        MoveRightCommand.self,
+        //for the turn, the answer key said 0.6
+        MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self,
+        //add another half rotation to make 3.5 rotations
+        MoveLeftCommand.self,
+        //for the turn, the answer key said 0.6
+        MoveForwardCommand.self,MoveForwardCommand.self,],
+        showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
 }
