@@ -174,7 +174,7 @@ struct TaskDateSource {
     
     
     
-    //This is all task 1 lesson 3 on the worksheet
+    //This is all task 1 lesson 3 on the worksheet \/
     static var Lesson31_1 = Task(
         lessonNum: 31.1,
     directionsText: "Try out the code on Geronimo. Go to the first blue line.",
@@ -193,11 +193,32 @@ struct TaskDateSource {
         lessonNum: 31.3,
     directionsText: "Try out the code on Geronimo. Go to stop.",
         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self,],
-        //not sure if this is correct- the answer key said F0.6
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
     
-    //This is all task 2 lesson 3 on the worksheet
+    //This is all task 2 lesson 3 on the worksheet \/
+    static var Lesson32_1 = Task(
+        lessonNum: 32.1,
+    directionsText: "Make Geronimo the robot go to the second blue line.",
+        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,],
+        //add another half rotation here to make 7.5 rotations
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+    
+    static var Lesson32_2 = Task(
+        lessonNum: 32.2,
+    directionsText: "Make Geronimo the robot turn left.",
+        simpleAnswer: [MoveLeftCommand.self],
+        //not sure if this is correct- the answer key said F0.6
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+    
+    static var Lesson32_3 = Task(
+        lessonNum: 32.3,
+    directionsText: "Make Geronimo the robot go to stop.",
+        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self,],
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+    
+    
+    //This is all task 3 lesson 3 on the worksheet \/
     
     
 
