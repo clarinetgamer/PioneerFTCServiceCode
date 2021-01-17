@@ -124,7 +124,7 @@ struct TaskDateSource {
        showTaskButtons:ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
     static var Lesson22_2 = Task(
-        lessonNum: 22.3,
+        lessonNum: 22.2,
     directionsText: "Geronimo the robot needs to reach the dot targets. Find out how many rotations it takes to get to the second line.",
     simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
         //add another half rotation here to make 5.5 rotations
@@ -170,6 +170,35 @@ struct TaskDateSource {
             //add half rotation to make 4.5 rotations
             MoveBackwardCommand.self, MoveBackwardCommand.self],
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+    
+    
+    
+    
+    //This is all task 1 lesson 3 on the worksheet
+    static var Lesson31_1 = Task(
+        lessonNum: 31.1,
+    directionsText: "Try out the code on Geronimo. Go to the first blue line.",
+        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self, MoveForwardCommand.self, ],
+        //add another half rotation to make 5.5 rotations
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+    
+    static var Lesson31_2 = Task(
+        lessonNum: 31.2,
+    directionsText: "Try out the code on Geronimo. Turn right.",
+        simpleAnswer: [MoveRightCommand.self],
+        //not sure if this is correct- the answer key said F0.6
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+    
+    static var Lesson31_3 = Task(
+        lessonNum: 31.3,
+    directionsText: "Try out the code on Geronimo. Go to stop.",
+        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self,],
+        //not sure if this is correct- the answer key said F0.6
+     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+    
+    
+    //This is all task 2 lesson 3 on the worksheet
+    
     
 
 }
