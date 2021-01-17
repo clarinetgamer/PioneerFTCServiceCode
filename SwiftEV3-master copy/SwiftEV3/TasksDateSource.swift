@@ -95,62 +95,26 @@ struct TaskDateSource {
     */
     //Write code here \/
     
-    //This is all task 1 lesson 2 on the worksheet \/
+    //LESSON 1
+    //This is about reaching a target with whole rotations
     static var Lesson21_1 = Task(
         lessonNum: 21.1,
-    directionsText: "Geronimo the robot needs to reach the dot targets. Find out how many rotations it takes to get to the yellow dot.",
+    directionsText: "Geronimo the robot is an astronaut traveling through space. Help him reach a new planet which is 3 spaces away.",
     simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
+   //This is about reaching a target using half rotations
     static var Lesson21_2 = Task(
         lessonNum: 21.2,
-    directionsText: "Geronimo the robot needs to reach the dot targets. Find out how many rotations it takes to get to the red dot.",
-    simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    static var Lesson21_3 = Task(
-        lessonNum: 21.3,
-    directionsText: "Geronimo the robot needs to reach the dot targets. Find out how many rotations it takes to get to the blue dot.",
-    simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    
-   //This is all task 2 lesson 2 on the worksheet \/
-    static var Lesson22_1 = Task(
-        lessonNum: 22.1,
-        directionsText: "Geronimo the robot needs to reach the line targets. Find out how many rotations it takes to get to the first line.",
+        directionsText: "Geronimo the robot is an explorer who needs to cross a bridge over a river to get to the treasure chest. Help him cross the bridge, which is 5 and a half spaces away.",
         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
         //add another half rotation here to make 5.5 rotations
        showTaskButtons:ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
-    static var Lesson22_2 = Task(
-        lessonNum: 22.2,
-    directionsText: "Geronimo the robot needs to reach the dot targets. Find out how many rotations it takes to get to the second line.",
-    simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
-        //add another half rotation here to make 5.5 rotations
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    
-    //This is all task 3 lesson 2 on the worksheet \/
-    static var Lesson23_1 = Task(
-        lessonNum: 23.1,
-    directionsText: "Geronimo the robot needs to cross the table. Find out how many rotations it takes for it to go the width, or short distance, of the table.",
-    simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
-        //add another part rotation here to make 5.3 rotations
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    static var Lesson23_2 = Task(
-        lessonNum: 23.2,
-    directionsText: "Geronimo the robot needs to cross the table. Find out how many rotations it takes for it to go the legnth, or long distance, of the table.",
-    simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
-        //add another half rotation here to make 12.5 rotations
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    
-    //This is all task 4 lesson 2\/
-    static var Lesson24_1 = Task(
-        lessonNum: 24.1,
-    directionsText: "Try out the code on Geronimo and write down the color of the dot it lands on.",
+    //This is about making the robot go backwards
+    static var Lesson21_3 = Task(
+        lessonNum: 21.3,
+    directionsText: "Geronimo is steering a boat across the sea to get one of his parts which he accidentally dropped in the water. First, go to the boat shop to repair his boat, which is 5 spaces in front. Then, make way for other boats to cross in front of him by moving back 2 spaces. Finally, go forward 6 spaces to where Geronimo dropped his part.",
         //robot stops on the blue dot because it goes 9 rotations forward in total
         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,
             //add half rotation to make 5.5 rotations
@@ -160,99 +124,32 @@ struct TaskDateSource {
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
     
-    //This is all task 5 on the worksheet lesson 2\/
-    static var Lesson25_1 = Task(
-        lessonNum: 25.1,
-    directionsText: "Try out the code on Geronimo and write down which line it lands on.",
-        //robot stops on the first line because it goes 5.5 rotations forward in total
-        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,
-            MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,
-            //add half rotation to make 4.5 rotations
-            MoveBackwardCommand.self, MoveBackwardCommand.self],
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    
-    
     
     //LESSON 3
-    //This is all task 1 lesson 3 on the worksheet \/
-    static var Lesson31_1 = Task(
-        lessonNum: 31.1,
-    directionsText: "Try out the code on Geronimo. Go to the first blue line.",
-        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self, MoveForwardCommand.self, ],
-        //add another half rotation to make 5.5 rotations
+    //This is about learning how to turn
+    static var Lesson23_1 = Task(
+        lessonNum: 23.1,
+    directionsText: "Geronimo the robot is looking for rocks for his rock collection. Help him find a cool rock, which is 3 spaces in front of him. Then, help him move right 4 spaces to add the rock to his rock pile.",
+        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,
+            MoveRightCommand.self,
+            MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,],
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
-    static var Lesson31_2 = Task(
-        lessonNum: 31.2,
-    directionsText: "Try out the code on Geronimo. Turn right.",
-        simpleAnswer: [MoveRightCommand.self],
-        //not sure if this is correct- the answer key said F0.6
+    //This is about learning to make a U-turn
+    static var Lesson23_2 = Task(
+        lessonNum: 23.2,
+    directionsText: "Geronimo the robot has to find ingredients to bake a chocolate cake. Help him get the chocolate, which is 4 spaces away, make a U-turn and come back to where he started.",
+        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,
+            MoveRightCommand.self, MoveRightCommand.self,
+            //not sure if this is sorrect- the answer key said 1.2
+            MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,],
+       
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
-    static var Lesson31_3 = Task(
-        lessonNum: 31.3,
-    directionsText: "Try out the code on Geronimo. Go to stop.",
-        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self,],
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    
-    //This is all task 2 lesson 3 on the worksheet \/
-    static var Lesson32_1 = Task(
-        lessonNum: 32.1,
-    directionsText: "Make Geronimo the robot go to the second blue line.",
-        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,],
-        //add another half rotation here to make 7.5 rotations
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    static var Lesson32_2 = Task(
-        lessonNum: 32.2,
-    directionsText: "Make Geronimo the robot turn left.",
-        simpleAnswer: [MoveLeftCommand.self],
-        //not sure if this is correct- the answer key said F0.6
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    static var Lesson32_3 = Task(
-        lessonNum: 32.3,
-    directionsText: "Make Geronimo the robot go to stop.",
-        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self,],
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    
-    //This is all task 3 lesson 3 on the worksheet \/
-    static var Lesson33_1 = Task(
-        lessonNum: 33.1,
-    directionsText: "Make Geronimo the robot go to the red dot.",
-        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self, MoveForwardCommand.self,],
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    static var Lesson33_2 = Task(
-        lessonNum: 33.2,
-    directionsText: "Make Geronimo the robot do a U-turn.",
-        simpleAnswer: [MoveRightCommand.self, MoveRightCommand.self,],
-        //not sure if this is sorrect- the answer key said 1.2
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-
-    static var Lesson33_3 = Task(
-        lessonNum: 33.3,
-    directionsText: "Make Geronimo the robot go to the red dot.",
-        simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self, MoveForwardCommand.self,MoveForwardCommand.self, MoveForwardCommand.self,],
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    
-    //This is all task 4 lesson 3
-    static var Lesson34_1 = Task(
-        lessonNum: 34.1,
-    directionsText: "Make Geronimo the robot go to any dot, do a U-turn and go to any other dot.",
-        simpleAnswer: [MoveForwardCommand.self,],
-        //this^ is a placeholder answer because this activity is up to the kid so there is no one answer
-     showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
-    
-    
-    //This is all task 5 lesson 3 on the worksheet \/
-    static var Lesson35_1 = Task(
-        lessonNum: 35.1,
-    directionsText: "Make Geronimo the robot go up to the garden gate. Code a path for him using the code you learned.",
+    //This is about combining turns into one path
+    static var Lesson23_3 = Task(
+        lessonNum: 23.3,
+    directionsText: "Geronimo the robot has to go to the garden gates to rescue his friend in the palace, but he has to first pass some obstacles on his way. First, help him find a gift for his friend at the store 1 space forward. Then, help him turn right and move 3 spaces forward so that he can find paper to wrap the gift for his friend. Then, help Geronimo turn left and go to the garden gates, which are 2 spaces forward.",
         simpleAnswer: [MoveForwardCommand.self,
         MoveRightCommand.self,
         //for the turn, the answer key said 0.6
