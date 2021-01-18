@@ -24,7 +24,13 @@ struct TaskDateSource {
         lesson21_3,
         lesson23_1,
         lesson23_2,
-        lesson23_3
+        lesson23_3,
+        lesson2y5_1,
+        lesson2y5_2,
+        lesson2y5_3,
+        lesson2y5_4,
+        lesson2y2b_1,
+        lesson2y2b_2
     ]
     
     static var lesson1 = Task(
@@ -90,6 +96,7 @@ struct TaskDateSource {
       complexAnswer: [("B", 4), ("K", 4)],
       position: Position(letterNum: 12, number: 1),
       showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+   
 /* Name Scheme:   lesson(year if greater than 1)(lesson #)_(part#) Year Ex:lesson2y1_1
   Lesson Assignments
      Mallika Lesson 1
@@ -129,7 +136,19 @@ struct TaskDateSource {
             MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
-    
+    //Lesson2B
+    static var lesson2y2b_1 = Task(
+        lessonNum: 22.1,
+      directionsText: "Using your knowledge of controlling speed, assist Geronimo with his vitamins by driving forward slowly in order to dispense one days worth of vitamins. Be careful to not go too far or else Geronimo will take too many vitamins",
+      simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],// needs .5 more
+      position: Position(letterNum: 12, number: 1),
+      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: true))
+    static var lesson2y2b_2 = Task(
+        lessonNum: 22.1,
+      directionsText: "Geronimo is testing out his speeds on the road. He is approaching a stoplight and notices a pedistrian. Go forward one rotation and try not to run over the pedestrian by going too fast.",
+      simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
+      position: Position(letterNum: 12, number: 1),
+      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: true))
     
     //LESSON 3
     //This is about learning how to turn
@@ -165,4 +184,35 @@ struct TaskDateSource {
         //for the turn, the answer key said 0.6
         MoveForwardCommand.self,MoveForwardCommand.self,],
         showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
+    
+    //Lesson 5
+     static var lesson2y5_1 = Task(
+         lessonNum: 25.1,
+         directionsText: "Geronimo the robot has been given a new robotic arm, he needs to practice his new arm! Tell Geronimo to move the arm up, wait a second, then move the arm down",
+         simpleAnswer:[ArmUpCommand.self, ArmDownCommand.self],//.25 rotations
+       position: Position(letterNum: 12, number: 1),
+       showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: true))
+     //ARMUP AND ARMDOWN is .25 rotations
+     static var lesson2y5_2 = Task(
+         lessonNum: 25.2,
+       directionsText: "Geronimo has picked up a ring for his wife with the new robotic arm. Help Geronimo give his new ring to his wife by driving forward, moving his arm down, then backing away",
+         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, ArmUpCommand.self, MoveBackwardCommand.self, MoveBackwardCommand.self, MoveBackwardCommand.self, MoveBackwardCommand.self, MoveBackwardCommand.self],//needs .5 forward and backward rotations on move.self commands
+       position: Position(letterNum: 12, number: 1),
+       showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: true))
+     static var lesson2y5_3 = Task(
+         lessonNum: 25.3,
+       directionsText: "Geronimo wants to get a dog! Help Geronimo pick out one by driving forward, picking up the dog with his arm, turning around, then heading home",
+         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, ArmUpCommand.self, MoveLeftCommand.self, MoveLeftCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self ],//need to add .5 more rotations for moveforward.self commands
+       position: Position(letterNum: 12, number: 1),
+       showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: true))
+     static var lesson2y5_4 = Task(
+         lessonNum: 25.4,
+       directionsText: "Geronimo is getting new glasses! Assist him at the glasses shop by going forward, using his arm to pick up the glasses, then backing out of the store",
+         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, ArmUpCommand.self, ArmUpCommand.self, MoveBackwardCommand.self, MoveBackwardCommand.self, MoveBackwardCommand.self, MoveBackwardCommand.self ],
+         //Need to switch to complex answer because student could turn then move backwards
+         //Also needs to go .5 more rotations on moveForward & moveBackward, and .1 more on ArmUP
+       position: Position(letterNum: 12, number: 1),
+       showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: true))
+     
+         
 }
