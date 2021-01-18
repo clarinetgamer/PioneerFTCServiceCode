@@ -18,7 +18,13 @@ struct TaskDateSource {
         lesson3_2,
         lesson3_3,
         lesson4_1,
-        lesson4_2
+        lesson4_2,
+        lesson21_1,
+        lesson21_2,
+        lesson21_3,
+        lesson23_1,
+        lesson23_2,
+        lesson23_3
     ]
     
     static var lesson1 = Task(
@@ -97,14 +103,14 @@ struct TaskDateSource {
     
     //LESSON 1
     //This is about reaching a target with whole rotations
-    static var Lesson21_1 = Task(
+    static var lesson21_1 = Task(
         lessonNum: 21.1,
     directionsText: "Geronimo the robot is an astronaut traveling through space. Help him reach a new planet which is 3 spaces away.",
     simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
    //This is about reaching a target using half rotations
-    static var Lesson21_2 = Task(
+    static var lesson21_2 = Task(
         lessonNum: 21.2,
         directionsText: "Geronimo the robot is an explorer who needs to cross a bridge over a river to get to the treasure chest. Help him cross the bridge, which is 5 and a half spaces away.",
         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self],
@@ -112,7 +118,7 @@ struct TaskDateSource {
        showTaskButtons:ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
     //This is about making the robot go backwards
-    static var Lesson21_3 = Task(
+    static var lesson21_3 = Task(
         lessonNum: 21.3,
     directionsText: "Geronimo is steering a boat across the sea to get one of his parts which he accidentally dropped in the water. First, go to the boat shop to repair his boat, which is 5 spaces in front. Then, make way for other boats to cross in front of him by moving back 2 spaces. Finally, go forward 6 spaces to where Geronimo dropped his part.",
         //robot stops on the blue dot because it goes 9 rotations forward in total
@@ -127,7 +133,7 @@ struct TaskDateSource {
     
     //LESSON 3
     //This is about learning how to turn
-    static var Lesson23_1 = Task(
+    static var lesson23_1 = Task(
         lessonNum: 23.1,
     directionsText: "Geronimo the robot is looking for rocks for his rock collection. Help him find a cool rock, which is 3 spaces in front of him. Then, help him move right 4 spaces to add the rock to his rock pile.",
         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,
@@ -136,7 +142,7 @@ struct TaskDateSource {
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
     //This is about learning to make a U-turn
-    static var Lesson23_2 = Task(
+    static var lesson23_2 = Task(
         lessonNum: 23.2,
     directionsText: "Geronimo the robot has to find ingredients to bake a chocolate cake. Help him get the chocolate, which is 4 spaces away, make a U-turn and come back to where he started.",
         simpleAnswer: [MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self, MoveForwardCommand.self,
@@ -147,7 +153,7 @@ struct TaskDateSource {
      showTaskButtons: ShowTaskButtons(showDirections: true, showSteppers: true, showArm: true, showSpeed: false))
     
     //This is about combining turns into one path
-    static var Lesson23_3 = Task(
+    static var lesson23_3 = Task(
         lessonNum: 23.3,
     directionsText: "Geronimo the robot has to go to the garden gates to rescue his friend in the palace, but he has to first pass some obstacles on his way. First, help him find a gift for his friend at the store 1 space forward. Then, help him turn right and move 3 spaces forward so that he can find paper to wrap the gift for his friend. Then, help Geronimo turn left and go to the garden gates, which are 2 spaces forward.",
         simpleAnswer: [MoveForwardCommand.self,
